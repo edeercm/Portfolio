@@ -64,14 +64,14 @@
 
 
 
- html, body {
+body {
   /* width: 100%;
   height: 100vh; */
   /* margin: 0;
   perspective: 1px;
   transform-style: preserve-3d; */
-  
-  overflow-y: scroll;  
+
+  overflow-y: scroll;
   overflow-x: hidden;
   background-color: #050505;
 }
@@ -83,49 +83,60 @@
   text-decoration: none;
 }
 
-h1, h2, h3, h4, h5, h6, p {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
   margin: 0;
- 
+
 }
 
 
 
-h2  {
+h2 {
   /* font-family: 'Autumn Romans', sans-serif; */
   /* font-family: 'BORELA', sans-serif; */
 
-                                                
+
   font-family: 'Haverbrooke', sans-serif;
-                                                
-                                                
-                                                
-                                                                                          
+
+
+
+
 }
 
- p, h4,  h6 {
+p,
+h4,
+h6 {
   font-family: 'Poppins', sans-serif;
 }
 
 
 
 h1 {
-  
 
-                                                
+
+
   font-family: 'Haverbrooke', sans-serif;
-                                                
+
 }
 
 h3 {
   font-size: 1.725rem;
   font-family: 'Steamflix Grotesk', sans-serif;
   font-weight: bold;
-  letter-spacing: 0.05rem;                           
+  letter-spacing: 0.05rem;
 }
 
 
 
-span, a, h5, label, .invalid-feedback {
-  font-family: 'Steamflix Grotesk', sans-serif; 
+span,
+a,
+h5,
+label,
+.invalid-feedback {
+  font-family: 'Steamflix Grotesk', sans-serif;
 }
-

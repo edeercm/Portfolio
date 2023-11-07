@@ -2,7 +2,7 @@
     height: auto;
     display: flex;
     align-items: center;
-    overflow: hidden;
+    overflow-x: hidden! important;
     padding: 10rem 0;
 }
 
