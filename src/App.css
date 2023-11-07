@@ -84,7 +84,8 @@ body {
   perspective: 1px;
   transform-style: preserve-3d; */
   
-  overflow: hidden;
+  /* overflow-y: scroll;  
+  overflow-x: hidden; */
   background-color: #050505;
 }
 
