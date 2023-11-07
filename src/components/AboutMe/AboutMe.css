@@ -1,0 +1,36 @@
+#aboutme {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background-color: #D9DBDE;
+    padding: 6.15rem 0;
+}
+
+.aboutme-labels {
+    font-size: 1.475rem;
+    line-height: 1.125;
+}
+
+.aboutme-icons svg {
+    color: #050505;
+    font-size: calc(1.375rem + 1.5vw);
+}
+
+@media screen and (max-width: 768px) {
+    
+}
+
+@media screen and (max-width: 576px) {
+
+    .aboutme-labels {
+        font-size: 1.65rem;
+    }
+
+    .aboutme-icons svg {
+        color: #050505;
+        font-size: 2.25rem;
+    }
+
+}

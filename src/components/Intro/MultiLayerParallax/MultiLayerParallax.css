@@ -1,0 +1,126 @@
+.parallax {
+    width: 100%;
+    height: 98vh;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.label {
+    position: relative;
+    font-size: 8rem;
+    font-family: 'Prestage', sans-serif;
+    color: #D9DBDE;
+    letter-spacing: 1.5rem;
+    text-transform: uppercase;
+    opacity: 0.6;
+    z-index: 30;
+}
+
+.fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+    -webkit-animation-duration: 2.75s;
+    animation-duration: 2.75s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-delay: 0.075s;
+    animation-delay: 0.075s;
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0.075;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0.075;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+.background {
+
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    background-image: url(/src/assets/images/intro/background.jpg);
+    background-position: bottom;
+    background-size: cover;
+
+}
+
+.person {
+    position: absolute;
+    inset: 0;
+    z-index: 20;
+    background-image: url(/src/assets/images/intro/person.png);
+    background-position: bottom;
+    background-size: cover;
+    filter: drop-shadow(0 0 1px rgb(0, 0, 0));
+}
+
+
+.scrolldown {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    gap: 0.65rem;
+    z-index: 20;
+}
+
+.scrolldown-indicator {
+    width: 20px;
+    height: 45px;
+    /* border: 1.75px solid #fff; */
+    border: 0;
+    border-radius: 50px;
+}
+
+.scrolldown-indicator:before {
+    content: "";
+    position: absolute;
+    width: 5.25px;
+    height: 15.25px;
+    background: #fff;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 5px;
+    border-radius: 0%;
+    animation: animate 1.25s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        opacity: 0.75;
+        top: 3.5px; 
+    }
+
+    100% {
+        opacity: 0.5;
+        top: 33.75px;
+    }
+}
+
+.scrolldown-label {
+    color: #D9DBDE;
+    font-size: 0.625rem;
+    text-transform: uppercase;
+
+}
+

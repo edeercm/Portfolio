@@ -1,0 +1,128 @@
+#projects {
+    height: auto;
+    background-color: #D9DBDE;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.projects-container {
+    padding: 6.75rem 0;
+}
+
+.projects-tittle {
+    font-size: 4.5rem;
+    color: #050505;
+    letter-spacing: 0.25rem;
+    text-shadow: 1.5px 1.5px 4px rgba(0, 0, 0, 0.5);
+}
+
+.project-card {
+    height: 85vh;
+}
+
+.project-name {
+    background-color: #050505;
+    padding: 0.915rem 0.205rem;
+}
+
+.project-name h5 {
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    word-spacing: -1rem;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+/* .project-tittle {
+    margin-left: 7rem;
+} */
+
+.project-img {
+    width: 100%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.project-img-mobile {
+    display: none;
+}
+
+.project-icons svg {
+    font-size: 2.5rem;
+    color: #050505;
+}
+
+@media screen and (max-width: 768px) {
+
+    .projects-container {
+        padding: 10rem 0;
+    }
+
+    .project-card {
+        height: 40vh;
+    }
+
+    .project-name {
+        margin-top: 0.75rem;
+        margin-right: -0.5rem;
+    }
+
+    .project-name h5 {
+        font-size: 0.715rem;
+    }
+
+    .project-img {
+        width: 95%;
+    }
+
+    .project-img-mobile {
+        display: none;
+    }
+
+    .project-icons svg {
+        font-size: 3rem;
+        margin-left: -2rem;
+
+    }
+
+}
+
+@media screen and (max-width: 576px) {
+
+    .projects-container {
+        padding: 7.5rem 0;
+    }
+
+    .project-card {
+        height: 95vh;
+    }
+
+    .projects-tittle {
+        font-size: 2.45rem;
+        letter-spacing: 0;
+    }
+
+    .project-name {
+        display: none;
+    }
+
+    .project-img {
+        display: none;
+    }
+
+    .project-img-mobile {
+        display: flex;
+        width: 100%;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+ 
+    }
+
+    .project-icons svg {
+        font-size: 1.75rem;
+        margin-top: -18.5rem;
+        margin-left: 20.065rem;
+
+    }
+
+}

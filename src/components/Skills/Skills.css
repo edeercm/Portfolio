@@ -1,0 +1,41 @@
+#skills {
+    height: auto;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    padding: 10rem 0;
+}
+
+.skill-tittle {
+    font-size: 4.25rem;
+    letter-spacing: 0.275rem;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);  
+}
+
+
+@media screen and (max-width: 768px) {
+
+    #skills {
+        padding: 15rem 0;
+    }
+
+ 
+}
+
+@media screen and (max-width: 576px) {
+
+    #skills {
+        padding: 7.5rem 0;
+    }
+
+    .skill-tittle {
+        font-size: 3.25rem; 
+    }
+
+
+
+ 
+}
+

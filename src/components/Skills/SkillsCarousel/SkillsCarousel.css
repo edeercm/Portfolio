@@ -1,0 +1,45 @@
+.react-multi-carousel-list {
+    overflow: visible;
+}
+
+.card {
+    height: 17.5rem;
+    width: 20rem;
+    padding: 2rem 2.5rem;
+    border-radius: 0;
+    border: 0.195rem solid;
+    border-color: #b1adad;
+    background-color: transparent;
+}
+
+.card-title {
+    margin: 0;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.card-percent {
+    color: #fff;
+    font-size: 5rem;
+    font-weight: 600;
+}
+
+.card-description {
+    color: #fff;
+    font-size: 1.25rem;
+}
+
+.line-color {
+    height: 100%;
+    background-color: #79797C;
+}
+
+.bg-line-color {
+    height: 1.25rem;
+    /* overflow: hidden; */
+    border-radius: 0.215rem;
+    background-color: #D9DBDE;
+}
+
+
