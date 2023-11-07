@@ -37,9 +37,9 @@ const projects = () => {
               <div className="col-lg-10 col-md-10">
                 <div data-aos="fade-left" data-aos-delay="200" data-aos-duration="1450" data-aos-easing="ease-out">
                   <img src={snkrs} alt="SNKRS Project" className='project-img' />
-                  <div className='d-flex flex-column align-items-center justify-content-center'>
+                  <div className='d-flex flex-column align-items-center justify-content-center' >
                     <img src={snkrsmobile} alt="SNKRS Project" className='project-img-mobile' />
-                    <div className="project-icons-mobile d-flex flex-row gap-4">
+                    <div className="project-icons-mobile d-flex flex-row gap-5">
                       <a href="https://snkrslabs.netlify.app/" target='_blank'><RxExternalLink /></a>
                       <a href="https://github.com/edeercm/SNKRS" target='_blank'><BsGithub /></a>
                     </div>
@@ -68,7 +68,7 @@ const projects = () => {
                   <img src={encrypter} alt="Encrypter Project" className='project-img' />
                   <div className='d-flex flex-column align-items-center justify-content-center'>
                     <img src={encryptermobile} alt="SNKRS Project" className='project-img-mobile' />
-                    <div className="project-icons-mobile d-flex flex-row gap-4">
+                    <div className="project-icons-mobile d-flex flex-row gap-5">
                       <a href="https://snkrslabs.netlify.app/" target='_blank'><RxExternalLink /></a>
                       <a href="https://github.com/edeercm/SNKRS" target='_blank'><BsGithub /></a>
                     </div>
