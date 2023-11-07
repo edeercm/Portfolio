@@ -25,7 +25,7 @@ const projects = () => {
           <div className="col-lg-12 mb-5 text-center">
             <h2 className='projects-tittle'>Projects</h2>
           </div>
-          <div className="col-lg-12 col-md-12 mt-5">
+          <div className="project-card col-lg-12 col-md-12 mt-5">
             <div className="row">
               <div className="col-lg-1 col-md-1 d-flex align-items-start justify-content-end mt-4">
                 <div data-aos="fade-up" data-aos-delay="500" data-aos-duration="1350" data-aos-easing="ease-in-out">
@@ -39,7 +39,7 @@ const projects = () => {
                   <img src={snkrs} alt="SNKRS Project" className='project-img' />
                   <div className='d-flex flex-column align-items-center justify-content-center' >
                     <img src={snkrsmobile} alt="SNKRS Project" className='project-img-mobile' />
-                    <div className="project-icons-mobile d-flex flex-row gap-5">
+                    <div className="project-icons-mobile d-flex flex-row mt-4 gap-5">
                       <a href="https://snkrslabs.netlify.app/" target='_blank'><RxExternalLink /></a>
                       <a href="https://github.com/edeercm/SNKRS" target='_blank'><BsGithub /></a>
                     </div>
