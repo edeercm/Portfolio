@@ -16,20 +16,29 @@ const responsive = {
     items: 2,
     partialVisibilityGutter: 15
   },
-  mobile: {
-    breakpoint: { max: 576, min: 428 },
+  mobiledefault: {
+    breakpoint: { max: 576, min: 0 },
     items: 1,
-    partialVisibilityGutter: 60
+  },
+  mobile: {
+    breakpoint: { max: 576, min: 414 },
+    items: 1,
+    partialVisibilityGutter: 65
+  },
+  mobilex: {
+    breakpoint: { max: 414, min: 390 },
+    items: 1,
+    partialVisibilityGutter: 50
   },
   mobilexs: {
-    breakpoint: { max: 390, min: 390 },
+    breakpoint: { max: 390, min: 375 },
     items: 1,
     partialVisibilityGutter: 30
   },
   mobilexxs: {
     breakpoint: { max: 375, min: 360 },
     items: 1,
-    partialVisibilityGutter: 15
+    partialVisibilityGutter: 5
   }
 };
 
@@ -44,7 +53,7 @@ const SkillsCarousel = () => {
       responsive={responsive}
       partialVisible={true}
       ssr={true}
-      removeArrowOnDeviceType={["tablet", "mobile", "mobilexs", "mobilexxs"]}
+      removeArrowOnDeviceType={["tablet", "mobiledefault", "mobile", "mobilex", "mobilexs", "mobilexxs"]}
     >
       <div data-aos="fade-left" data-aos-duration="1500" data-aos-delay="250">
         <div className="card d-flex flex-column justify-content-between" >
