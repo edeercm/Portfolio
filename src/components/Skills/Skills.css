@@ -28,6 +28,8 @@
 
     #skills {
         padding: 7.5rem 0;
+
+        overflow: hidden;
     }
 
     .skill-tittle {
