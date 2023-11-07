@@ -27,9 +27,7 @@
 @media screen and (max-width: 576px) {
 
     #skills {
-        padding: 7.5rem 0;
-        overflow-x: hidden;
-        
+        padding: 7.5rem 0;        
     }
 
     .skill-tittle {
