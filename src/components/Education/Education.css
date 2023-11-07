@@ -23,7 +23,6 @@
     width: 75%;
     height: 75vh;
     object-fit: cover;
-
 }
 
 [data-aos="eduction-img-animation"] {
@@ -121,6 +120,10 @@
     
     #education {
         padding: 0.50rem 0 7rem;
+    }
+
+    .education-img {
+        width: 100%;
     }
 
     .education-tittle {

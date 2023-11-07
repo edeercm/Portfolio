@@ -45,6 +45,11 @@
 
 @media screen and (max-width: 576px) {
 
+    .card {
+      margin-left: 0.5rem;
+    }
+    
+
    
   
 }
