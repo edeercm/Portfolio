@@ -91,11 +91,7 @@
 @media screen and (max-width: 576px) {
 
     .projects-container {
-        padding: 7.5rem 0;
-    }
-
-    .project-card {
-        height: 95vh;
+        padding: 7.5rem 0 23.25rem ;
     }
 
     .projects-tittle {
@@ -113,15 +109,15 @@
 
     .project-img-mobile {
         display: flex;
-        width: 100%;
+        width: 75%;
+        margin-bottom: -5.75rem;
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
- 
     }
 
     .project-icons svg {
-        font-size: 1.75rem;
-        margin-top: -18.5rem;
-        margin-left: 20.065rem;
+        font-size: 1.5rem;
+        margin-top: -10rem;
+        margin-left: 20.15rem;
 
     }
 

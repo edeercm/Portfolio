@@ -25,7 +25,7 @@ const projects = () => {
           <div className="col-lg-12 mb-5 text-center">
             <h2 className='projects-tittle'>Projects</h2>
           </div>
-          <div className="project-card col-lg-12 col-md-12 col-sm-12 mt-5">
+          <div className="col-lg-12 col-md-12 col-sm-12 mt-5">
             <div className="row">
               <div className="col-lg-1 col-md-1 col-sm-1 d-flex align-items-start justify-content-end mt-4">
                 <div data-aos="fade-up" data-aos-delay="500" data-aos-duration="1350" data-aos-easing="ease-in-out">
