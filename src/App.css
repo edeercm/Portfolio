@@ -77,7 +77,7 @@
   overflow: hidden
 } */
 
-body {
+html, body {
   /* width: 100%;
   height: 100vh; */
   /* margin: 0;
@@ -85,7 +85,7 @@ body {
   transform-style: preserve-3d; */
   
   overflow-y: scroll;  
-  overflow-x: hidden;
+  overflow-x: hidden !important;
   background-color: #050505;
 }
 
