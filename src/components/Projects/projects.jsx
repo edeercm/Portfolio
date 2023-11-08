@@ -39,14 +39,21 @@ const projects = () => {
                   <img src={snkrs} alt="SNKRS Project" className='project-img' />
                   <div className='d-flex flex-column align-items-center justify-content-center' >
                     <img src={snkrsmobile} alt="SNKRS Project" className='project-img-mobile' />
-                    <div className="project-icons-mobile d-flex flex-row mt-3 gap-4">
-                      {/* <a href="https://snkrslabs.netlify.app/" target='_blank'><RxExternalLink /></a>
-                      <a href="https://github.com/edeercm/SNKRS" target='_blank'><BsGithub /></a> */}
+
+                    {/* <div className="project-icons-mobile d-flex flex-row mt-3 gap-4">
                       <a href="https://snkrslabs.netlify.app/" target='_blank'><button className='mobile-btn'>Demo</button></a>
                       <a href="https://github.com/edeercm/SNKRS" target='_blank'><button className='mobile-btn'>Repo</button></a>
-                    </div>
+                    </div> */}
+
                   </div>
                 </div>
+
+                <div className="project-icons-mobile d-flex flex-row justify-content-center mt-4 gap-4">
+                  <a href="https://snkrslabs.netlify.app/" target='_blank'><button className='mobile-btn'>Demo</button></a>
+                  <a href="https://github.com/edeercm/SNKRS" target='_blank'><button className='mobile-btn'>Repo</button></a>
+                </div>
+
+
               </div>
               <div className="col-lg-1 col-md-1 d-flex align-items-end justify-content-start" data-aos="fade-left" data-aos-duration="1450" data-aos-easing="ease-out">
                 <div className="project-icons d-flex flex-column gap-3 mb-4">
@@ -70,14 +77,25 @@ const projects = () => {
                   <img src={encrypter} alt="Encrypter Project" className='project-img' />
                   <div className='d-flex flex-column align-items-center justify-content-center'>
                     <img src={encryptermobile} alt="SNKRS Project" className='project-img-mobile' />
-                    <div className="project-icons-mobile d-flex flex-row mt-3 gap-4">
-                      {/* <a href="https://snkrslabs.netlify.app/" target='_blank'><RxExternalLink /></a>
-                      <a href="https://github.com/edeercm/SNKRS" target='_blank'><BsGithub /></a> */}
+
+
+                    {/* <div className="project-icons-mobile d-flex flex-row mt-3 gap-4">
                       <a href="https://snkrslabs.netlify.app/" target='_blank'><button className='mobile-btn'>Demo</button></a>
                       <a href="https://github.com/edeercm/SNKRS" target='_blank'><button className='mobile-btn'>Repo</button></a>
-                    </div>
+                    </div> */}
+
+
                   </div>
                 </div>
+
+                <div className="project-icons-mobile d-flex flex-row justify-content-center mt-4 gap-4">
+                  <a href="https://snkrslabs.netlify.app/" target='_blank'><button className='mobile-btn'>Demo</button></a>
+                  <a href="https://github.com/edeercm/SNKRS" target='_blank'><button className='mobile-btn'>Repo</button></a>
+                </div>
+
+
+
+
               </div>
               <div className="col-lg-1 col-md-1 d-flex align-items-end justify-content-start" data-aos="fade-left" data-aos-duration="1450" data-aos-easing="ease-out">
                 <div className="project-icons  d-flex flex-column gap-3 mb-3">
