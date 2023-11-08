@@ -37,6 +37,9 @@ const projects = () => {
               <div className="col-lg-10 col-md-10">
                 <div data-aos="fade-left" data-aos-delay="200" data-aos-duration="1450" data-aos-easing="ease-out">
                   <img src={snkrs} alt="SNKRS Project" className='project-img' />
+
+
+
                   <div className='d-flex flex-column align-items-center justify-content-center' >
                     <img src={snkrsmobile} alt="SNKRS Project" className='project-img-mobile' />
 
@@ -44,11 +47,11 @@ const projects = () => {
                       <a href="https://snkrslabs.netlify.app/" target='_blank'><button className='mobile-btn'>Demo</button></a>
                       <a href="https://github.com/edeercm/SNKRS" target='_blank'><button className='mobile-btn'>Repo</button></a>
                     </div> */}
-
                   </div>
+
                 </div>
 
-                <div className="project-icons-mobile d-flex flex-row justify-content-center mt-4 gap-4">
+                <div className="project-icons-mobile d-flex flex-row justify-content-center mt-5 gap-4">
                   <a href="https://snkrslabs.netlify.app/" target='_blank'><button className='mobile-btn'>Demo</button></a>
                   <a href="https://github.com/edeercm/SNKRS" target='_blank'><button className='mobile-btn'>Repo</button></a>
                 </div>
@@ -88,7 +91,7 @@ const projects = () => {
                   </div>
                 </div>
 
-                <div className="project-icons-mobile d-flex flex-row justify-content-center mt-4 gap-4">
+                <div className="project-icons-mobile d-flex flex-row justify-content-center mt-5 gap-4">
                   <a href="https://snkrslabs.netlify.app/" target='_blank'><button className='mobile-btn'>Demo</button></a>
                   <a href="https://github.com/edeercm/SNKRS" target='_blank'><button className='mobile-btn'>Repo</button></a>
                 </div>
