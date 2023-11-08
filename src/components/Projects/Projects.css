@@ -113,7 +113,7 @@
 
     .project-img-mobile {
         display: flex;
-        width: 85%;
+        width: 80%;
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
     }
 
@@ -122,20 +122,31 @@
 
     }
 
-    .project-icons-mobile {
+    /* .project-icons-mobile {
         width: 10rem;
         height: 2.5rem;
-        margin-left: 10.7rem;
         display: flex;
         align-items: center;
         justify-content: center;
         background-color: #050505;
-    }
+    } */
 
-    .project-icons-mobile svg {
+    /* .project-icons-mobile svg {
         display: flex;
-        font-size: 1.75rem;
+        font-size: 2rem;
+        color: #050505;
+    } */
+
+    .mobile-btn {
+        width: 6.75rem;
+        height: 1.975rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 0;
+        font-size: 1.075rem;
         color: #fff;
+        background-color: #050505;
     }
 
 }

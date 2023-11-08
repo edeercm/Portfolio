@@ -39,9 +39,11 @@ const projects = () => {
                   <img src={snkrs} alt="SNKRS Project" className='project-img' />
                   <div className='d-flex flex-column align-items-center justify-content-center' >
                     <img src={snkrsmobile} alt="SNKRS Project" className='project-img-mobile' />
-                    <div className="project-icons-mobile d-flex flex-row gap-5">
-                      <a href="https://snkrslabs.netlify.app/" target='_blank'><RxExternalLink /></a>
-                      <a href="https://github.com/edeercm/SNKRS" target='_blank'><BsGithub /></a>
+                    <div className="project-icons-mobile d-flex flex-row mt-3 gap-4">
+                      {/* <a href="https://snkrslabs.netlify.app/" target='_blank'><RxExternalLink /></a>
+                      <a href="https://github.com/edeercm/SNKRS" target='_blank'><BsGithub /></a> */}
+                      <a href="https://snkrslabs.netlify.app/" target='_blank'><button className='mobile-btn'>Demo</button></a>
+                      <a href="https://github.com/edeercm/SNKRS" target='_blank'><button className='mobile-btn'>Repo</button></a>
                     </div>
                   </div>
                 </div>
@@ -68,9 +70,11 @@ const projects = () => {
                   <img src={encrypter} alt="Encrypter Project" className='project-img' />
                   <div className='d-flex flex-column align-items-center justify-content-center'>
                     <img src={encryptermobile} alt="SNKRS Project" className='project-img-mobile' />
-                    <div className="project-icons-mobile d-flex flex-row gap-5">
-                      <a href="https://snkrslabs.netlify.app/" target='_blank'><RxExternalLink /></a>
-                      <a href="https://github.com/edeercm/SNKRS" target='_blank'><BsGithub /></a>
+                    <div className="project-icons-mobile d-flex flex-row mt-3 gap-4">
+                      {/* <a href="https://snkrslabs.netlify.app/" target='_blank'><RxExternalLink /></a>
+                      <a href="https://github.com/edeercm/SNKRS" target='_blank'><BsGithub /></a> */}
+                      <a href="https://snkrslabs.netlify.app/" target='_blank'><button className='mobile-btn'>Demo</button></a>
+                      <a href="https://github.com/edeercm/SNKRS" target='_blank'><button className='mobile-btn'>Repo</button></a>
                     </div>
                   </div>
                 </div>
