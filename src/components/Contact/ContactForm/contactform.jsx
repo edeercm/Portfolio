@@ -29,7 +29,7 @@ function ContactForm() {
   };
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)} className='contact-form-container'>
+    <form onSubmit={handleSubmit(onSubmit)}>
       <div data-aos="fade-right" data-aos-duration="1500" data-aos-delay="250">
         <input
           type="text"
@@ -61,7 +61,7 @@ function ContactForm() {
           style={{ fontFamily: 'Steamflix Grotesk, sans-serif' }}
           {...register("message", { required: true })}
           onBlur={() => handleBlur("message")}
-          className={`form-control text-area ${errors.message ? 'is-invalid' : ''}`}
+          className={`form-control ${errors.message ? 'is-invalid' : ''}`}
         />
         {errors.message && <div className="invalid-feedback">Please enter message text</div>}
       </div>

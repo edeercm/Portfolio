@@ -1,22 +1,22 @@
-.contact-form-container {
-    width: 100%;
+form {
+    width: auto;
     height: 50vh;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
 }
 
-.contact-form-style .form-control {
+form textarea {
+    height: 7.5rem;
+}
+
+.form-control {
     border-radius: 0;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.35);
 }
 
-.contact-form-style .form-control:focus {
+.form-control:focus {
     box-shadow: none;
-}
-
-.contact-form-style .text-area {
-    height: 5rem;
 }
 
 .send-btn {
@@ -62,10 +62,6 @@
 
 @media screen and (max-width: 768px) {
 
-    .contact-form-container {
-        height: 40vh;
-    }
-
     .media-icons {
         margin-top: 0.75rem;
     }
@@ -91,11 +87,8 @@
 
 @media screen and (max-width: 576px) {
 
-    .contact-form-container {
-        width: 100%;
-        height: 45vh;
-        display: flex;
-        align-items: center;
+    .form-control {
+        border-radius: 0.185rem;
     }
 
     .media-icons {
@@ -106,7 +99,7 @@
     .social svg {
         font-size: 2.015rem;
         color: #ffffffdc;
-        filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.5));
+        filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.35));
     }
 
     .send svg:hover,
@@ -114,7 +107,7 @@
         color: #ffffffdc;
         transition: none;
         filter: none;
-        
+
     }
 
 
