@@ -15,7 +15,9 @@ const contact = () => {
             </div>
           </div>
           <div className="col-lg-12 col-md-12 col-sm-12">
-            <ContactForm />
+            <div className='d-flex justify-content-center'>
+              <ContactForm />
+            </div>
           </div>
         </div>
       </div>
