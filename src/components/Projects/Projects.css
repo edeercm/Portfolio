@@ -97,8 +97,6 @@
 
 @media screen and (max-width: 576px) {
 
-
-
     .projects-container {
         padding: 7.5rem 0;
     }
@@ -107,10 +105,6 @@
         font-size: 2.615rem;
         letter-spacing: 0;
         text-shadow: 1.5px 1.5px 4px rgba(0, 0, 0, 0.05);
-    }
-
-    .project-card {
-        height: auto;
     }
 
     .project-name {
@@ -123,45 +117,22 @@
 
     .project-img-mobile {
         display: flex;
-        width: 65%;
+        width: 75%;
         border-radius: 0.25rem;
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
     }
 
-    .project-icons svg {
-       display: none;
-
+    .project-icon {
+        display: none;
     }
 
-    /* .project-icons-mobile {
-        width: 10rem;
-        height: 2.5rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-color: #050505;
-    } */
-
-    /* .project-icons-mobile svg {
-        display: flex;
+    .project-icon-mobile svg {
         font-size: 2rem;
         color: #050505;
-    } */
-
-    .mobile-btn {
-        width: 5rem;
-        height: 2.5rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border: 0;
-        font-size: 1.25rem;
-        font-weight: bold;
-        color: #fff;
-        border-radius: 0.215rem;
-        background-color: #050505;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
     }
+
+
+
 
 
 
