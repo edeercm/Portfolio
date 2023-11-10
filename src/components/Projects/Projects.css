@@ -111,6 +111,10 @@
         margin-left: 1.45rem;
     }
 
+    .project-name h5 {
+        word-spacing: -0.475rem;
+    }
+
     .project-img {
         display: none;
     }
