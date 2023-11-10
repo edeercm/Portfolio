@@ -22,10 +22,10 @@ const projects = () => {
     <section id="projects">
       <div className="container-xxl container-md container-sm projects-container d-flex align-items-center justify-content-center" >
         <div className="row"  >
-          <div className="col-lg-12 mb-5 text-center">
+          <div className="col-lg-12 col-md-12 col-sm-12 mb-5 text-center">
             <h2 className='projects-tittle'>Projects</h2>
           </div>
-          <div className="col-lg-12 col-md-12 mt-5">
+          <div className="col-lg-12 col-md-12 col-sm-12 mt-5">
             <div className="d-flex flex-row align-items-center justify-content-center">
               <div data-aos="fade-up" data-aos-delay="500" data-aos-duration="1350" data-aos-easing="ease-in-out">
                 <div className="project-name" >
@@ -48,7 +48,7 @@ const projects = () => {
               </div>
             </div>
           </div>
-          <div className="col-lg-12 col-md-12 mt-5">
+          <div className="col-lg-12 col-md-12 col-sm-12 mt-5">
             <div className="d-flex flex-row align-items-center justify-content-center">
               <div data-aos="fade-up" data-aos-delay="500" data-aos-duration="1350" data-aos-easing="ease-in-out">
                 <div className="project-name" >
