@@ -15,7 +15,7 @@
     font-size: 4.5rem;
     color: #050505;
     letter-spacing: 0.25rem;
-    text-shadow: 1.5px 1.5px 4px rgba(0, 0, 0, 0.5);
+    text-shadow: 1.5px 1.5px 4px rgba(0, 0, 0, 0.25);
 }
 
 .project-name {
@@ -33,19 +33,19 @@
 
 .project-img {
     width: 90%;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.025);
 }
 
 .project-img-mobile {
     display: none;
 }
 
-.project-icons svg {
+.project-icon svg {
     font-size: 2.5rem;
     color: #050505;
 }
 
-.project-icons-mobile svg {
+.project-icon-mobile svg {
     display: none;
 }
 
@@ -80,14 +80,15 @@
         display: none;
     }
 
-    .project-icons svg {
-        font-size: 3rem;
-        margin-left: -2rem;
+    .project-icon svg {
+        font-size: 2.5rem;
+        color: #050505;
     }
-
-    .project-icons-mobile svg {
+    
+    .project-icon-mobile svg {
         display: none;
     }
+    
 
     .mobile-btn {
         display: none;

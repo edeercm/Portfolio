@@ -1,6 +1,6 @@
 form {
-    width: auto;
-    height: 50vh;
+    width: 90%;
+    height: 40vh;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -11,12 +11,19 @@ form textarea {
 }
 
 .form-control {
-    border-radius: 0;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.35);
+    border-radius: 0.25rem;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.25);
 }
 
 .form-control:focus {
     box-shadow: none;
+}
+
+
+.media-icons {
+    position: absolute;
+    
+    transform: translate(-685px, 80px);
 }
 
 .send-btn {
@@ -27,16 +34,19 @@ form textarea {
 .send svg,
 .social svg {
     font-size: 3rem;
-    color: #4f4f52dc;
-    transition: color 0.35s ease;
+    /* color: #4f4f52dc; */
+    color: #fff;
+    opacity: 0.15;
+    transition: color 0.25s ease-in-out;
     /* filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.5)); */
 }
 
 .send svg:hover,
 .social svg:hover {
     color: #fff;
-    transition: filter 1s ease;
-    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.5));
+    opacity: 1;
+    transition: filter 3s ease-in-out;
+    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.25));
 }
 
 .social svg:hover {
@@ -103,7 +113,7 @@ form textarea {
     .social svg {
         font-size: 2.375rem;
         color: #ffffffdc;
-        filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.35));
+        filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.25));
     }
 
     .send svg:hover,
