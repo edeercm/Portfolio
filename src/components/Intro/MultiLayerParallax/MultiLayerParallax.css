@@ -91,9 +91,18 @@
 
 @media screen and (max-width: 768px) {
 
-    #skills {
-        padding: 15rem 0;
+    .parallax {
+        height: 90vh;
     }
+
+    .scrolldown {
+
+        top: 82.5%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+    }
+   
 
 
 }
