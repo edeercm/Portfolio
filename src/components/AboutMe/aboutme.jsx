@@ -35,25 +35,25 @@ const AboutMe = () => {
                 My name is
               </span> */}
               <span
+                className='name'
                 style={{
                   marginTop: '-0.25rem',
                   marginBottom: '',
                   fontFamily: 'twilight lechy, sans-serif',
-                  fontSize: '4rem',
                   textTransform: '',
                   letterSpacing: '',
-                  wordSpacing: '-0.25rem'
+                  
                 }}
               >
                 Eder Cadena
               </span>
               <span
+                className='career'
                 style={{
                   marginTop: '0.25rem',
                   marginBottom: '',
                   fontFamily: 'h Habis, sans-serif',
-                  fontSize: '2.5rem',
-                  textTransform: 'uppercase',
+                  
                 }}
               >
                 Front-End Web Developer

@@ -13,25 +13,44 @@
     line-height: 1.125;
 }
 
+.aboutme-content .name {
+    font-size: 4rem;
+    word-spacing: -0.25rem;
+}
+
+.aboutme-content .career {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+
 .aboutme-icons svg {
     margin-top: 0.825rem;
     color: #050505;
     font-size: 2rem;
 }
 
-@media screen and (max-width: 768px) {
-    
-}
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {}
 
 @media screen and (max-width: 576px) {
 
-    .aboutme-labels {
-        font-size: 1.65rem;
+    .aboutme-content {
+        width: 100%;
     }
 
-    .aboutme-icons svg {
-        color: #050505;
-        font-size: 2.25rem;
+    .aboutme-content .name {
+        font-size: 4.75rem;
+        word-spacing: -0.65rem;
+    }
+
+    .aboutme-content .career {
+        font-size: 2rem;
     }
 
 }
