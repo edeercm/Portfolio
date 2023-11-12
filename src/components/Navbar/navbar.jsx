@@ -2,7 +2,6 @@ import React, { useState, useRef } from 'react'
 import { Link } from 'react-scroll' 
 import { HiBars3BottomRight } from 'react-icons/hi2';
 import { AiFillLinkedin, AiFillGithub, AiOutlineInstagram } from 'react-icons/ai'
-import logo from '../../assets/images/logo.png'
 import './Navbar.css'
 
 const Navbar = () => {
