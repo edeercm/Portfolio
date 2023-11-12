@@ -17,25 +17,22 @@ const education = () => {
 
   return <>
     <section id='education'>
-      <div className="container-xxl container-md container-sm education-container">
+      <div className="container-xxl container-md container-sm" >
         <div className="row">
-          <div className="col-lg-6" >
-            <div className="image-container"  >
-              <div className="image-content" data-aos="eduction-img-animation" data-aos-duration="3000">
-                <img src={bg1} alt="" className='education-img' />
-              </div>
-            </div>
+          <div className="col-lg-6 col-md-12 col-sm-12" >
+            <img src={bg1} alt="Education-img" className='education-img' />
           </div>
-          <div className="col-lg-6 col-md-6 col-sm-6 d-flex align-items-center">
-            <div className="row">
+          <div className={`col-lg-6 col-md-12 col-sm-12 d-flex justify-content-${window.innerWidth <= 576 ? 'start' : 'center'}`}>
+            <div className="row" style={{ width: window.innerWidth <= 576 ? '100%' : '75%' }}>
               <div className="col-lg-12 col-md-12 col-sm-12">
-                <h1 className='education-tittle'>Education</h1>
+                <div className="education-title">
+                  <h1>Education</h1>
+                </div>
               </div>
               <div className="col-lg-12 col-md-12 col-sm-12">
                 <div className="education-career-container">
-
                   <div data-aos="fade-right" data-aos-duration="1250" data-aos-delay="0">
-                    <div className='education-description d-flex flex-column'>
+                    <div className='education-description'>
                       <h3 className='mb-1'>Electromechanical Engineer</h3>
                       <span>Instituto Tecnológico Superior de Xalapa</span>
                       <span>Graduate Date | Dec 2023</span>
@@ -45,7 +42,6 @@ const education = () => {
                       </div>
                     </div>
                   </div>
-
                   <div data-aos="fade-right" data-aos-duration="1250" data-aos-delay="250">
                     <div className='education-description'>
                       <h3 className='mb-1'>Front End Developer</h3>
@@ -62,7 +58,6 @@ const education = () => {
                       </div>
                     </div>
                   </div>
-
                   <div data-aos="fade-right" data-aos-duration="1250" data-aos-delay="500">
                     <div className='education-description'>
                       <h3>Certificates</h3>
@@ -72,11 +67,21 @@ const education = () => {
                       </div>
                     </div>
                   </div>
-
                 </div>
               </div>
             </div>
           </div>
+
+
+
+
+
+
+
+
+
+
+
         </div>
       </div>
     </section>
