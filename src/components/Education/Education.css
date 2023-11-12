@@ -56,10 +56,9 @@
 .education-career-container {
     margin-top: 0.75rem;
     width: 100%;
-    height: 47.5vh;
+    height: 45vh;
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
     justify-content: space-between;
 }
 
@@ -117,6 +116,11 @@
         margin-top: 2.5rem;
         font-size: 2.175rem;
         text-align: center;
+    }
+
+    .education-career-container {
+        height: 40vh;
+        margin-top: 1.5rem;
     }
 
     .education-description {
