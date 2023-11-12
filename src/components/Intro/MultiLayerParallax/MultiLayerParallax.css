@@ -82,37 +82,46 @@
 }
 
 .scrolldown {
-    -webkit-animation-name: slideInRight;
-    animation-name: slideInRight;
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+    -webkit-animation-duration: 1.25s;
+    animation-duration: 1.25s;
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
+    -webkit-animation-delay: 0.75s;
+    animation-delay: 0.75s;
 }
 
-@-webkit-keyframes slideInRight {
+@-webkit-keyframes fadeInDown {
     0% {
-        -webkit-transform: translateX(100%);
-        transform: translateX(100%);
-        visibility: visible;
+        opacity: 0;
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
     }
 
     100% {
-        -webkit-transform: translateX(0);
-        transform: translateX(0);
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+        /* -webkit-animation: ease-in-out;
+        animation: ease-in-out; */
+       
     }
 }
 
-@keyframes slideInRight {
+@keyframes fadeInDown {
     0% {
-        -webkit-transform: translateX(100%);
-        transform: translateX(100%);
-        visibility: visible;
+        opacity: 0;
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
     }
 
     100% {
-        -webkit-transform: translateX(0);
-        transform: translateX(0);
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+        /* -webkit-animation: ease-in-out;
+        animation: ease-in-out; */
     }
 }
 
