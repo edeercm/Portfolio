@@ -3,7 +3,7 @@
 
 .parallax {
     width: 100%;
-    height: 95vh;
+    height: 98.5vh;
     position: relative;
     overflow: hidden;
     display: flex;
@@ -91,17 +91,8 @@
 
 @media screen and (max-width: 768px) {
 
-    .parallax {
-        height: 90vh;
-    }
+    
 
-    .scrolldown {
-
-        top: 82.5%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-
-    }
    
 
 
