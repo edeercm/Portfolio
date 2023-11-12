@@ -1,5 +1,5 @@
 import { motion, useScroll, useTransform } from "framer-motion";
-import React, { useRef } from "react";
+import React, { useRef, useEffect, useState } from "react";
 import '../MultiLayerParallax/MultiLayerParallax.css'
 
 
@@ -13,8 +13,25 @@ export default function MultiLayerParallax() {
   });
 
   const backgroundY = useTransform(scrollYProgress, [0, 1], ["0%", "25%"]);
-  const textY = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
-  const textY2 = useTransform(scrollYProgress, [0, 1], ["0%", "200%"]);
+  // const textY = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
+  // const textY2 = useTransform(scrollYProgress, [0, 1], ["0%", "200%"]);
+
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 576);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 576);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+  const textY = useTransform(scrollYProgress, [0, 1], isMobile ? ["50%", "100%"] : ["0%", "100%"]);
+  const textY2 = useTransform(scrollYProgress, [0, 1], isMobile ? ["100%", "200%"] : ["0%", "200%"]);
 
   return (
     <>
