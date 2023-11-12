@@ -1,6 +1,5 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import React, { useRef } from "react";
-import TypeAnimation from "../TypeAnimation/typeanimation";
 import '../MultiLayerParallax/MultiLayerParallax.css'
 
 
