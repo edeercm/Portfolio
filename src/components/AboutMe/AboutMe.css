@@ -10,16 +10,13 @@
 
 .aboutme-content {
     width: 50%;
-}
-
-.aboutme-content span {
-    font-size: 1.475rem;
     line-height: 1.125;
 }
 
 .aboutme-icons svg {
+    margin-top: 0.825rem;
     color: #050505;
-    font-size: calc(1.375rem + 1.5vw);
+    font-size: 2rem;
 }
 
 @media screen and (max-width: 768px) {
