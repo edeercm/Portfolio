@@ -22,8 +22,8 @@ const education = () => {
           <div className="col-lg-6 col-md-12 col-sm-12" >
             <img src={bg1} alt="Education-img" className='education-img' />
           </div>
-          <div className={`col-lg-6 col-md-12 col-sm-12 d-flex justify-content-${window.innerWidth <= 576 ? 'start' : 'center'}`}>
-            <div className="row" style={{ width: window.innerWidth <= 576 ? '100%' : '75%' }}>
+          <div className="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-center">
+            <div className="row" style={{ width: window.innerWidth <= 576 ? 'auto' : '75%' }}>
               <div className="col-lg-12 col-md-12 col-sm-12">
                 <div className="education-title">
                   <h1>Education</h1>
