@@ -30,8 +30,8 @@ export default function MultiLayerParallax() {
     };
   }, []);
 
-  const textY = useTransform(scrollYProgress, [0, 1], isMobile ? ["85%", "100%"] : ["0%", "100%"]);
-  const textY2 = useTransform(scrollYProgress, [0, 1], isMobile ? ["165%", "200%"] : ["0%", "200%"]);
+  const textY = useTransform(scrollYProgress, [0, 1], isMobile ? ["50%", "100%"] : ["0%", "100%"]);
+  const textY2 = useTransform(scrollYProgress, [0, 1], isMobile ? ["100%", "200%"] : ["0%", "200%"]);
 
   return (
     <>
