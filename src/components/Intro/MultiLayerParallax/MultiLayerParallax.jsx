@@ -1,5 +1,6 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import React, { useRef } from "react";
+import TypeAnimation from "../TypeAnimation/typeanimation";
 import '../MultiLayerParallax/MultiLayerParallax.css'
 
 
@@ -18,7 +19,7 @@ export default function MultiLayerParallax() {
   return (
     <>
       <div className="parallax" ref={ref}>
-        <motion.h1 className="label fadeIn" style={{ y: textY }}>
+        <motion.h1 className="label" style={{ y: textY }}>
           مرحبا
         </motion.h1>
         <motion.div className="background" style={{ y: backgroundY }}></motion.div>

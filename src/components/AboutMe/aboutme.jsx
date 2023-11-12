@@ -20,7 +20,7 @@ const AboutMe = () => {
             <h1 style={{ fontSize: '2rem', fontWeight: 'bold', letterSpacing: '0.175rem', color: '#050505' }}>About Me</h1>
           </div>
           <div className="col-lg-12 d-flex flex-column align-items-center">
-            <div className='d-flex flex-column aboutme-labels' style={{ width: 768 ? '90%' : '50%' }}>
+            <div className='aboutme-content d-flex flex-column' >
               <span>My name is</span>
               <span style={{ fontFamily: 'Kusack Signature, sans-serif', fontSize: '4rem', marginTop: '0.25rem', marginBottom: '-1.35rem' }}>Eder Cadena</span>
               <span>I am passionate about transforming<br></br>ideas into engaging web experiences.</span>
