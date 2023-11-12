@@ -45,7 +45,7 @@ const education = () => {
                   <div data-aos="fade-right" data-aos-duration="1250" data-aos-delay="250">
                     <div className='education-description'>
                       <h3 className='mb-1'>Front End Developer</h3>
-                      <span>Oracle Next Education (ONE) project + Alura Latam</span>
+                      <span>Oracle Next Education (ONE) + Alura Latam</span>
                       <div className='education-link-container d-flex flex-row gap-3'>
                         <div className='d-flex align-items-center gap-1'>
                           <a href='https://www.itsx.edu.mx/' target="_blank" rel="noopener noreferrer"><BiSolidCubeAlt /></a>
