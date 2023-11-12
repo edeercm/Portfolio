@@ -1,9 +1,7 @@
 import React, { useEffect } from 'react'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
-import { BsGithub } from 'react-icons/bs'
 import { RxExternalLink } from 'react-icons/rx'
-
 import snkrs from '../../assets/images/projects/snkrs.jpg'
 import snkrsmobile from '../../assets/images/projects/snkrsmobile.jpg'
 import encrypter from '../../assets/images/projects/encrypter.jpg'

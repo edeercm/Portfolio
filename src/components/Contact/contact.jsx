@@ -1,7 +1,5 @@
 import React from 'react'
 import ContactForm from './ContactForm/contactform'
-import { FaRegPaperPlane } from 'react-icons/fa';
-import { BsInstagram, BsGithub, BsLinkedin } from 'react-icons/bs'
 import '../Contact/Contact.css'
 
 const contact = () => {

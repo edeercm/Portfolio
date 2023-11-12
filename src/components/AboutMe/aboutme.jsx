@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react'
 import AOS from 'aos'
-import me from '../../assets/images/aboutme/me.jpg'
 import 'aos/dist/aos.css'
 import '../AboutMe/AboutMe.css'
 
