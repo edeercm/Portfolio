@@ -1,105 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Mr+Dafoe&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Mr+Dafoe&family=Yellowtail&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@1,300;1,400;1,500&display=swap');
-
-
-
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-
-
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700;800&display=swap');
-
-
-
-
-@import url('https://fonts.cdnfonts.com/css/univers-lt-std');
-
-
-@import url('https://fonts.cdnfonts.com/css/comic-dandy');
-
-
-
-@import url('https://fonts.cdnfonts.com/css/skeina');
-
-
-@import url('https://fonts.cdnfonts.com/css/autumn-romans');
-
-
-
-
-
-@import url('https://fonts.cdnfonts.com/css/borela');
 @import url('https://fonts.cdnfonts.com/css/haverbrooke');
-
-
 
 @import url('https://fonts.cdnfonts.com/css/steamflix-grotesk');
 
-
-
-@import url('https://fonts.cdnfonts.com/css/neue-power');
-
-
-
-@import url('https://fonts.cdnfonts.com/css/estilo-pro-bold');
-
-
-
-@import url('https://fonts.cdnfonts.com/css/mn-grissee-personal-use');
-
-
-
-@import url('https://fonts.cdnfonts.com/css/prestage-2');
-
-
-
-
-@import url('https://fonts.cdnfonts.com/css/passeio-test');
-
-
-
-@import url('https://fonts.cdnfonts.com/css/kusack-signature');
-
-
-
-@import url('https://fonts.cdnfonts.com/css/mayeka-demo');
-
-
-
-
 @import url('https://fonts.cdnfonts.com/css/h-habis');
-
 
 @import url('https://fonts.cdnfonts.com/css/twilight-lechy');
 
-
-
-@import url('https://fonts.cdnfonts.com/css/lexend');
-
-
-
-@import url('https://fonts.cdnfonts.com/css/hermooun');
-
-
-
-
-
 @import url('https://fonts.cdnfonts.com/css/mabsout');
+
+
+@import url('https://fonts.cdnfonts.com/css/monzane');
 
 
 
 html {
   overflow-y: scroll;
-  /* overflow-x: hidden; */
 }
 
 body {
-  /* overflow-y: scroll; */
   overflow-x: hidden;
   background-color: #050505;
-  
 }
 
 * {
@@ -120,50 +40,31 @@ p {
 
 }
 
-
-
-h2 {
-  /* font-family: 'Autumn Romans', sans-serif; */
-  /* font-family: 'BORELA', sans-serif; */
-
-
+h1, h2 {
   font-family: 'Haverbrooke', sans-serif;
-
-
-
-
-}
-
-p,
-h4,
-h6 {
-  font-family: 'Poppins', sans-serif;
 }
 
 
-
-h1 {
-
-
-
-  font-family: 'Haverbrooke', sans-serif;
-
-}
-
-h3 {
-  font-size: 1.725rem;
-  font-family: 'Steamflix Grotesk', sans-serif;
-  font-weight: bold;
-  /* letter-spacing: 0.05rem; */
-}
-
-
-
-span,
-a,
-h5,
-label,
-.invalid-feedback {
+ h4, h5, span, a, label, .invalid-feedback {
   font-family: 'Steamflix Grotesk', sans-serif;
   text-decoration: none;
 }
+
+h3 {
+  font-family: 'Monzane', sans-serif;
+                                                
+                                                
+                                                
+                                                
+}
+
+
+
+
+
+
+
+
+
+
+
