@@ -128,5 +128,23 @@
       text-align: center;
       align-items: center;
     }
+
+    .education-description h3 {
+        font-size: 1.15rem;
+        text-transform: uppercase;
+    }
     
+    .education-link-container a {
+        font-size: 0.875rem;
+    }
+
+    .education-link-container svg {
+        font-size: 2.25rem;
+    }
+    
+    
+
+   
+  
+
 }
