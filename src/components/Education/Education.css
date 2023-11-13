@@ -4,7 +4,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 7.5rem 0 12.5rem;
+    padding: 2.5rem 0 10rem;
 }
 
 .education-container {
@@ -22,28 +22,6 @@
     /* box-shadow: 0 -8px 12px rgba(255, 255, 255, 0.115); */
 }
 
-/* [data-aos="eduction-img-animation"] {
-    opacity: 0;
-    transform: scale(1.2);
-    transition: opacity 0.75s ease, transform 0.75s ease;
-
-    &.aos-animate {
-        opacity: 1;
-        transform: scale(1);
-    }
-
-    @keyframes zoom-fade {
-        0% {
-            opacity: 0;
-            transform: scale(1.2);
-        }
-
-        100% {
-            opacity: 1;
-            transform: scale(1);
-        }
-    }
-} */
 
 .education-title h1 {
     margin-bottom: 0.875rem;
@@ -71,7 +49,7 @@
 
 .education-description h3 {
     font-size: 1.4rem;
-    /* font-weight: 400; */
+    font-weight: bold;
     text-transform: uppercase;
 }
 
@@ -108,7 +86,7 @@
 @media screen and (max-width: 576px) {
     
     #education {
-        padding: 0.50rem 0 7rem;
+        padding: 0 0 9.5rem;
     }
 
     .education-img {
@@ -152,9 +130,4 @@
         font-size: 2.175rem;
     }
     
-    
-
-   
-  
-
 }

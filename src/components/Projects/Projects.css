@@ -11,10 +11,12 @@
     padding: 6.75rem 0;
 }
 
-.projects-tittle {
-    font-size: 4.5rem;
+.projects-title h2 {
+    margin-bottom: 3rem;
     color: #050505;
+    font-size: 4.5rem;
     letter-spacing: 0.25rem;
+    text-align: center;
     text-shadow: 1.5px 1.5px 4px rgba(0, 0, 0, 0.25);
 }
 
@@ -49,9 +51,7 @@
     display: none;
 }
 
-.mobile-btn {
-   display: none;
-}
+
 
 @media screen and (max-width: 768px) {
 
@@ -59,15 +59,9 @@
         padding: 10rem 0;
     }
 
-    .project-card {
-        height: 40vh;
-    }
+   
 
-    .project-name {
-        margin-top: 0.75rem;
-        margin-right: -0.5rem;
-    }
-
+   
     .project-name h5 {
         font-size: 0.715rem;
     }
@@ -80,19 +74,10 @@
         display: none;
     }
 
-    .project-icon svg {
-        font-size: 2.5rem;
-        color: #050505;
-    }
+  
     
-    .project-icon-mobile svg {
-        display: none;
-    }
+  
     
-
-    .mobile-btn {
-        display: none;
-    }
 
 }
 
@@ -102,14 +87,9 @@
         padding: 7.5rem 0;
     }
 
-    .projects-tittle {
-        font-size: 2.615rem;
-        letter-spacing: 0;
-        text-shadow: 1.5px 1.5px 4px rgba(0, 0, 0, 0.05);
-    }
-
-    .project-name {
-        margin-left: 1.45rem;
+    .projects-title h2 {
+        font-size: 2.5rem;
+        letter-spacing: 0.075rem;
     }
 
     .project-name h5 {
@@ -127,22 +107,12 @@
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
     }
 
-    .project-icon {
-        display: none;
-    }
+    .project-icon svg {
+        font-size: 1.175rem;
 
-    .project-icon-mobile svg {
-        font-size: 2rem;
-        color: #050505;
     }
 
 
-
-
-
-
-    
-
-
+ 
 
 }
