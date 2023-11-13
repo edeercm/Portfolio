@@ -45,18 +45,18 @@ h1, h2 {
 }
 
 
- h4, h5, span, a, label, .invalid-feedback {
+ h3, h4, h5, span, a, label, .invalid-feedback {
   font-family: 'Steamflix Grotesk', sans-serif;
   text-decoration: none;
 }
 
-h3 {
+/* h3 {
   font-family: 'Monzane', sans-serif;
                                                 
                                                 
                                                 
                                                 
-}
+} */
 
 
 
