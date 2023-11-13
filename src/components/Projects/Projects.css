@@ -59,9 +59,6 @@
         padding: 10rem 0;
     }
 
-   
-
-   
     .project-name h5 {
         font-size: 0.715rem;
     }
@@ -73,11 +70,6 @@
     .project-img-mobile {
         display: none;
     }
-
-  
-    
-  
-    
 
 }
 
@@ -109,10 +101,6 @@
 
     .project-icon svg {
         font-size: 1.175rem;
-
     }
-
-
- 
 
 }
