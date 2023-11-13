@@ -58,32 +58,6 @@ const projects = () => {
                 </div>
               </div>
             </div>
-
-
-
-            {/* <div className="d-flex flex-row align-items-center justify-content-center">
-              <div data-aos="fade-up" data-aos-delay="500" data-aos-duration="1350" data-aos-easing="ease-in-out">
-                <div className="project-name" >
-                  <h5>TEXT ENCRYPTER</h5>
-                </div>
-              </div>
-              <div data-aos="fade-left" data-aos-delay="200" data-aos-duration="1450" data-aos-easing="ease-out">
-                <div className='d-flex justify-content-center'>
-                  <img src={encrypter} alt="Encrypter Project" className='project-img' />
-                  <div className='d-flex flex-row align-items-end justify-content-center gap-3'>
-                    <img src={encryptermobile} alt="SNKRS Project" className='project-img-mobile' />
-                    <div className="project-icon-mobile">
-                      <a href="https://snkrslabs.netlify.app/" target='_blank'><RxExternalLink /></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="project-icon">
-                <a href="https://snkrslabs.netlify.app/" target='_blank'><RxExternalLink /></a>
-              </div>
-            </div> */}
-
-
           </div>
         </div>
       </div>

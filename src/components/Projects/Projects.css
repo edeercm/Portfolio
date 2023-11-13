@@ -100,7 +100,7 @@
     }
 
     .project-icon svg {
-        font-size: 1.175rem;
+        display: none;
     }
 
 }
