@@ -79,9 +79,14 @@
         padding: 7.5rem 0;
     }
 
+  
     .projects-title h2 {
         font-size: 2.5rem;
         letter-spacing: 0.075rem;
+    }
+
+    .project-name {
+        position: absolute;
     }
 
     .project-name h5 {
@@ -99,8 +104,9 @@
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
     }
 
-    .project-icon svg {
-        display: none;
+    .project-icon  {
+        
+        margin-left: -1rem;
     }
 
 }
