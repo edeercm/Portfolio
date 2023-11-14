@@ -3,12 +3,13 @@ import { IoIosArrowUp } from 'react-icons/io';
 import '../BackToTopBtn/BackToTopBtn.css';
 
 const BackToTopBtn = () => {
-  
   const [showButton, setShowButton] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
-      const isBottom = window.innerHeight + window.scrollY >= document.body.offsetHeight;
+      const isBottom =
+        window.innerHeight + window.scrollY >= document.documentElement.scrollHeight ||
+        document.documentElement.clientHeight >= document.documentElement.scrollHeight;
 
       if (isBottom) {
         setShowButton(true);
