@@ -11,6 +11,11 @@ import { BiSolidCubeAlt } from 'react-icons/bi'
 
 const education = () => {
 
+  const screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+  const delay = screenWidth <= 576 ? 250 : 750;
+  const delay2 = screenWidth <= 576 ? 500 : 1000;
+  const delay3 = screenWidth <= 576 ? 750 : 1250;
+
   useEffect(() => {
     AOS.init()
   }, [])
@@ -41,7 +46,7 @@ const education = () => {
               </div>
               <div className="col-lg-12 col-md-12 col-sm-12">
                 <div className="education-career-container">
-                  <div data-aos="fade-right" data-aos-duration="1250" data-aos-delay="750">
+                  <div data-aos="fade-right" data-aos-duration="1250" data-aos-delay={delay}>
                     <div className='education-description'>
                       <h3 className='mb-1'>Electromechanical Engineer</h3>
                       <span>Instituto Tecnológico Superior de Xalapa</span>
@@ -52,7 +57,7 @@ const education = () => {
                       </div>
                     </div>
                   </div>
-                  <div data-aos="fade-right" data-aos-duration="1250" data-aos-delay="1000">
+                  <div data-aos="fade-right" data-aos-duration="1250" data-aos-delay={delay2}>
                     <div className='education-description'>
                       <h3 className='mb-1'>Front End Developer</h3>
                       <span>Oracle Next Education (ONE) + Alura Latam</span>
@@ -68,7 +73,7 @@ const education = () => {
                       </div>
                     </div>
                   </div>
-                  <div data-aos="fade-right" data-aos-duration="1250" data-aos-delay="1500">
+                  <div data-aos="fade-right" data-aos-duration="1250" data-aos-delay={delay3}>
                     <div className='education-description'>
                       <h3>Certificates</h3>
                       <div className='education-link-container d-flex flex-row gap-2'>
