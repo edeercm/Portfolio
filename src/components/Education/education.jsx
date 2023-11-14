@@ -21,8 +21,16 @@ const education = () => {
         <div className="row">
 
           <div className="col-lg-7 col-md-12 col-sm-12" >
-            <img src={bg1} alt="Education-img" className='education-img' />
+            <div className="education-img-container" data-aos="education-img-animation" data-aos-duration="3000">
+              <div className="education-img-content" >
+                <img src={bg1} alt="Education-img" className='education-img' />
+              </div>
+            </div>
           </div>
+
+          {/* <div className="col-lg-7 col-md-12 col-sm-12" >
+            <img src={bg1} alt="Education-img" className='education-img' />
+          </div> */}
 
           <div className="col-lg-5 col-md-12 col-sm-12 d-flex align-items-center justify-content-center">
             <div className="row" style={{ width: window.innerWidth <= 576 ? 'auto' : '85%' }}>
@@ -33,7 +41,7 @@ const education = () => {
               </div>
               <div className="col-lg-12 col-md-12 col-sm-12">
                 <div className="education-career-container">
-                  <div data-aos="fade-right" data-aos-duration="1250" data-aos-delay="0">
+                  <div data-aos="fade-right" data-aos-duration="1250" data-aos-delay="750">
                     <div className='education-description'>
                       <h3 className='mb-1'>Electromechanical Engineer</h3>
                       <span>Instituto Tecnológico Superior de Xalapa</span>
@@ -44,7 +52,7 @@ const education = () => {
                       </div>
                     </div>
                   </div>
-                  <div data-aos="fade-right" data-aos-duration="1250" data-aos-delay="250">
+                  <div data-aos="fade-right" data-aos-duration="1250" data-aos-delay="1000">
                     <div className='education-description'>
                       <h3 className='mb-1'>Front End Developer</h3>
                       <span>Oracle Next Education (ONE) + Alura Latam</span>
@@ -60,7 +68,7 @@ const education = () => {
                       </div>
                     </div>
                   </div>
-                  <div data-aos="fade-right" data-aos-duration="1250" data-aos-delay="500">
+                  <div data-aos="fade-right" data-aos-duration="1250" data-aos-delay="1500">
                     <div className='education-description'>
                       <h3>Certificates</h3>
                       <div className='education-link-container d-flex flex-row gap-2'>
