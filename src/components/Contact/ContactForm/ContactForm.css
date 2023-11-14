@@ -1,6 +1,6 @@
 form {
-    width: 90%;
-    height: 40vh;
+    width: 50%;
+    height: 50vh;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -11,19 +11,12 @@ form textarea {
 }
 
 .form-control {
-    border-radius: 0.25rem;
+    border-radius: 0.15rem;
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.25);
 }
 
 .form-control:focus {
     box-shadow: none;
-}
-
-
-.media-icons {
-    position: absolute;
-    
-    transform: translate(-685px, 80px);
 }
 
 .send-btn {
@@ -33,18 +26,15 @@ form textarea {
 
 .send svg,
 .social svg {
-    font-size: 3rem;
-    /* color: #4f4f52dc; */
+    font-size: 2.75rem;
     color: #fff;
-    opacity: 0.15;
     transition: color 0.25s ease-in-out;
-    /* filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.5)); */
 }
 
 .send svg:hover,
 .social svg:hover {
     color: #fff;
-    opacity: 1;
+    opacity: 0.75;
     transition: filter 3s ease-in-out;
     filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.25));
 }
@@ -72,56 +62,22 @@ form textarea {
 
 @media screen and (max-width: 768px) {
 
-    .media-icons {
-        margin-top: 0.75rem;
-    }
-
     .send svg,
     .social svg {
         color: #ffffffdc;
-        /* transition: color 0.35s ease; */
-        /* filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.5)); */
     }
-
-    .send svg:hover,
-    .social svg:hover {
-        color: #ffffffdc;
-        transition: none;
-        filter: none;
-    }
-
 
 }
-
-
 
 @media screen and (max-width: 576px) {
 
     form {
-        width: 80%;
-    }
-
-    .form-control {
-        border-radius: 0.185rem;
-    }
-
-    .media-icons {
-        margin-top: 0.75rem;
+        width: 95%;
     }
 
     .send svg,
     .social svg {
-        font-size: 2.375rem;
-        color: #ffffffdc;
-        filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.25));
+        font-size: 2.25rem;
     }
-
-    .send svg:hover,
-    .social svg:hover {
-        color: #ffffffdc;
-        transition: none;
-        filter: none;
-    }
-
 
 }

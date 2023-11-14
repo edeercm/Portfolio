@@ -65,7 +65,7 @@ function ContactForm() {
         />
         {errors.message && <div className="invalid-feedback">Please enter message text</div>}
       </div>
-      <div className='media-icons d-flex justify-content-center gap-3'>
+      <div className='media-icons d-flex justify-content-center mt-2 gap-3'>
         <button
           type="submit"
           className={`send send-btn ${!isValid ? 'contact-btn-disabled' : ''}`}
