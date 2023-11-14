@@ -12,9 +12,9 @@ import { BiSolidCubeAlt } from 'react-icons/bi'
 const education = () => {
 
   const screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
-  const delay = screenWidth <= 576 ? 250 : 750;
-  const delay2 = screenWidth <= 576 ? 500 : 1000;
-  const delay3 = screenWidth <= 576 ? 750 : 1250;
+  const delay = screenWidth <= 576 ? 0 : 750;
+  const delay2 = screenWidth <= 576 ? 250 : 1000;
+  const delay3 = screenWidth <= 576 ? 500 : 1250;
 
   useEffect(() => {
     AOS.init()
