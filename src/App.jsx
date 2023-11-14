@@ -7,9 +7,9 @@ import Education from './components/Education/education'
 import Projects from './components/Projects/projects'
 import Contact from './components/Contact/contact'
 
+
 function App() {
   
-
   return (
     <>
     {/* <Navbar /> */}

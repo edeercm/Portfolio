@@ -32,11 +32,6 @@ const education = () => {
               </div>
             </div>
           </div>
-
-          {/* <div className="col-lg-7 col-md-12 col-sm-12" >
-            <img src={bg1} alt="Education-img" className='education-img' />
-          </div> */}
-
           <div className="col-lg-5 col-md-12 col-sm-12 d-flex align-items-center justify-content-center">
             <div className="row" style={{ width: window.innerWidth <= 576 ? 'auto' : '85%' }}>
               <div className="col-lg-12 col-md-12 col-sm-12">
