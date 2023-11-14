@@ -1,0 +1,26 @@
+#backtotopbtn {
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+   
+    padding: 0.25rem;
+    
+    border: none;
+    outline: none;
+  
+    background-color: white;
+    z-index: 50;
+    cursor: pointer;
+}
+
+#backtotopbtn svg {
+    font-size: 2rem;
+}
+
+#backtotopbtn:hover {
+    opacity: 0.75;
+}

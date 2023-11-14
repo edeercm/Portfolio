@@ -6,6 +6,7 @@ import Skills from './components/Skills/Skills'
 import Education from './components/Education/education'
 import Projects from './components/Projects/projects'
 import Contact from './components/Contact/contact'
+import BackToTopBtn from './components/BackToTopBtn/backtotopbtn'
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
     <Education />
     <Projects />
     <Contact />
+    <BackToTopBtn />
     </>
   )
 }
