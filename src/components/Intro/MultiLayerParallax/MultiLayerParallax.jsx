@@ -12,7 +12,6 @@ export default function MultiLayerParallax() {
     offset: ["start start", "end start"],
   });
 
-  const backgroundY = useTransform(scrollYProgress, [0, 1], ["0%", "25%"]);
   // const textY = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
   // const textY2 = useTransform(scrollYProgress, [0, 1], ["0%", "200%"]);
 
@@ -30,15 +29,15 @@ export default function MultiLayerParallax() {
     };
   }, []);
 
+  const backgroundY = useTransform(scrollYProgress, [0, 1], ["0%", "25%"]);
   const textY = useTransform(scrollYProgress, [0, 1], isMobile ? ["50%", "100%"] : ["0%", "100%"]);
   const textY2 = useTransform(scrollYProgress, [0, 1], isMobile ? ["100%", "200%"] : ["0%", "200%"]);
+
+ 
 
   return (
     <>
       <div className="parallax" ref={ref}>
-        {/* <motion.h1 className="label" style={{ y: textY }}>
-          مرحبا
-        </motion.h1> */}
         <div className="d-flex flex-column">
           <motion.h1 className="label" style={{ y: textY }}>
             أهلاً وسهلاً

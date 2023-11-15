@@ -11,7 +11,9 @@ import '../Projects/Projects.css'
 const projects = () => {
 
   useEffect(() => {
-    AOS.init()
+    AOS.init({
+      once: true
+    })
   }, [])
 
   return <>

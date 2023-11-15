@@ -1,5 +1,5 @@
 import React, { useState, useRef } from 'react'
-import { Link } from 'react-scroll' 
+// import { Link } from 'react-scroll' 
 import { HiBars3BottomRight } from 'react-icons/hi2';
 import { AiFillLinkedin, AiFillGithub, AiOutlineInstagram } from 'react-icons/ai'
 import './Navbar.css'

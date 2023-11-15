@@ -45,7 +45,9 @@ const responsive = {
 const SkillsCarousel = () => {
 
   useEffect(() => {
-    AOS.init()
+    AOS.init({
+      once: true
+    })
   }, [])
 
   return <>

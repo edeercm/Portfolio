@@ -9,7 +9,9 @@ import '../ContactForm/ContactForm.css'
 function ContactForm() {
 
   useEffect(() => {
-    AOS.init()
+    AOS.init({
+      once: true
+    })
   }, [])
 
   const { handleSubmit, register, formState: { errors, isDirty, isValid }, trigger, reset } = useForm();

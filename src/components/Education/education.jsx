@@ -3,7 +3,6 @@ import AOS from 'aos'
 import 'aos/dist/aos.css'
 import bg1 from '../../assets/images/education/bg1.png'
 import '../Education/Education.css'
-import { Link } from 'react-scroll'
 import { VscVerifiedFilled } from 'react-icons/vsc'
 import { IoMdSchool } from 'react-icons/io'
 import { GrOracle } from 'react-icons/gr'
@@ -17,7 +16,9 @@ const education = () => {
   const delay3 = screenWidth <= 576 ? 500 : 1250;
 
   useEffect(() => {
-    AOS.init()
+    AOS.init({
+      once: true
+    })
   }, [])
 
   return <>
