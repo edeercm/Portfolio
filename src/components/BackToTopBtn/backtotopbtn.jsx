@@ -17,7 +17,7 @@ const BackToTopBtn = () => {
       if (isBottom) {
         setTimeout(() => {
           setShowButton(true);
-        }, 1250); // Cambiar el valor del retraso según sea necesario
+        }, 1000); // Cambiar el valor del retraso según sea necesario
       } else {
         setShowButton(false);
       }
