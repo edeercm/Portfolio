@@ -1,26 +1,35 @@
 #backtotopbtn {
-    /* display: flex;
+    display: flex;
     align-items: center;
-    justify-content: center; */
+    justify-content: center;
 
     position: fixed;
-    bottom: 2rem;
-    right: 2rem;
-   
-    padding: 0.25rem;
-    
+    width: 2.75rem;
+    height: 4.75rem;
+    left: 96%;
+    bottom: 1rem;
+    /* padding: 0.5rem; */
     border: none;
     outline: none;
-  
-    background-color: white;
-    z-index: 50;
     cursor: pointer;
+    background-color: rgb(255, 255, 255);
+    z-index: 50;
+    opacity: 0.75;
+    transition: opacity 0.25s ease-in-out, box-shadow 0.5s ease-in-out;
+   
 }
 
 #backtotopbtn svg {
     font-size: 2rem;
 }
 
+#backtotopbtn span {
+    font-size: 0.75rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
 #backtotopbtn:hover {
-    opacity: 0.75;
+    opacity: 1;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.25);
 }
