@@ -64,7 +64,7 @@ const BackToTopBtn = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const scrolledToTop = window.pageYOffset > 200; // Muestra el botón después de desplazarse 300px hacia abajo
+      const scrolledToTop = window.pageYOffset > 750; // Muestra el botón después de desplazarse 300px hacia abajo
       setShowButton(scrolledToTop);
     };
 
@@ -86,9 +86,8 @@ const BackToTopBtn = () => {
     <>
       {showButton && (
         <button id='backtotopbtn' className='show slide-and-fade' onClick={scrollToTop}>
-          <div className='d-flex flex-column align-items-center'>
+          <div className='d-flex justify-content-center'>
             <VscArrowSmallUp />
-            {/* <span>Back To Top</span> */}
           </div>
         </button>
       )}
