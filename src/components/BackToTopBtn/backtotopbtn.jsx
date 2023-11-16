@@ -65,7 +65,6 @@ const BackToTopBtn = () => {
   useEffect(() => {
     const handleScroll = () => {
       const scrolledToTop = window.pageYOffset > 200; // Muestra el botón después de desplazarse 300px hacia abajo
-
       setShowButton(scrolledToTop);
     };
 
