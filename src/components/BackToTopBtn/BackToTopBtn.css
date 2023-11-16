@@ -2,13 +2,10 @@
     position: fixed;
     left: 97%;
     bottom: 2%;
-    /* width: 1.25rem;
-    height: 13.75rem; */
     border: none;
     outline: none;
     cursor: pointer;
     background-color: transparent;
-    /* box-shadow: 0 0 10px rgba(255, 255, 255, 0.25); */
 }
 
 #backtotopbtn.show {
@@ -45,9 +42,11 @@
 
 @media screen and (max-width: 768px) {
 
-
-
  
+
+    
+
+
 }
 
 @media screen and (max-width: 576px) {
@@ -69,12 +68,5 @@
     #backtotopbtn span {
         display: none;
     }
-
- 
-
-  
-
-
-   
 
 }

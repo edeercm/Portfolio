@@ -25,7 +25,6 @@ const education = () => {
     <section id='education'>
       <div className="container-fluid" style={{ paddingRight: '0', paddingLeft: '0' }}>
         <div className="row">
-
           <div className="col-lg-7 col-md-12 col-sm-12" >
             <div className="education-img-container" data-aos="education-img-animation" data-aos-duration="3000">
               <div className="education-img-content" >
