@@ -1,5 +1,5 @@
 form {
-    width: 50%;
+    width: 45%;
     height: 50vh;
     display: flex;
     flex-direction: column;
@@ -61,6 +61,10 @@ form textarea {
 
 
 @media screen and (max-width: 768px) {
+
+    form {
+        width: 75%;
+    }
 
     .send svg,
     .social svg {
