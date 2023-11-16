@@ -5,7 +5,12 @@
     border: none;
     outline: none;
     cursor: pointer;
-    background-color: transparent;
+    /* background-color: transparent; */
+
+
+    border-radius: 50%;
+    background-color: #ffffffe5;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.35);
 }
 
 #backtotopbtn.show {
@@ -17,7 +22,7 @@
     font-size: 2rem;
 }
 
-#backtotopbtn span {
+/* #backtotopbtn span {
     color: #fff;
     font-size: 0.775rem;
     font-weight: bold;
@@ -25,7 +30,7 @@
     text-transform: uppercase;
     writing-mode: vertical-lr;
     word-spacing: -0.25rem;
-}
+} */
 
 @keyframes slide-and-fade {
     0% {
@@ -40,10 +45,12 @@
 }
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 885px) {
 
- 
-
+    #backtotopbtn {
+        left: 70%;
+        bottom: 25%;
+    }
 }
 
 @media screen and (max-width: 576px) {
@@ -62,8 +69,8 @@
     }
 
 
-    #backtotopbtn span {
+    /* #backtotopbtn span {
         display: none;
-    }
+    } */
 
 }
