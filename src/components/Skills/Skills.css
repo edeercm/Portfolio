@@ -26,6 +26,11 @@
 @media screen and (max-width: 576px) {
 
 
+    #skills {
+        padding: 10rem 0;
+    }
+
+
     .skill-tittle {
         font-size: 3.25rem; 
     }
