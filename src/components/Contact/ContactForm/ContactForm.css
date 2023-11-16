@@ -72,7 +72,7 @@ form textarea {
 @media screen and (max-width: 576px) {
 
     form {
-        width: 95%;
+        width: 80%;
     }
 
     .send svg,
