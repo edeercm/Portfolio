@@ -55,7 +55,7 @@ const projects = () => {
                   <img src={encrypter} alt="SNKRS Project" className='project-img' />
                   <img src={encryptermobile} alt="SNKRS Project" className='project-img-mobile' />
                   <div className="project-icon">
-                    <a href="https://snkrslabs.netlify.app/" target='_blank'><RxExternalLink /></a>
+                    <a href="https://edeercm.github.io/EncriptadorDeTextoAlura/" target='_blank'><RxExternalLink /></a>
                   </div>
                 </div>
               </div>
