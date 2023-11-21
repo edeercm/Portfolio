@@ -73,7 +73,7 @@ const education = () => {
                       <h3>Certificates</h3>
                       <div className='education-link-container d-flex flex-row gap-2'>
                         <a href='https://app.aluracursos.com/program/certificate/a68f3cd6-df17-4a66-8f8a-5ab3077f8431' target="_blank" rel="noopener noreferrer" className='education-label'><VscVerifiedFilled /></a>
-                        <a href='https://app.aluracursos.com/program/certificate/a68f3cd6-df17-4a66-8f8a-5ab3077f8431' target="_blank" rel="noopener noreferrer" className='education-label'><VscVerifiedFilled /></a>
+                        <a href='https://drive.google.com/file/d/1h-0En3pIN8J0NyWqAgG0z0egTZIOKY7I/view?usp=drive_link' target="_blank" rel="noopener noreferrer" className='education-label'><VscVerifiedFilled /></a>
                       </div>
                     </div>
                   </div>
