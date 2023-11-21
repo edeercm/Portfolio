@@ -35,7 +35,6 @@
 
 
 @media screen and (max-width: 885px) {
-
     #backtotopbtn {
         left: 92.5%;
         bottom: 0.75%;
@@ -44,15 +43,9 @@
 }
 
 @media screen and (max-width: 576px) {
-
     #backtotopbtn {
         left: 85%;
         bottom: 0.5%;
         box-shadow: 0 2px 6px rgba(5, 5, 5, 0.5), 0 2px 8px rgba(217, 219, 222, 0.25);
     }
-
-    
-
-
-
 }

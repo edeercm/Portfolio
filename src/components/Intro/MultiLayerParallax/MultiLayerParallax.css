@@ -98,15 +98,7 @@
 }
 
 @media screen and (max-width: 576px) {
-
     .label {
-        font-size: 3rem;
-        letter-spacing: 0.75rem;
+        letter-spacing: 1.25rem;
     }
-
-    .label-two {
-        font-size: 2rem;
-        letter-spacing: 0.75rem;
-    }
-
 }
