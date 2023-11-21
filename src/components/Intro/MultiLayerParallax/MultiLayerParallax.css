@@ -12,17 +12,16 @@
     text-align: center;
 }
 
-.label {
+/* .label {
     position: relative;
-    color: #D9DBDE;
-    font-size: 7.5rem;
+    color: #d9dbde7a;
+    font-size: 6.25rem;
     font-family: 'Prestage', sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 2rem;
-    z-index: 20;
-}
+    letter-spacing: 2.25rem;
+    z-index: 25;
+} */
 
-.label-two {
+.label {
     position: relative;
     color: #D9DBDE;
     font-size: 2.5rem;
@@ -101,7 +100,7 @@
 @media screen and (max-width: 576px) {
 
     .label {
-        font-size: 4.5rem;
+        font-size: 3rem;
         letter-spacing: 0.75rem;
     }
 
