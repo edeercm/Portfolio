@@ -1,5 +1,4 @@
 @import 'Animations.css';
-/* @import url('/src/components/Intro/MultiLayerParallax/Animations.css'); */
 
 .parallax {
     width: 100%;
@@ -11,15 +10,6 @@
     justify-content: center;
     text-align: center;
 }
-
-/* .label {
-    position: relative;
-    color: #d9dbde7a;
-    font-size: 6.25rem;
-    font-family: 'Prestage', sans-serif;
-    letter-spacing: 2.25rem;
-    z-index: 25;
-} */
 
 .label {
     position: relative;
