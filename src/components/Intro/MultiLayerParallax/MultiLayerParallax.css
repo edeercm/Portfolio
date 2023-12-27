@@ -25,16 +25,16 @@
     position: absolute;
     inset: 0;
     z-index: 0;
-    background-image: url(/src/assets/images/intro/background.jpg);
+    background-image: url(/src/assets/images/home/background.jpg);
     background-position: bottom;
     background-size: cover;
 }
 
-.person {
+.img {
     position: absolute;
     inset: 0;
     z-index: 20;
-    background-image: url(/src/assets/images/intro/person.png);
+    background-image: url(/src/assets/images/home/img.png);
     background-position: bottom;
     background-size: cover;
     filter: drop-shadow(0 0 1px rgb(0, 0, 0));

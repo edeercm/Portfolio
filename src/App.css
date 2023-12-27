@@ -12,13 +12,9 @@
 @import url('https://fonts.cdnfonts.com/css/monzane');
 
 
-
-html {
-  overflow-y: scroll;
-}
-
 body {
   overflow-x: hidden;
+  scroll-behavior: smooth;
   background-color: #050505;
 }
 
@@ -50,13 +46,6 @@ h1, h2 {
   text-decoration: none;
 }
 
-/* h3 {
-  font-family: 'Monzane', sans-serif;
-                                                
-                                                
-                                                
-                                                
-} */
 
 
 
