@@ -89,7 +89,7 @@ export default function MultiLayerParallax() {
 
       <div className="scrolldown d-flex flex-column align-items-center">
         <div className="scrolldown-indicator"></div>
-        <span className="scrolldown-label">Scroll Down</span>
+        <span className="scrolldown-label">ScrolL</span>
       </div>
     </div>
   );
