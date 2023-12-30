@@ -7,15 +7,15 @@ import Education from './components/Education/education'
 import Projects from './components/Projects/projects'
 import Contact from './components/Contact/contact'
 import BackToTopBtn from './components/BackToTopBtn/backtotopbtn'
-import Home from './pages/Home'
+// import Home from './pages/Home'
 
 
 function App() {
   
   return (
     <>
-    {/* <Intro /> */}
-    <Home />
+    <Intro />
+    {/* <Home /> */}
     <AboutMe />
     <Skills />
     <Education />
