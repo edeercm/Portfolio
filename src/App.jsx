@@ -7,16 +7,15 @@ import Education from './components/Education/education'
 import Projects from './components/Projects/projects'
 import Contact from './components/Contact/contact'
 import BackToTopBtn from './components/BackToTopBtn/backtotopbtn'
-
-import ParallaxComp from './components/HomeComps/ParrallaxComp'
+import Home from './pages/Home'
 
 
 function App() {
   
   return (
     <>
-    {/* <ParallaxComp /> */}
-    <Intro />
+    {/* <Intro /> */}
+    <Home />
     <AboutMe />
     <Skills />
     <Education />
