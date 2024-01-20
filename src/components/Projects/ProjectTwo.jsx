@@ -17,6 +17,8 @@ const Section = styled.section`
   }
 
   @media (max-width: 575.97px) {
+    height: auto;
+    padding: 2.5rem 0;
   }
 `;
 
@@ -30,6 +32,7 @@ const Label = styled.h1`
   }
 
   @media (max-width: 575.97px) {
+    text-align: center;
   }
 `;
 
@@ -44,6 +47,7 @@ const ImgDesktop = styled.img`
   }
 
   @media (max-width: 575.97px) {
+    display: none;
   }
 `;
 
@@ -61,6 +65,10 @@ const Description = styled.span`
   }
 
   @media (max-width: 575.97px) {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1rem;
+    margin-top: -1.25rem;
   }
 `;
 

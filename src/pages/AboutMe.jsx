@@ -38,6 +38,8 @@ const Section = styled.section`
   }
 
   @media (max-width: 575.97px) {
+    height: auto;
+    padding: 2.5rem 0;
   }
 `;
 
@@ -78,6 +80,8 @@ const Container = styled.div`
   }
 
   @media (max-width: 575.97px) {
+    margin-top: 1.5rem;
+    width: 100%;
   }
 `;
 
@@ -105,7 +109,7 @@ const AboutMe = () => {
           <div className="col-md-12 col-lg-12 col-xl-12">
             <div className="row">
               <div className="col-md-12 col-lg-6 col-xl-6 text-md-center text-lg-start text-xl-start">
-                <h1 className='mt-md-5 mt-lg-0 mt-xl-0 mb-md-4 mb-lg-0 mb-xl-0'>Education</h1>
+                <h1 className='mt-5 mt-md-5 mt-lg-0 mt-xl-0 mb-4 mb-md-4 mb-lg-0 mb-xl-0'>Education</h1>
               </div>
               <div className="col-md-12 col-lg-6 col-xl-6 d-flex flex-column gap-4">
                 <div className='text-md-center text-lg-start text-xl-start'>
@@ -128,9 +132,9 @@ const AboutMe = () => {
           <div className="col-md-12 col-lg-12 col-xl-12 mt-5">
             <div className="row">
               <div className="col-md-12 col-lg-6 col-xl-6 text-md-center text-lg-start text-xl-start">
-                <h1 className='mb-md-4 mb-lg-0 mb-xl-0'>Key Skills</h1>
+                <h1 className='mb-4 mb-md-4 mb-lg-0 mb-xl-0'>Key Skills</h1>
               </div>
-              <div className="col-md-12 col-lg-6 col-xl-6 d-flex justify-content-md-center justify-content-lg-start justify-content-xl-start">
+              <div className="col-md-12 col-lg-6 col-xl-6 d-flex justify-content-center justify-content-md-center justify-content-lg-start justify-content-xl-start">
                 <SkillCards />
               </div>
             </div>

@@ -27,6 +27,7 @@ const Container = styled.div`
   }
 
   @media (max-width: 575.97px) {
+    width: 100%;
   }
 `;
 
@@ -40,6 +41,7 @@ const Label = styled.h1`
   }
 
   @media (max-width: 575.97px) {
+    font-size: 4.75rem;
   }
 `;
 
