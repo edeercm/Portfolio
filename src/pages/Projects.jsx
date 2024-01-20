@@ -30,12 +30,13 @@ const SectionLabel = styled.h4`
   }
 
   @media (max-width: 575.97px) {
+    font-size: 1.75rem;
   }
 `;
 
 const Projects = () => {
   return <>
-    <div className='container position-relative top-0 d-flex flex-row align-items-center justify-content-md-center justify-content-lg-start justify-content-xl-start gap-2 mt-5'>
+    <div className='container position-relative top-0 d-flex flex-row align-items-center justify-content-center justify-content-md-center justify-content-lg-start justify-content-xl-start gap-2 mt-5'>
       <Circle></Circle>
       <SectionLabel>Projects</SectionLabel>
     </div>

@@ -69,6 +69,7 @@ const SectionLabel = styled.h4`
   }
 
   @media (max-width: 575.97px) {
+    font-size: 1.75rem;
   }
 `;
 
@@ -100,7 +101,7 @@ const Label = styled.h2`
 const AboutMe = () => {
   return <>
     <Section id='aboutme'>
-      <div className='container position-absolute top-0 d-flex flex-row align-items-center justify-content-md-center justify-content-lg-start justify-content-xl-start gap-2 mt-5'>
+      <div className='container position-absolute top-0 d-flex flex-row align-items-center justify-content-center justify-content-md-center justify-content-lg-start justify-content-xl-start gap-2 mt-5'>
         <Circle></Circle>
         <SectionLabel>About Me</SectionLabel>
       </div>
