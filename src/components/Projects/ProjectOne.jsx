@@ -1,7 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
 import desktop from '../../assets/images/projects/encrypter.jpg'
-import mobile from '../../assets/images/projects/encryptermobile.png'
+// import mobile from '../../assets/images/projects/encryptermobile.png'
+
+import mobile from '../../../src/assets/images/projects/encryptermobile.png'
 
 const Section = styled.section`
   width: 100%;
