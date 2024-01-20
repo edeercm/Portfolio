@@ -76,8 +76,6 @@ const ImgMobile = styled.img`
   }
 `;
 
-
-
 const ProjectOne = () => {
   return <>
     <Section>
