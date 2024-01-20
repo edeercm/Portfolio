@@ -8,21 +8,49 @@
 
 @import url('https://fonts.cdnfonts.com/css/mabsout');
 
-
 @import url('https://fonts.cdnfonts.com/css/monzane');
 
 
-body {
+
+
+
+
+
+
+@import url('https://fonts.cdnfonts.com/css/bahttrasignature');
+
+@import url('https://fonts.cdnfonts.com/css/oswald-variable');
+
+@import url('https://fonts.cdnfonts.com/css/poppins');
+
+@import url('https://fonts.cdnfonts.com/css/urbanist');
+
+@import url('https://fonts.cdnfonts.com/css/anek-kannada');
+
+@import url('https://fonts.cdnfonts.com/css/vic');
+
+
+@import url('https://fonts.cdnfonts.com/css/rem');
+
+
+
+
+
+
+
+html {
   overflow-x: hidden;
   scroll-behavior: smooth;
-  background-color: #050505;
 }
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  text-decoration: none;
+  list-style: none;
+	text-decoration: none;
+	border: none;
+	outline: none;
 }
 
 h1,
@@ -31,20 +59,22 @@ h3,
 h4,
 h5,
 h6,
-p {
+p,
+a {
   margin: 0;
+  
 
 }
 
-h1, h2 {
+/* h1, h2 {
   font-family: 'Haverbrooke', sans-serif;
-}
+} */
 
 
- h3, h4, h5, span, a, label, .invalid-feedback {
+/* h3, h4, h5, span, a, label, .invalid-feedback {
   font-family: 'Steamflix Grotesk', sans-serif;
   text-decoration: none;
-}
+} */
 
 
 

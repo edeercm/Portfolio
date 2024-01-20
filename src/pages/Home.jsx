@@ -1,15 +1,101 @@
-import React from 'react'
+import React from 'react';
 import styled from 'styled-components'
+import Me from '../assets/images/home/me.jpg'
+import Button from '../components/HomeComps/Button';
+import { FaInstagram, FaLinkedin, FaGithub } from "react-icons/fa";
 
-const Seccone = styled.section`
+const Section = styled.section`
   width: 100%;
   height: 100vh;
-  display: flex;
-  align-items: center;
-  background-image: url(/src/assets/images/home/bg.jpg);
-  background-size: cover;
-  background-position: center;
+  background-color: #0C0F0A;
 
+  @media (min-width: 575.98px) and (max-width: 991.98px) {
+    height: auto;
+    padding: 5rem 0;
+  }
+
+  @media (max-width: 575.97px) {
+
+  }
+`;
+
+const Content = styled.div`
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0 5rem;
+
+  h1, span, svg {
+    color: white;
+  }
+
+  @media (min-width: 575.98px) and (max-width: 991.98px) {
+    margin-bottom: 2rem;
+    height: 30vh;
+    align-items: center;
+    text-align: center;
+  }
+
+  @media (max-width: 575.97px) {
+  }
+`;
+
+const Img = styled.img`
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  object-position: bottom;
+
+  @media (min-width: 575.98px) and (max-width: 991.98px) {
+    height: 75vh;
+    object-fit: contain;
+  }
+
+  @media (max-width: 575.97px) {
+  }
+`;
+
+const Label = styled.h1`
+  font-weight: 400;
+  font-size: 2.5rem;
+  font-family: 'VIC', sans-serif;
+                                                                                                        
+  @media (min-width: 575.98px) and (max-width: 991.98px) {
+  }
+
+  @media (max-width: 575.97px) {
+  }
+`;
+
+const Name = styled.h1`
+  font-size: 4rem;
+  font-weight: bold;
+  font-family: 'Bahttra_Signature', sans-serif;
+                                                                   
+  @media (min-width: 575.98px) and (max-width: 991.98px) {
+  }
+
+  @media (max-width: 575.97px) {
+  }
+`;
+
+const Skill = styled.h1`
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  font-size: 2.25rem;
+  font-family: 'REM', sans-serif;
+                                                                                                        
+  @media (min-width: 575.98px) and (max-width: 991.98px) {
+  }
+
+  @media (max-width: 575.97px) {
+  }
+`;
+
+const Info = styled.span`
+  font-family: 'VIC', sans-serif;
+                                                                                                        
   @media (min-width: 575.98px) and (max-width: 991.98px) {
   }
 
@@ -19,14 +105,41 @@ const Seccone = styled.section`
 
 const Home = () => {
   return <>
-    <Seccone>
-      <div className="container-xxl">
+    <Section id='home'>
+      <div className='container-fluid w-100 h-100 pe-0'>
+        <Button />
         <div className="row">
-          <div className="col-lg-12 col-xl-12"></div>
-
+          <div className="col-md-12 col-lg-6 col-xl-6 d-flex align-items-center">
+            <Content>
+              <div>
+                <div className='d-flex flex-row align-items-center justify-content-md-center justify-content-lg-start gap-3'>
+                  <Label>Hello, I'm</Label>
+                  <Name>Eder Cadena.</Name>
+                </div>
+                <Skill>Front-End Web Developer</Skill>
+                <Info>
+                  I am passionate about transforming ideas into engaging web experiences. With a high level of proficiency and a keen eye for detail. I have consistently showcased my dedication to staying up.to.date with the latest industry standards and regulations.
+                </Info>
+              </div>
+              <div className='d-flex flex-row fs-4 gap-1'>
+                <a href='https://www.instagram.com/edeercm/' target='_blank' rel='noopener noreferrer'>
+                  <FaInstagram />
+                </a>
+                <a href='https://www.linkedin.com/in/edeercm/' target='_blank' rel='noopener noreferrer'>
+                  <FaLinkedin />
+                </a>
+                <a href='https://github.com/edeercm' target='_blank' rel='noopener noreferrer'>
+                  <FaGithub />
+                </a>
+              </div>
+            </Content>
+          </div>
+          <div className="col-md-12 col-lg-6 col-xl-6">
+            <Img src={Me} alt="" />
+          </div>
         </div>
       </div>
-    </Seccone>
+    </Section >
   </>
 }
 
