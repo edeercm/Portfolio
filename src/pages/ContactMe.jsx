@@ -17,6 +17,17 @@ const Section = styled.section`
   }
 `;
 
+const Container = styled.div`
+  width: 50%;
+
+  @media (min-width: 575.98px) and (max-width: 991.98px) {
+    width: 100%;
+  }
+
+  @media (max-width: 575.97px) {
+  }
+`;
+
 const Label = styled.h1`
   color: #fff;
   font-size: 5rem;
@@ -45,7 +56,7 @@ const LabelTwo = styled.h1`
 const ContactMe = () => {
   return <>
     <Section id='contact'>
-      <div className="container w-50">
+      <Container className="container">
         <div className="row">
           <div className="col-sm-12 col-md-12 col-lg-12 d-flex flex-column align-items-center">
             <div className='d-flex flex-column text-center'>
@@ -55,7 +66,7 @@ const ContactMe = () => {
             <ContactForm />
           </div>
         </div>
-      </div>
+      </Container>
 
     </Section>
   </>
