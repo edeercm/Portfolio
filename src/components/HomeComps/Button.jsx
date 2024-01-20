@@ -24,6 +24,7 @@ const Btn = styled.div`
   }
 
   @media (max-width: 575.97px) {
+    display: none;
   }
 `;
 

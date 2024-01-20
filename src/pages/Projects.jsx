@@ -26,6 +26,7 @@ const SectionLabel = styled.h4`
   text-underline-position: under;
 
   @media (min-width: 575.98px) and (max-width: 991.98px) {
+    font-size: 3rem;
   }
 
   @media (max-width: 575.97px) {
@@ -34,7 +35,7 @@ const SectionLabel = styled.h4`
 
 const Projects = () => {
   return <>
-    <div className='container position-relative top-0 d-flex flex-row align-items-center gap-2 mt-5'>
+    <div className='container position-relative top-0 d-flex flex-row align-items-center justify-content-md-center justify-content-lg-start justify-content-xl-start gap-2 mt-5'>
       <Circle></Circle>
       <SectionLabel>Projects</SectionLabel>
     </div>
