@@ -1,6 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
-import ContactForm from '../components/ContactForm/contactform'
+import ContactForm from '../components/ContactForm/ContactForm'
+
+
 
 const Section = styled.section`
   width: 100%;
