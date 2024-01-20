@@ -135,7 +135,7 @@ const Home = () => {
                   I am passionate about transforming ideas into engaging web experiences. With a high level of proficiency and a keen eye for detail. I have consistently showcased my dedication to staying up.to.date with the latest industry standards and regulations.
                 </Info>
               </div>
-              <div className='d-flex flex-row fs-1 fs-lg-4 fs-xl-4 gap-1'>
+              <div className='d-flex flex-row fs-4 gap-1'>
                 <a href='https://www.instagram.com/edeercm/' target='_blank' rel='noopener noreferrer'>
                   <FaInstagram />
                 </a>
