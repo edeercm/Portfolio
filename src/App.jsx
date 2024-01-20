@@ -1,6 +1,6 @@
 import './App.css'
 import Home from './pages/Home'
-import AboutMe from './pages/Aboutme'
+import AboutMe from './pages/AboutMe'
 import Projects from './pages/Projects'
 import ContactMe from './pages/ContactMe'
 
