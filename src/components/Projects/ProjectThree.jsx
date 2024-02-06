@@ -1,110 +1,60 @@
 import React from 'react'
 import styled from 'styled-components'
-import desktop from '../../assets/images/projects/portfolio.jpg' 
-import mobile from '../../assets/images/projects/portfoliomobile.png' 
+import { Card, Title, Subtitle, Content, Label, Btn } from './ProjectsGlobalStyles';
 
-const Section = styled.section`
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #0C0F0A;
+const Project = styled.div`
+  width: 90%;
+  height: 50vh;
+  background-image: url(/src/assets/images/projects/projecthree.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
 
   @media (min-width: 575.98px) and (max-width: 991.98px) {
-    height: auto;
-    padding: 5rem 0;
+    height: 34vh;
   }
 
   @media (max-width: 575.97px) {
-    height: auto;
-    padding: 2.5rem 0;
-  }
-`;
 
-const Label = styled.h1`
-  color: #fff;
-  font-size: 3rem;
-  font-family: 'VIC', sans-serif;
-
-  @media (min-width: 575.98px) and (max-width: 991.98px) {
-    text-align: center;
-  }
-
-  @media (max-width: 575.97px) {
-    text-align: center;
-  }
-`;
-
-const ImgDesktop = styled.img`
-  width: 85%;
-  height: auto;
-  object-fit: contain;
-  border-radius: 0.75rem;
-
-  @media (min-width: 575.98px) and (max-width: 991.98px) {
-    display: none;
-  }
-
-  @media (max-width: 575.97px) {
-    display: none;
-  }
-`;
-
-const Description = styled.span`
-  width: 80%;
-  color: #fff;
-  font-size: 1.075rem;
-  font-family: 'VIC', sans-serif;
-
-  @media (min-width: 575.98px) and (max-width: 991.98px) {
-    width: 90%;
-    font-size: 1.5rem;
-    text-align: center;
-    margin-bottom: 2rem;
-  }
-
-  @media (max-width: 575.97px) {
-    width: 100%;
-    text-align: center;
-    margin-bottom: 1rem;
-    margin-top: -1.25rem;
-  }
-`;
-
-const ImgMobile = styled.img`
-  width: 60%;
-  height: auto;
-  object-fit: contain;
-
-  @media (min-width: 575.98px) and (max-width: 991.98px) {
-  }
-
-  @media (max-width: 575.97px) {
   }
 `;
 
 const ProjectThree = () => {
   return <>
-    <Section>
-      <div className="container-xxl">
-        <div className="row">
-          <div className="col-lg-8 d-flex flex-column align-items-md-center align-items-lg-start align-items-xl-start justify-content-center gap-3">
-            <Label>Eve's Portfolio</Label>
-            <a href="https://eacreativestudio.netlify.app/" target='_blank' rel="noopener noreferrer">
-              <ImgDesktop src={desktop} alt="Desktop version" />
-            </a>
-            <Description>Crafted with styled components in lieu of traditional CSS for meticulous interface design, this website was developed using React + Vite, reflecting a modern and efficient approach to web development.</Description>
-          </div>
-          <div className="col-lg-4 ">
-            <a href="https://eacreativestudio.netlify.app/" target='_blank' rel="noopener noreferrer" className='d-flex justify-content-center'>
-              <ImgMobile src={mobile} alt="Mobile version" />
-            </a>
+    <div className='d-flex justify-content-center'>
+      <Card>
+        <div className="container">
+          <div className='row'>
+            <div className="col-12 mb-5">
+              <div className="row">
+                <div className="col-6 d-flex justify-content-center">
+                  <div>
+                    <Title>Eve's Portfolio</Title>
+                    <Subtitle>Code developed by me</Subtitle>
+                  </div>
+                </div>
+                <div className="col-6">
+                  <Content>
+                    <Label>Developed with React + Vite, enriched with styled-components and Bootstrap.</Label>
+                    <Btn
+                      href="https://eacreativestudio.netlify.app/"
+                      target='_blank'
+                      rel="noopener noreferrer"
+                    >
+                      <span>View project</span>
+                    </Btn>
+                  </Content>
+                </div>
+              </div>
+            </div>
+            <div className="col-12 d-flex justify-content-center mt-5">
+              <Project></Project>
+            </div>
           </div>
         </div>
-      </div>
-    </Section>
+      </Card>
+    </div>
   </>
 }
 
-export default ProjectThree
+export default ProjectThree 

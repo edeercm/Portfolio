@@ -1,19 +1,28 @@
-import './App.css'
+import Header from './components/Header/Header'
 import Home from './pages/Home'
-import AboutMe from './pages/AboutMe'
 import Projects from './pages/Projects'
+import Skills from './pages/Skills'
 import ContactMe from './pages/ContactMe'
-
+import './App.css'
 
 function App() {
-  return (
-    <>
+  return <>
+    <Header />
+    <div id='home'>
       <Home />
-      <AboutMe />
+    </div>
+    <div id='skills'>
+      <Skills />
+    </div>
+    <div id='projects'>
       <Projects />
+    </div>
+    <div id='contactMe'>
       <ContactMe />
-    </>
-  )
+    </div>
+  </>
 }
 
 export default App
+
+
