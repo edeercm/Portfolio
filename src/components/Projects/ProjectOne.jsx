@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Card, Title, Subtitle, Content, Label, Btn } from './ProjectsGlobalStyles';
+import projectBanner from '../../assets/images/projects/projectone.png'
 
 const Project = styled.div`
   width: 100%;
@@ -8,7 +9,8 @@ const Project = styled.div`
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
-  background-image: url(/src/assets/images/projects/projectone.png);
+  background: url(${projectBanner});
+  /* background-image: url(/src/assets/images/projects/projectone.png); */
 
   @media (min-width: 575.98px) and (max-width: 991.98px) {
     width: 95%;

@@ -12,7 +12,6 @@ const Container = styled.div`
 
   @media (min-width: 575.98px) and (max-width: 991.98px) {
     flex-wrap: wrap;
-    
   }
 
   @media (max-width: 575.97px) {
