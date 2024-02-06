@@ -10,7 +10,6 @@ const Project = styled.div`
   background-size: contain;
   background-repeat: no-repeat;
   background-image: url(${projectBanner});
-  /*background-image: url(/src/assets/images/projects/projecthree.png); */
 
   @media (min-width: 575.98px) and (max-width: 991.98px) {
     height: 34vh;

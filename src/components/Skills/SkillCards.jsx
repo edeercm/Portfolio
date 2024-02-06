@@ -33,6 +33,8 @@ const Card = styled.div`
   }
 
   @media (max-width: 575.97px) {
+    width: 15rem;
+  height: 15rem;
   }
 `;
 
@@ -44,6 +46,7 @@ const Label = styled.span`
   }
 
   @media (max-width: 575.97px) {
+    font-size: 1.25rem;
   }
 `;
 
@@ -55,6 +58,7 @@ const Icon = styled.div`
   }
 
   @media (max-width: 575.97px) {
+    font-size: 5rem;
   }
 `;
 
