@@ -9,7 +9,7 @@ const Project = styled.div`
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
-  background: url(${projectBanner});
+  background-image: url(${projectBanner});
   /* background-image: url(/src/assets/images/projects/projectone.png); */
 
   @media (min-width: 575.98px) and (max-width: 991.98px) {
