@@ -24,8 +24,7 @@ const Label = styled.h1`
   }
 
   @media (max-width: 575.97px) {
-    font-size: 3rem;
-    letter-spacing: -0.1rem;
+    font-size: 3.75rem;
   }
 `;
 
@@ -39,7 +38,7 @@ const LabelTwo = styled.span`
   }
 
   @media (max-width: 575.97px) {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
   }
 `;
 
@@ -50,10 +49,6 @@ const LabelThree = styled.span`
 
   @media (min-width: 575.98px) and (max-width: 991.98px) {
     font-size: 1.75rem; 
-  }
-
-  @media (max-width: 575.97px) {
-    font-size: 1.25rem; 
   }
 `;
 
@@ -66,10 +61,6 @@ const LabelFour = styled.span`
 
   @media (min-width: 575.98px) and (max-width: 991.98px) {
     font-size: 1.75rem; 
-  }
-
-  @media (max-width: 575.97px) {
-    font-size: 1.25rem; 
   }
 `;
 
@@ -88,7 +79,7 @@ const Icon = styled.div`
   }
 
   @media (max-width: 575.97px) {
-    font-size: 2rem;
+    font-size: 2.25rem;
   }
 `;
 

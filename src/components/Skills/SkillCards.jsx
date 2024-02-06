@@ -3,6 +3,23 @@ import styled from 'styled-components'
 import { SiAdobephotoshop } from "react-icons/si";
 import { FaHtml5, FaBootstrap, FaReact, FaCss3Alt } from "react-icons/fa";
 
+const Container = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+
+  @media (min-width: 575.98px) and (max-width: 991.98px) {
+    flex-wrap: wrap;
+    
+  }
+
+  @media (max-width: 575.97px) {
+    flex-direction: column;
+  }
+`;
+
 const Card = styled.div`
   display: flex;
   flex-direction: column;
@@ -46,7 +63,7 @@ const SkillCards = () => {
 
 
   return <>
-    <div className='d-flex flex-wrap flex-md-wrap flex-xl-row justify-content-center gap-5'>
+    <Container>
       <Card>
         <Icon><FaHtml5 /></Icon>
         <Label>HTML5</Label>
@@ -67,7 +84,7 @@ const SkillCards = () => {
         <Icon><FaCss3Alt /></Icon>
         <Label>CSS3</Label>
       </Card>
-    </div>
+    </Container>
   </>
 }
 
