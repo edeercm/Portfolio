@@ -16,7 +16,8 @@ const Container = styled.div`
 const NavbarToggle = styled.div`
 
   svg {
-    font-size: 3rem;
+    margin-right: 0.25rem;
+    font-size: 2.5rem;
     color: var(--third-color);
   }
 
