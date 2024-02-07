@@ -6,37 +6,34 @@ import { AiFillLinkedin, AiFillGithub, AiOutlineInstagram } from 'react-icons/ai
 const Container = styled.div`
   display: none;
 
-  /* .offcanvas-mobile-menu {
-    background-color: #E8E8E8;
-  } */
-
   @media (max-width: 576px) {
     display: flex;
     align-items: center;
     justify-content: end;
   }
+`;
+
+const NavbarToggle = styled.div`
 
   svg {
-    color: #E8E8E8;
-    font-size: 2rem;
+    font-size: 3.5rem;
+    color: var(--third-color);
   }
+
 `;
 
 const Label = styled.h1`
-  color: #da1515;
-  font-size: 3rem;
+  font-size: 5rem;
+  color: var(--third-color);
 `;
 
-const Icons = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.75rem;
+const Icon = styled.div`
 
   svg {
-    color: #0C0F0A;
-    font-size: 2.5rem;
+    font-size: 3.5rem;
+    color: var(--third-color);
   }
+
 `;
 
 
@@ -73,13 +70,15 @@ const Hamburger = () => {
         data-bs-target="#offcanvasNavbar"
         aria-controls="offcanvasNavbar"
       >
-        <HiBars3BottomRight />
+        <NavbarToggle>
+          <HiBars3BottomRight />
+        </NavbarToggle>
       </div>
       <div
-        style={{ backgroundColor: 'E8E8E8' }}   
-        className="offcanvas offcanvas-end" 
-        tabIndex="-1" id="offcanvasNavbar" 
-        aria-labelledby="offcanvasRightLabel" 
+        style={{ backgroundColor: '#101011' }}
+        className="offcanvas offcanvas-end"
+        tabIndex="-1" id="offcanvasNavbar"
+        aria-labelledby="offcanvasRightLabel"
         ref={offcanvasRef}
       >
         <div className="offcanvas-header d-flex justify-content-end">
@@ -87,21 +86,27 @@ const Hamburger = () => {
         </div>
         <div className="offcanvas-body d-flex flex-column justify-content-around">
           <div className='d-flex flex-column text-center gap-3'>
-            <Label onClick={() => handleNavigation('skills')}>Skills</Label>
-            <Label onClick={() => handleNavigation('projects')}>Projects</Label>
-            <Label onClick={() => handleNavigation('contactMe')}>Contac</Label>
+            <div onClick={() => handleNavigation('skills')}><Label>Skills</Label></div>
+            <div onClick={() => handleNavigation('projects')}> <Label>Projects</Label></div>
+            <div onClick={() => handleNavigation('contactMe')}><Label>Contact</Label></div>
           </div>
-          <Icons>
+          <div className='d-flex flex-row justify-content-center gap-3'>
             <a href="https://www.linkedin.com/in/edeercm/" target="_blank" rel="noopener noreferrer">
-              <AiFillLinkedin />
+              <Icon>
+                <AiFillLinkedin />
+              </Icon>
             </a>
             <a href="https://github.com/edeercm" target="_blank" rel="noopener noreferrer">
-              <AiFillGithub />
+              <Icon>
+                <AiFillGithub />
+              </Icon>
             </a>
             <a href="https://www.instagram.com/edeercm/" target="_blank" rel="noopener noreferrer">
-              <AiOutlineInstagram />
+              <Icon>
+                <AiOutlineInstagram />
+              </Icon>
             </a>
-          </Icons>
+          </div>
         </div>
       </div>
     </Container>

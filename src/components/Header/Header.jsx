@@ -9,23 +9,31 @@ const NavBar = styled.header`
   width: 100%;
   height: 10vh;
   z-index: 10;
-  background-color: #101011;
+  background-color: var(--second-color);
+`;
 
-  h1, span {
-    color: #E8E8E8;
-    cursor: pointer;
-  }
+const Logo = styled.h1`
+  cursor: pointer;
+  color: var(--third-color);
 
-  span {
-    font-size: 1.25rem;
+  @media (max-width: 576px) {
+    font-size: 2.75rem;
   }
 `;
 
+const NavLabel = styled.span`
+  cursor: pointer;
+  font-size: 1.25rem;
+  color: var(--third-color);
+`;
+
 const RWDContainerOne = styled.div`
-  display: block;
+  display: flex;
+  align-items: end;
+  justify-content: end;
 
   @media (min-width: 575.98px) and (max-width: 991.98px) {
-    display: block;
+    display: flex;
   }
 
   @media (max-width: 575.97px) {
@@ -41,7 +49,8 @@ const RWDContainerTwo = styled.div`
   }
 
   @media (max-width: 575.97px) {
-    display: block;
+    display: flex;
+    justify-content: end;
   }
 `;
 
@@ -58,16 +67,22 @@ const Header = () => {
     <NavBar>
       <div className="container">
         <div className="row">
-          <div className="col-6">
-            <div>
-              <h1 onClick={() => handleNavigation('home')}>X</h1>
-            </div>
+          <div className="col-6 d-flex align-items-center">
+            <Logo onClick={() => handleNavigation('home')}>
+              X
+            </Logo>
           </div>
-          <RWDContainerOne className="col-6 d-flex justify-content-end">
+          <RWDContainerOne className="col-6">
             <div className='d-flex flex-row align-items-center gap-3'>
-              <span onClick={() => handleNavigation('skills')}>Skills</span>
-              <span onClick={() => handleNavigation('projects')}>Projects</span>
-              <span onClick={() => handleNavigation('contactMe')}>Contac</span>
+              <NavLabel onClick={() => handleNavigation('skills')}>
+                Skills
+              </NavLabel>
+              <NavLabel onClick={() => handleNavigation('projects')}>
+                Projects
+              </NavLabel>
+              <NavLabel onClick={() => handleNavigation('contactMe')}>
+                Contac
+              </NavLabel>
             </div>
           </RWDContainerOne>
           <RWDContainerTwo className="col-6">

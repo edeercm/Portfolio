@@ -66,7 +66,7 @@ export const Content = styled.div`
 `;
 
 export const Label = styled.span`
-  color: #E8E8E8;
+  color: var(--third-color);
 
   @media (min-width: 575.98px) and (max-width: 991.98px) {
   }

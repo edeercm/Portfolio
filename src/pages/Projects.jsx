@@ -9,24 +9,11 @@ const Section = styled.section`
   height: auto;
   padding: 7.5rem 0;
   background-color: var(--second-color);
-
-  @media (min-width: 575.98px) and (max-width: 991.98px) {
-   
-  }
-
-  @media (max-width: 575.97px) {
-  }
 `;
 
-const Label = styled.h1`
-  color: #E8E8E8;
+const Title = styled.h1`
   font-size: 5rem;
-
-  @media (min-width: 575.98px) and (max-width: 991.98px) {
-  }
-
-  @media (max-width: 575.97px) {
-  }
+  color: var(--third-color);
 `;
 
 const Projects = () => {
@@ -34,7 +21,7 @@ const Projects = () => {
     <Section>
       <div className="container">
         <div className='text-center'>
-          <Label>Projects.</Label>
+          <Title>Projects.</Title>
         </div>
       </div>
       <ProjectOne />
