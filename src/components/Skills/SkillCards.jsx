@@ -15,6 +15,7 @@ const Container = styled.div`
   }
 
   @media (max-width: 575.97px) {
+    margin-top: 3.5rem;
     flex-direction: column;
   }
 `;
