@@ -16,7 +16,7 @@ const Project = styled.div`
   }
 
   @media (max-width: 575.97px) {
-
+    height: 20vh;
   }
 `;
 
@@ -28,13 +28,13 @@ const ProjectThree = () => {
           <div className='row'>
             <div className="col-12 mb-5">
               <div className="row">
-                <div className="col-6 d-flex justify-content-center">
-                  <div>
+                <div className="col-12 col-md-6 col-xl-6 d-flex justify-content-center">
+                  <div className='text-center text-md-start text-xl-start'>
                     <Title>Eve's Portfolio</Title>
                     <Subtitle>Code developed by me</Subtitle>
                   </div>
                 </div>
-                <div className="col-6">
+                <div className="col-12 col-md-6 col-xl-6">
                   <Content>
                     <Label>Developed with React + Vite, enriched with styled-components and Bootstrap.</Label>
                     <Btn

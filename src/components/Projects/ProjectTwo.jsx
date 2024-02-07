@@ -16,7 +16,7 @@ const Project = styled.div`
   }
 
   @media (max-width: 575.97px) {
-
+    height: 24vh;
   }
 `;
 
@@ -28,13 +28,13 @@ const ProjectTwo = () => {
           <div className='row'>
             <div className="col-12 mb-5">
               <div className="row">
-                <div className="col-6 d-flex justify-content-center">
-                  <div>
+                <div className="col-12 col-md-6 col-xl-6 d-flex justify-content-center">
+                  <div className='text-center text-md-start text-xl-start'>
                     <Title>SNKRS</Title>
                     <Subtitle>Created by me</Subtitle>
                   </div>
                 </div>
-                <div className="col-6">
+                <div className="col-12 col-md-6 col-xl-6">
                   <Content>
                     <Label>A unique e-commerce experience. Engineered with Bootstrap and curated libraries for a stylish design.</Label>
                     <Btn

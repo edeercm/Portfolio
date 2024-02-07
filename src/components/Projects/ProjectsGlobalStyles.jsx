@@ -16,7 +16,9 @@ export const Card = styled.div`
   }
 
   @media (max-width: 575.97px) {
-
+    width: 90%;
+    height: auto;
+    padding: 5rem 0;
   }
 `;
 
@@ -56,6 +58,10 @@ export const Content = styled.div`
   }
 
   @media (max-width: 575.97px) {
+    width: 100%;
+    margin-top: 1rem;
+    text-align: center;
+    align-items: center;
   }
 `;
 

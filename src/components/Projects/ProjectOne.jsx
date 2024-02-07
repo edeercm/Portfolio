@@ -17,6 +17,7 @@ const Project = styled.div`
   }
 
   @media (max-width: 575.97px) {
+    height: 20vh;
 
   }
 `;
@@ -29,13 +30,13 @@ const ProjectOne = () => {
           <div className='row'>
             <div className="col-12 mb-xl-5">
               <div className="row">
-                <div className="col-6 d-flex justify-content-center">
-                  <div>
+                <div className="col-12 col-md-6 col-xl-6 d-flex justify-content-center">
+                  <div className='text-center text-md-start text-xl-start'>
                     <Title>Encrypter</Title>
                     <Subtitle>Alura challenge</Subtitle>
                   </div>
                 </div>
-                <div className="col-6 ">
+                <div className="col-12 col-md-6 col-xl-6">
                   <Content>
                     <Label>A personal project developed by me for the Alura challenge. Built with HTML, CSS, and JavaScript.</Label>
                     <Btn
