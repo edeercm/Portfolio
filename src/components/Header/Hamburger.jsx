@@ -36,7 +36,6 @@ const Icon = styled.div`
 
 `;
 
-
 const Hamburger = () => {
 
   const offcanvasRef = useRef(null);
@@ -81,7 +80,7 @@ const Hamburger = () => {
         aria-labelledby="offcanvasRightLabel"
         ref={offcanvasRef}
       >
-        <div className="offcanvas-header d-flex justify-content-end">
+        <div className="offcanvas-header bg-white d-flex justify-content-end">
           <button type="button" className="btn-close fs-4" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div className="offcanvas-body d-flex flex-column justify-content-around">
