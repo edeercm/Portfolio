@@ -6,14 +6,16 @@ const NavBar = styled.header`
   position: fixed;
   display: flex;
   align-items: center;
+  justify-content: center;
   width: 100%;
-  height: 10vh;
+  height: 9vh;
   z-index: 10;
   background-color: var(--second-color);
 `;
 
-const Logo = styled.h1`
+const Logo = styled.h2`
   cursor: pointer;
+  font-weight: bold;
   color: var(--third-color);
 
   @media (max-width: 576px) {
@@ -21,15 +23,32 @@ const Logo = styled.h1`
   }
 `;
 
-const NavLabel = styled.span`
+const NavLabel = styled.h2`
+  position: relative;
   cursor: pointer;
-  font-size: 1.25rem;
+  font-size: 2rem;
   color: var(--third-color);
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0; /* Ajuste para que la línea comience desde el lado derecho */
+    width: 0;
+    height: 0.175rem;
+    background-color: var(--third-color);
+    transition: width 0.35s ease-out, right 0.35s ease-in; /* Agregamos right a la transición */
+  }
+
+  &:hover::after {
+    width: 100%;
+    left: 0;
+  }
 `;
 
 const RWDContainerOne = styled.div`
   display: flex;
-  align-items: end;
+  align-items: center;
   justify-content: end;
 
   @media (max-width: 575.97px) {
@@ -42,6 +61,7 @@ const RWDContainerTwo = styled.div`
 
   @media (max-width: 575.97px) {
     display: flex;
+    align-items: center;
     justify-content: end;
   }
 `;
@@ -59,7 +79,7 @@ const Header = () => {
     <NavBar>
       <div className="container">
         <div className="row">
-          <div className="col-6 d-flex align-items-center">
+          <div className="col-6">
             <Logo onClick={() => handleNavigation('home')}>
               X
             </Logo>
@@ -73,7 +93,7 @@ const Header = () => {
                 Projects
               </NavLabel>
               <NavLabel onClick={() => handleNavigation('contactMe')}>
-                Contac
+                Contact
               </NavLabel>
             </div>
           </RWDContainerOne>
