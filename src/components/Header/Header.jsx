@@ -19,7 +19,7 @@ const Logo = styled.h2`
   color: var(--third-color);
 
   @media (max-width: 576px) {
-    font-size: 2.75rem;
+    font-size: 2.5rem;
   }
 `;
 

@@ -16,23 +16,30 @@ const Container = styled.div`
 const NavbarToggle = styled.div`
 
   svg {
-    font-size: 3.5rem;
+    font-size: 3rem;
     color: var(--third-color);
   }
 
 `;
 
-const Label = styled.h1`
+const Label = styled.h2`
   font-size: 5rem;
-  color: var(--third-color);
+  color: var(--second-color);
 `;
 
 const Icon = styled.div`
-
   svg {
     font-size: 3.5rem;
-    color: var(--third-color);
+    color: var(--second-color);
   }
+
+`;
+
+const CloseBtn = styled.button`
+ 
+ &:focus {
+  box-shadow: none;
+ }
 
 `;
 
@@ -74,14 +81,14 @@ const Hamburger = () => {
         </NavbarToggle>
       </div>
       <div
-        style={{ backgroundColor: '#101011' }}
+        style={{ backgroundColor: '#E8E8E8' }}
         className="offcanvas offcanvas-end"
         tabIndex="-1" id="offcanvasNavbar"
         aria-labelledby="offcanvasRightLabel"
         ref={offcanvasRef}
       >
-        <div className="offcanvas-header bg-white d-flex justify-content-end">
-          <button type="button" className="btn-close fs-4" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        <div className="offcanvas-header d-flex justify-content-end">
+          <CloseBtn type="button" className="btn-close fs-4" data-bs-dismiss="offcanvas" aria-label="Close"></CloseBtn>
         </div>
         <div className="offcanvas-body d-flex flex-column justify-content-around">
           <div className='d-flex flex-column text-center gap-3'>
