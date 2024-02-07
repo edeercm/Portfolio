@@ -38,7 +38,7 @@ const ProjectOne = () => {
                 </div>
                 <div className="col-12 col-md-6 col-xl-6">
                   <Content>
-                    <Label>A personal project developed by me for the Alura challenge. Built with HTML, CSS, and JavaScript.</Label>
+                    <Label>Project developed by me for the Alura challenge. Built with HTML, CSS, and JavaScript.</Label>
                     <Btn
                       href="https://edeercm.github.io/EncriptadorDeTextoAlura/"
                       target='_blank'
