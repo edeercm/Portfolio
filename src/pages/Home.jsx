@@ -79,7 +79,7 @@ const Icon = styled.div`
   }
 
   @media (max-width: 575.97px) {
-    font-size: 2.25rem;
+    font-size: 2.5rem;
   }
 `;
 
@@ -106,7 +106,7 @@ const Home = () => {
       <div className="container">
         <div className="row gap-4">
           <div className="col-lg-12 mt-md-3 mt-xl-0">
-            <Label>Hello I'm Eder</Label>
+            <Label>Hi, I'm Eder</Label>
             <Label>Front-end <br />  Web Developer</Label>
             <LabelTwo>and a Electromechanical engineer.</LabelTwo>
           </div>
