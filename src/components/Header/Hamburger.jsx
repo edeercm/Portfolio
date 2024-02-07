@@ -24,7 +24,7 @@ const NavbarToggle = styled.div`
 `;
 
 const Label = styled.h2`
-  font-size: 5rem;
+  font-size: 4.25rem;
   color: var(--second-color);
 `;
 
