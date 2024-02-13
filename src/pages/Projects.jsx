@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import ProjectOne from '../components/Projects/ProjectOne';
 import ProjectTwo from '../components/Projects/ProjectTwo';
 import ProjectThree from '../components/Projects/ProjectThree';
+import ProjectFour from '../components/Projects/ProjectFour';
 
 const Section = styled.section`
   width: 100%;
@@ -27,6 +28,7 @@ const Projects = () => {
       <ProjectOne />
       <ProjectTwo />
       <ProjectThree />
+      <ProjectFour />
     </Section>
   </>
 }
