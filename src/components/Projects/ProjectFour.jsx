@@ -32,15 +32,15 @@ const ProjectFour = () => {
               <div className="row">
                 <div className="col-12 col-md-6 col-xl-6 d-flex justify-content-center">
                   <div className='text-center text-md-start text-xl-start'>
-                    <Title>Fylo</Title>
+                    <Title>Space tourism</Title>
                     <Subtitle>Frontend Mentor challenge</Subtitle>
                   </div>
                 </div>
                 <div className="col-12 col-md-6 col-xl-6">
                   <Content>
-                    <Label>A responsive landing page built with React + Vite, Bootstrap, and styled-components.</Label>
+                    <Label>A responsive multi-page website built with React, Bootstrap, and styled-components.</Label>
                     <Btn
-                      href="https://fylosecurity.netlify.app/"
+                      href="https://spacetourismproject.netlify.app/"
                       target='_blank'
                       rel="noopener noreferrer"
                     >
