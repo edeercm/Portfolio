@@ -14,7 +14,7 @@ const Label = styled.span`
 
   @media (max-width: 575.97px) {
     width: 100%;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
   }
 `;
 
@@ -29,7 +29,7 @@ const LabelTwo = styled.span`
   }
 
   @media (max-width: 575.97px) {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
   }
 `;
 
