@@ -4,7 +4,7 @@ import Projects from './pages/Projects'
 import Skills from './pages/Skills'
 import Contact from './pages/Contact'
 import './App.css'
-import './Reset.css'
+import './reset.css'
 
 function App() {
   return <>
