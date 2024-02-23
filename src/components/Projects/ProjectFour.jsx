@@ -18,7 +18,6 @@ const Project = styled.div`
 
   @media (max-width: 575.97px) {
     height: 20vh;
-
   }
 `;
 

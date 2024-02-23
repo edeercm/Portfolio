@@ -74,7 +74,7 @@ const Btn = styled.a`
 
 const ContactMe = () => {
   return <>
-    <Section>
+    <Section id='contact'>
       <div className="container">
         <div className="row">
           <div className="col-12">

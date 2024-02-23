@@ -19,7 +19,7 @@ const Title = styled.h1`
 
 const Projects = () => {
   return <>
-    <Section>
+    <Section id='projects'>
       <div className="container">
         <div className='text-center'>
           <Title>Projects.</Title>

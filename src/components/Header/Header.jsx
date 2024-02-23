@@ -93,7 +93,7 @@ const Header = () => {
               <NavLabel onClick={() => handleNavigation('projects')}>
                 Projects
               </NavLabel>
-              <NavLabel onClick={() => handleNavigation('contactMe')}>
+              <NavLabel onClick={() => handleNavigation('contact')}>
                 Contact
               </NavLabel>
             </div>
