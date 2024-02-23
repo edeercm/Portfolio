@@ -6,10 +6,15 @@ const Label = styled.span`
   width: 90%;
   font-size: 1.5rem; 
   color: var(--second-color);
-
-  @media (max-width: 991.98px) {
+  
+  @media (min-width: 575.98px) and (max-width: 991.98px) {
     width: 100%;
     font-size: 1.75rem; 
+  }
+
+  @media (max-width: 575.97px) {
+    width: 100%;
+    font-size: 1.5rem;
   }
 `;
 
@@ -19,8 +24,12 @@ const LabelTwo = styled.span`
   text-decoration: underline;
   text-underline-position: under;
 
-  @media (max-width: 991.98px) {
+  @media (min-width: 575.98px) and (max-width: 991.98px) {
     font-size: 1.75rem; 
+  }
+
+  @media (max-width: 575.97px) {
+    font-size: 1.5rem;
   }
 `;
 
@@ -34,13 +43,10 @@ const Icon = styled.div`
     transform: scale(1.25) rotate(10deg);
   }
 
-  @media (min-width: 575.98px) and (max-width: 991.98px) {
+  @media (max-width: 991.98px) {
     font-size: 2.5rem;
   }
 
-  @media (max-width: 575.97px) {
-    font-size: 2.5rem;
-  }
 `;
 
 const About = () => {
