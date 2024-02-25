@@ -12,7 +12,7 @@ const Name = styled.h1`
   }
 
   @media (max-width: 575.97px) {
-    font-size: 3.5rem;
+    font-size: 3.25rem;
   }
 `;
 
@@ -27,7 +27,7 @@ const Label = styled.h1`
   }
 
   @media (max-width: 575.97px) {
-    font-size: 3.5rem;
+    font-size: 3.25rem;
   }
 `;
 
@@ -41,7 +41,7 @@ const Bachelor = styled.span`
   }
 
   @media (max-width: 575.97px) {
-    font-size: 1.375rem;
+    font-size: 1.25rem;
   }
 `;
 

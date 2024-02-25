@@ -18,7 +18,7 @@ const Section = styled.section`
   }
 
   @media (max-width: 575.97px) {
-    padding: 5.75rem 0;
+    padding: 5.75rem 0 3.75rem;
   }
 `;
 
