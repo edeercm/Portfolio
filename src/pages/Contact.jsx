@@ -1,7 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { FaLinkedin } from "react-icons/fa";
-import { MdAlternateEmail } from "react-icons/md";
+import Buttons from '../components/Contact/Buttons';
 
 const Section = styled.section`
   width: 100%;
@@ -36,42 +35,6 @@ const Label = styled.h1`
   }
 `;
 
-const Btn = styled.a`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.25rem;
-  width: 10rem;
-  height: 2.25rem;
-  color: #3F01A8;
-  text-decoration: none;
-  background-color: transparent;
-  border: 0.05rem solid #3F01A8;
-  transition: background-color 0.5s;
-
-  svg {
-    font-size: 1.5rem;
-  }
-
-  &:hover {
-    border: none;
-    background-color: var(--second-color);
-
-    svg, span {
-      font-weight: bold;
-      color: var(--third-color);
-    }
-  }
-
-
-  @media (min-width: 575.98px) and (max-width: 991.98px) {
-  }
-
-  @media (max-width: 575.97px) {
-
-  }
-`;
-
 const ContactMe = () => {
   return <>
     <Section id='contact'>
@@ -80,23 +43,7 @@ const ContactMe = () => {
           <div className="col-12">
             <h1>Already have a design in mind?</h1>
             <Label>Let's connect</Label>
-            <div className='d-flex flex-row gap-3'>
-              <Btn
-                href="https://www.linkedin.com/in/edeercm/"
-                target='_blank'
-                rel="noopener noreferrer"
-              >
-                <FaLinkedin />
-                <span>Message me</span>
-              </Btn>
-              <Btn
-                href="mailto:eder.cadena@gmail.com"
-                rel="noopener noreferrer"
-              >
-                <MdAlternateEmail />
-                <span>Get in touch</span>
-              </Btn>
-            </div>
+            <Buttons />
           </div>
         </div>
       </div>
