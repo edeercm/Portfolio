@@ -16,10 +16,10 @@ const NavBar = styled.header`
 const Logo = styled.h2`
   cursor: pointer;
   font-weight: bold;
+  font-size: 2rem;
   color: var(--third-color);
 
   @media (max-width: 576px) {
-    font-size: 2rem;
     margin-left: 0.25rem;
   }
 `;
