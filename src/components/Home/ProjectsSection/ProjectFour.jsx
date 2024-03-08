@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Card, Title, Subtitle, Content, Label, Btn } from './ProjectsGlobalStyles';
-import projectBanner from '../../assets/images/projects/projectone.png'
+import projectBanner from '../../../assets/images/projects/projectfour.png'
 
 const Project = styled.div`
   width: 100%;
@@ -18,11 +18,10 @@ const Project = styled.div`
 
   @media (max-width: 575.97px) {
     height: 20vh;
-
   }
 `;
 
-const ProjectOne = () => {
+const ProjectFour = () => {
   return <>
     <div className='d-flex justify-content-center'>
       <Card>
@@ -32,15 +31,15 @@ const ProjectOne = () => {
               <div className="row">
                 <div className="col-12 col-md-6 col-xl-6 d-flex justify-content-center">
                   <div className='text-center text-md-start text-xl-start'>
-                    <Title>Encrypter</Title>
-                    <Subtitle>Alura challenge</Subtitle>
+                    <Title>Space tourism</Title>
+                    <Subtitle>Frontend Mentor challenge</Subtitle>
                   </div>
                 </div>
                 <div className="col-12 col-md-6 col-xl-6">
                   <Content>
-                    <Label>Project developed by me for the Alura challenge. Built with HTML, CSS, and JavaScript.</Label>
+                    <Label>A responsive multi-page website built with React, Bootstrap, and styled-components.</Label>
                     <Btn
-                      href="https://edeercm.github.io/EncriptadorDeTextoAlura/"
+                      href="https://spacetourismproject.netlify.app/"
                       target='_blank'
                       rel="noopener noreferrer"
                     >
@@ -60,4 +59,4 @@ const ProjectOne = () => {
   </>
 }
 
-export default ProjectOne
+export default ProjectFour

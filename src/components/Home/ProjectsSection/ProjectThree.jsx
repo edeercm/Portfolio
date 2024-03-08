@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Card, Title, Subtitle, Content, Label, Btn } from './ProjectsGlobalStyles';
-import projectBanner from '../../assets/images/projects/projecthree.png'
+import projectBanner from '../../../assets/images/projects/projecthree.png'
 
 const Project = styled.div`
   width: 90%;

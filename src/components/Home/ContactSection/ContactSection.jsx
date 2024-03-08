@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import Buttons from '../components/Contact/Buttons';
+import Buttons from './Buttons';
 
 const Section = styled.section`
   width: 100%;
@@ -37,7 +37,7 @@ const Label = styled.h1`
 
 const ContactMe = () => {
   return <>
-    <Section id='contact'>
+    <Section>
       <div className="container">
         <div className="row">
           <div className="col-12">
@@ -47,7 +47,6 @@ const ContactMe = () => {
           </div>
         </div>
       </div>
-
     </Section >
   </>
 }

@@ -1,45 +1,44 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Card, Title, Subtitle, Content, Label, Btn } from './ProjectsGlobalStyles';
-import projectBanner from '../../assets/images/projects/projectfour.png'
+import projectBanner from '../../../assets/images/projects/projectwo.png'
 
 const Project = styled.div`
-  width: 100%;
-  height: 45vh;
+  width: 90%;
+  height: 50vh;
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
   background-image: url(${projectBanner});
 
   @media (min-width: 575.98px) and (max-width: 991.98px) {
-    width: 95%;
-    height: 34vh;
+    height: 39vh;
   }
 
   @media (max-width: 575.97px) {
-    height: 20vh;
+    height: 24vh;
   }
 `;
 
-const ProjectFour = () => {
+const ProjectTwo = () => {
   return <>
     <div className='d-flex justify-content-center'>
       <Card>
         <div className="container">
           <div className='row'>
-            <div className="col-12 mb-xl-5">
+            <div className="col-12 mb-5">
               <div className="row">
                 <div className="col-12 col-md-6 col-xl-6 d-flex justify-content-center">
                   <div className='text-center text-md-start text-xl-start'>
-                    <Title>Space tourism</Title>
-                    <Subtitle>Frontend Mentor challenge</Subtitle>
+                    <Title>SNKRS</Title>
+                    <Subtitle>Created by me</Subtitle>
                   </div>
                 </div>
                 <div className="col-12 col-md-6 col-xl-6">
                   <Content>
-                    <Label>A responsive multi-page website built with React, Bootstrap, and styled-components.</Label>
+                    <Label>A unique e-commerce experience. Engineered with Bootstrap and curated libraries for a stylish design.</Label>
                     <Btn
-                      href="https://spacetourismproject.netlify.app/"
+                      href="https://snkrslabs.netlify.app/"
                       target='_blank'
                       rel="noopener noreferrer"
                     >
@@ -59,4 +58,4 @@ const ProjectFour = () => {
   </>
 }
 
-export default ProjectFour
+export default ProjectTwo 

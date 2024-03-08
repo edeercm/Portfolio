@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components'
-import SkillCards from '../components/Skills/SkillCards';
+import SkillsCards from './SkillsCards';
 
 const Section = styled.section`
   width: 100%;
@@ -34,12 +34,12 @@ const Label = styled.h1`
 const Skills = () => {
 
   return <>
-    <Section id='skills'>
+    <Section>
       <div className='container'>
         <div className="row">
           <div className="col-12 d-flex flex-column text-center align-items-center gap-5">
             <Label>Key Skills.</Label>
-            <SkillCards />
+            <SkillsCards />
           </div>
         </div>
       </div>
