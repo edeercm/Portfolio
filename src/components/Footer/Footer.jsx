@@ -38,22 +38,22 @@ const Footer = () => {
       <div className='container'>
         <div className="row">
           <div className="col-12">
-            <div className="row">
-              <div className="col-6">
+            <div className="row gap-2 gap-md-0">
+              <div className="col-12 col-md-6 d-flex justify-content-center justify-content-md-start">
                 <FooterLabels />
               </div>
-              <div className="col-6 text-end">
+              <div className="col-12 col-md-6 text-center text-md-end">
                 <Ubi>Ver, MX</Ubi>
               </div>
             </div>
+            <Line></Line>
           </div>
-          <Line></Line>
-          <div className="col-12 mt-5">
-            <div className="row">
-              <div className="col-6">
+          <div className="col-12 mt-4 mt-md-5">
+            <div className="row gap-3 gap-md-0">
+              <div className="col-12 col-md-6 text-center text-md-start">
                 <Copyright>&#169; Eder | 2024</Copyright>
               </div>
-              <div className="col-6 d-flex justify-content-end">
+              <div className="col-12 col-md-6 d-flex justify-content-center justify-content-md-end">
                 <FooterIcons />
               </div>
             </div>

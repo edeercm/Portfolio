@@ -21,8 +21,8 @@ const projsData = [
   },
   {
     "id": 3,
-    "title": "Eve's Portfolio",
-    "subtitle": "Code developed by me",
+    "title": "Eve's Pf.",
+    "subtitle": "Code by me",
     "desc": "Developed with React + Vite, enriched with styled-components and Bootstrap.",
     "link": "https://eacreativestudio.netlify.app/",
     "image": projecthree

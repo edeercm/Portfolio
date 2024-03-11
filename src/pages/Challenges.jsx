@@ -15,6 +15,14 @@ const Title = styled.h4`
   font-size: 5rem;
   font-weight: bold;
   color: var(--main-color);
+
+  @media (min-width: 575.98px) and (max-width: 991.98px) {
+    font-size: 6rem;
+  }
+
+  @media (max-width: 575.97px) {
+
+  }
 `;
 
 const Challenges = () => {

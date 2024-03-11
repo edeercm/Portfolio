@@ -10,7 +10,7 @@ export const Card = styled.div`
   background-color: var(--alternative-color);
 
   @media (min-width: 575.98px) and (max-width: 991.98px) {
-    width: 90%;
+    width: 95%;
     height: auto;
     padding: 5rem 0;
   }

@@ -22,7 +22,7 @@ const chlsData = [
   },
   {
     "id": 3,
-    "title": "Space tourism",
+    "title": "Space",
     "subtitle": "Challenge",
     "desc": "Multi-page website developed with React, Bootstrap, styled-componets and react-router-dom.",
     "link": "https://spacetourismproject.netlify.app/",
@@ -30,7 +30,7 @@ const chlsData = [
   },
   {
     "id": 4,
-    "title": "IP Addr Tracker",
+    "title": "IP Addr",
     "subtitle": "Challenge",
     "desc": "To build this app i am using the IP Geolocation API by IPify, bootstrap and styled-componets. ",
     "link": "https://ipaddresstrk.netlify.app/",
