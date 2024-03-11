@@ -2,40 +2,24 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 import styled from 'styled-components'
 
-const LabelsCont = styled.ul`
+const BurgerLabelCont = styled.ul`
   display: flex;
-  flex-direction: row;
+  align-items: center;
+  flex-direction: column;
   gap: 0.75rem;
 
   a {
-    position: relative;
-    cursor: pointer;
-    font-size: 1.25rem;
+    font-size: 3rem;
+    font-weight: bold;
     text-transform: uppercase;
-    color: var(--third-color);
-
-    &::after {
-      content: '';
-      position: absolute;
-      bottom: 0;
-      right: 0;
-      width: 0;
-      height: 0.175rem;
-      background-color: var(--third-color);
-      transition: width 0.35s ease-out, right 0.35s ease-in;
-    }
-
-    &:hover::after {
-      width: 100%;
-      left: 0;
-    }
+    color: var(--second-color);
   }
 `;
 
-const HeaderLabels = () => {
+const BurgerLabels = () => {
   return <>
-    <nav className='d-none d-md-flex'>
-      <LabelsCont>
+    <nav className='mt-5'>
+      <BurgerLabelCont>
         <li><Link to={'/'}>Home</Link></li>
         <li><Link to={'projects'}>Projects</Link></li>
         <li><Link to={'contact'}>Contact</Link></li>
@@ -48,9 +32,9 @@ const HeaderLabels = () => {
             Resume
           </a>
         </li>
-      </LabelsCont>
+      </BurgerLabelCont>
     </nav>
   </>
 }
 
-export default HeaderLabels
+export default BurgerLabels

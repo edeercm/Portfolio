@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import styled from 'styled-components'
-import Hamburger from './Hamburger';
+import Burger from './Burger';
 
 import HeaderLabels from './HeaderLabels';
 
@@ -39,7 +39,7 @@ const Header = () => {
           </div>
           <div className="col-6 d-flex justify-content-end align-items-center">
             <HeaderLabels />
-            <Hamburger />
+            <Burger />
           </div>
         </div>
       </div>
