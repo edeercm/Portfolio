@@ -32,7 +32,7 @@ const chlsData = [
     "id": 4,
     "title": "IP Addr",
     "subtitle": "Challenge",
-    "desc": "To build this app i am using the IP Geolocation API by IPify, bootstrap and styled-componets. ",
+    "desc": "To build this app I am using the IP Geolocation API by IPify, bootstrap and styled-componets. ",
     "link": "https://ipaddresstrk.netlify.app/",
     "image": chlsfour
   },
