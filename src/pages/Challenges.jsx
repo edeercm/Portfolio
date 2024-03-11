@@ -10,9 +10,10 @@ const Section = styled.section`
   background-color: var(--third-color);
 `;
 
-const Title = styled.h1`
+const Title = styled.h4`
   margin-top: 2.5rem;
-  font-size: 6.25rem;
+  font-size: 5rem;
+  font-weight: bold;
   color: var(--second-color);
 `;
 
@@ -20,7 +21,7 @@ const Challenges = () => {
   return <>
     <Section>
       <div className='container text-center'>
-        <Title>Frontend Mentor.</Title>
+        <Title>Frontend Mentor</Title>
       </div>
       <div>
         {chlsData.map((chls) => (

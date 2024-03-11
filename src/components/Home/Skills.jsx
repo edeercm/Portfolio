@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components'
-import SkillsCards from '../Skills/SkillsCards'
+import SkillsCards from './SkillsCards'
 
 const Section = styled.section`
   width: 100%;
@@ -8,7 +8,7 @@ const Section = styled.section`
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--second-color);
+  background-color: var(--third-color);
 
   @media (min-width: 575.98px) and (max-width: 991.98px) {
   }
@@ -19,10 +19,10 @@ const Section = styled.section`
   }
 `;
 
-const Label = styled.h1`
+const Label = styled.h4`
   font-size: 5rem;
   font-weight: bold;
-  color: var(--third-color);
+  color: var(--main-color);
 
   @media (min-width: 575.98px) and (max-width: 991.98px) {
   }
@@ -38,7 +38,7 @@ const Skills = () => {
       <div className='container'>
         <div className="row">
           <div className="col-12 d-flex flex-column text-center align-items-center gap-5">
-            <Label>Key Skills.</Label>
+            <Label>Skills.</Label>
             <SkillsCards />
           </div>
         </div>

@@ -11,9 +11,10 @@ const Section = styled.section`
   background-color: var(--third-color);
 `;
 
-const Title = styled.h1`
+const Title = styled.h4`
   margin-top: 2.5rem;
-  font-size: 7.5rem;
+  font-size: 5rem;
+  font-weight: bold;
   color: var(--second-color);
 `;
 

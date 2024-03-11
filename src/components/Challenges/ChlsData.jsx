@@ -7,7 +7,7 @@ const chlsData = [
   {
     "id": 1,
     "title": "Fylo",
-    "subtitle": "Frontend Mentor",
+    "subtitle": "Challenge",
     "desc": "Landing page developed with React, Bootstrap and styled-componets.",
     "link": "https://fylosecurity.netlify.app/",
     "image": chlsone  
@@ -15,7 +15,7 @@ const chlsData = [
   {
     "id": 2,
     "title": "Room",
-    "subtitle": "Frontend Mentor",
+    "subtitle": "Challenge",
     "desc": "This small homepage challenge developed with React, Bootstrap and styled-componets.",
     "link": "https://roomfurn.netlify.app/",
     "image": chlstwo
@@ -23,7 +23,7 @@ const chlsData = [
   {
     "id": 3,
     "title": "Space tourism",
-    "subtitle": "Frontend Mentor",
+    "subtitle": "Challenge",
     "desc": "Multi-page website developed with React, Bootstrap, styled-componets and react-router-dom.",
     "link": "https://spacetourismproject.netlify.app/",
     "image": chlsthree
@@ -31,7 +31,7 @@ const chlsData = [
   {
     "id": 4,
     "title": "IP Addr Tracker",
-    "subtitle": "Frontend Mentor",
+    "subtitle": "Challenge",
     "desc": "To build this app i am using the IP Geolocation API by IPify, bootstrap and styled-componets. ",
     "link": "https://ipaddresstrk.netlify.app/",
     "image": chlsfour

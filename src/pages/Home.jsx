@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import Intro from '../components/Home/Intro';
 import About from '../components/Home/About';
 import img from '../assets/images/home/me2.jpg'
-import Skills from '../components/Skills/Skills'
+import Skills from '../components/Home/Skills'
 
 
 const Section = styled.section`
