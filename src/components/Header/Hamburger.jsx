@@ -1,122 +1,96 @@
 import React, { useRef } from 'react';
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import { HiBars3BottomRight } from 'react-icons/hi2';
+
+import HeaderLabels from './HeaderLabels';
 import { AiFillLinkedin, AiFillGithub, AiOutlineInstagram } from 'react-icons/ai';
 
-const Container = styled.div`
-  display: none;
 
-  @media (max-width: 576px) {
-    display: flex;
-    align-items: center;
-    justify-content: end;
-  }
-`;
-
-const NavbarToggle = styled.div`
-
-  svg {
-    margin-right: 0.25rem;
-    font-size: 2.5rem;
-    color: var(--third-color);
-  }
-
-`;
-
-const Label = styled.h2`
-  font-size: 4.25rem;
-  color: var(--second-color);
-`;
-
-const Icon = styled.div`
-  svg {
-    font-size: 3.5rem;
-    color: var(--second-color);
-  }
-
-`;
+const HamBtn = styled.button`
+ svg {
+  font-size: 2.75rem;
+  color: var(--third-color);
+ }
+`
 
 const CloseBtn = styled.button`
- 
- &:focus {
-  box-shadow: none;
- }
+  &:focus {
+    box-shadow: none;
+  }
+`
 
+const LabelsCont = styled.ul`
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.75rem;
+
+  a {
+    position: relative;
+    cursor: pointer;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    color: var(--second-color);
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 0;
+      height: 0.175rem;
+      background-color: var(--third-color);
+      transition: width 0.35s ease-out, right 0.35s ease-in;
+    }
+
+    &:hover::after {
+      width: 100%;
+      left: 0;
+    }
+  }
 `;
 
 const Hamburger = () => {
-
-  const offcanvasRef = useRef(null);
-
-  const handleNavigation = (id) => {
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-    closeOffcanvas();
-  };
-
-  const closeOffcanvas = () => {
-    if (offcanvasRef.current) {
-      offcanvasRef.current.classList.remove('show');
-      // Elimina el fondo oscuro
-      const backdrop = document.querySelector('.offcanvas-backdrop');
-      if (backdrop) {
-        backdrop.remove();
-      }
-      // Reactiva el scroll después de cerrar el offcanvas
-      document.body.style.overflow = 'auto';
-    }
-  };
-
   return <>
-    <Container>
-      <div className="navbar-toggle"
+    <div className='d-flex d-md-none'>
+      <HamBtn
         type="button"
         data-bs-toggle="offcanvas"
-        data-bs-target="#offcanvasNavbar"
-        aria-controls="offcanvasNavbar"
+        data-bs-target="#offcanvasRight"
+        aria-controls="offcanvasRight"
       >
-        <NavbarToggle>
-          <HiBars3BottomRight />
-        </NavbarToggle>
-      </div>
+        <HiBars3BottomRight />
+      </HamBtn>
       <div
-        style={{ backgroundColor: '#E8E8E8' }}
         className="offcanvas offcanvas-end"
-        tabIndex="-1" id="offcanvasNavbar"
+        tabIndex="-1"
+        id="offcanvasRight"
         aria-labelledby="offcanvasRightLabel"
-        ref={offcanvasRef}
       >
-        <div className="offcanvas-header d-flex justify-content-end">
-          <CloseBtn type="button" className="btn-close fs-4" data-bs-dismiss="offcanvas" aria-label="Close"></CloseBtn>
+        <div class="offcanvas-header">
+          <CloseBtn type="button" className="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></CloseBtn>
         </div>
-        <div className="offcanvas-body d-flex flex-column justify-content-around">
-          <div className='d-flex flex-column text-center gap-3'>
-            <div onClick={() => handleNavigation('skills')}><Label>Skills</Label></div>
-            <div onClick={() => handleNavigation('projects')}> <Label>Projects</Label></div>
-            <div onClick={() => handleNavigation('contactMe')}><Label>Contact</Label></div>
-          </div>
-          <div className='d-flex flex-row justify-content-center gap-3'>
-            <a href="https://www.linkedin.com/in/edeercm/" target="_blank" rel="noopener noreferrer">
-              <Icon>
-                <AiFillLinkedin />
-              </Icon>
-            </a>
-            <a href="https://github.com/edeercm" target="_blank" rel="noopener noreferrer">
-              <Icon>
-                <AiFillGithub />
-              </Icon>
-            </a>
-            <a href="https://www.instagram.com/edeercm/" target="_blank" rel="noopener noreferrer">
-              <Icon>
-                <AiOutlineInstagram />
-              </Icon>
-            </a>
-          </div>
+        <div className="offcanvas-body">
+          <nav>
+            <LabelsCont>
+              <li>
+                <Link to={'/'}>Home</Link>
+              </li>
+              <li>
+                <Link to={'projects'}>Projects</Link>
+              </li>
+              <li>
+                <Link to={'contact'}>Contact</Link>
+              </li>
+              <li>
+                <a href="">Resume</a>
+              </li>
+            </LabelsCont>
+          </nav>
         </div>
       </div>
-    </Container>
+    </div>
 
   </>
 }
