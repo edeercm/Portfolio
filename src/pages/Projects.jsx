@@ -15,7 +15,7 @@ const Title = styled.h4`
   margin-top: 2.5rem;
   font-size: 5rem;
   font-weight: bold;
-  color: var(--second-color);
+  color: var(--main-color);
 `;
 
 const Projects = () => {
