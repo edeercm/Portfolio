@@ -1,6 +1,6 @@
-import React from 'react'
+import React from 'react';
 import styled from 'styled-components'
-import Buttons from './Buttons';
+import SkillsCards from '../Skills/SkillsCards'
 
 const Section = styled.section`
   width: 100%;
@@ -8,47 +8,44 @@ const Section = styled.section`
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #E8E8E8;
-
-  a {
-    text-decoration: none;
-  }
+  background-color: var(--second-color);
 
   @media (min-width: 575.98px) and (max-width: 991.98px) {
   }
 
   @media (max-width: 575.97px) {
+    height: auto;
+    padding: 7.5rem 0;
   }
 `;
 
 const Label = styled.h1`
-  color: #3F01A8;
-  font-size: 7.5rem;
+  font-size: 5rem;
   font-weight: bold;
+  color: var(--third-color);
 
   @media (min-width: 575.98px) and (max-width: 991.98px) {
-    font-size: 6.5rem;
   }
 
   @media (max-width: 575.97px) {
-    font-size: 6.5rem;
   }
 `;
 
-const ContactMe = () => {
+const Skills = () => {
+
   return <>
     <Section>
-      <div className="container">
+      <div className='container'>
         <div className="row">
-          <div className="col-12">
-            <h1>Already have a design in mind?</h1>
-            <Label>Let's connect</Label>
-            <Buttons />
+          <div className="col-12 d-flex flex-column text-center align-items-center gap-5">
+            <Label>Key Skills.</Label>
+            <SkillsCards />
           </div>
         </div>
       </div>
-    </Section >
+    </Section>
   </>
+
 }
 
-export default ContactMe
+export default Skills

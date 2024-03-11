@@ -32,15 +32,15 @@ figure {
 }
 
 /* Reseteamos los enlaces para funcionar como cajas... */
-a {
+/* a {
   display: block;
   text-decoration: none;
   color: inherit;
   font-size: inherit;
-}
+} */
 
 /* ... excepto los que se encuentran en párrafos */
-p a {
+p {
   display: inline;
 }
 
@@ -134,11 +134,11 @@ td {
 }
 
 /* Evitamos problemas con los SVG */
-svg {
+/* svg {
   width: 100%;
   display: block;
   fill: currentColor;
-}
+} */
 
 /* Configuramos la tipografía para toda la web */
 body {

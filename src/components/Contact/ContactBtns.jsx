@@ -31,7 +31,7 @@ const Btn = styled.a`
   }
 `;
 
-const Buttons = () => {
+const ContactBtns = () => {
   return <>
     <div className='d-flex flex-row gap-3'>
       <Btn
@@ -53,4 +53,4 @@ const Buttons = () => {
   </>
 }
 
-export default Buttons
+export default ContactBtns

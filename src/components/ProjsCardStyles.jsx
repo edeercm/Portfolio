@@ -46,13 +46,12 @@ export const Subtitle = styled.h3`
   }
 `;
 
-export const Content = styled.div`
+export const DescriptionCont = styled.div`
   width: 80%;
   display: flex;
   flex-direction: column;
   gap: 1.75rem;
 
- 
   @media (min-width: 575.98px) and (max-width: 991.98px) {
     width: 90%;
   }
@@ -65,7 +64,7 @@ export const Content = styled.div`
   }
 `;
 
-export const Label = styled.span`
+export const Desc = styled.span`
   color: var(--third-color);
 
   @media (min-width: 575.98px) and (max-width: 991.98px) {
@@ -76,7 +75,7 @@ export const Label = styled.span`
   }
 `;
 
-export const Btn = styled.a`
+export const ViewBtn = styled.a`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -102,6 +101,21 @@ export const Btn = styled.a`
   }
 
   @media (max-width: 575.97px) {
+  }
+`;
+
+export const ProjectImg = styled.img`
+  height: 50vh;
+  object-fit: contain;
+  object-position: center;
+
+  @media (min-width: 575.98px) and (max-width: 991.98px) {
+    width: 95%;
+    height: 34vh;
+  }
+
+  @media (max-width: 575.97px) {
+    height: 20vh;
   }
 `;
 

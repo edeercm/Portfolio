@@ -1,6 +1,6 @@
-import React from 'react';
+import React from 'react'
 import styled from 'styled-components'
-import SkillsCards from './SkillsCards';
+import ContactBtns from '../components/Contact/ContactBtns';
 
 const Section = styled.section`
   width: 100%;
@@ -8,44 +8,47 @@ const Section = styled.section`
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--second-color);
+  background-color: #E8E8E8;
+
+  a {
+    text-decoration: none;
+  }
 
   @media (min-width: 575.98px) and (max-width: 991.98px) {
   }
 
   @media (max-width: 575.97px) {
-    height: auto;
-    padding: 7.5rem 0;
   }
 `;
 
 const Label = styled.h1`
-  font-size: 5rem;
+  color: #3F01A8;
+  font-size: 7.5rem;
   font-weight: bold;
-  color: var(--third-color);
 
   @media (min-width: 575.98px) and (max-width: 991.98px) {
+    font-size: 6.5rem;
   }
 
   @media (max-width: 575.97px) {
+    font-size: 6.5rem;
   }
 `;
 
-const Skills = () => {
-
+const Contact = () => {
   return <>
     <Section>
-      <div className='container'>
+      <div className="container">
         <div className="row">
-          <div className="col-12 d-flex flex-column text-center align-items-center gap-5">
-            <Label>Key Skills.</Label>
-            <SkillsCards />
+          <div className="col-12">
+            <h1>Already have a design in mind?</h1>
+            <Label>Let's connect</Label>
+            <ContactBtns />
           </div>
         </div>
       </div>
-    </Section>
+    </Section >
   </>
-
 }
 
-export default Skills
+export default Contact

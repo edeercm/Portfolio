@@ -3,10 +3,10 @@
 @import url('https://fonts.cdnfonts.com/css/manjari-2');
 @import url('https://fonts.cdnfonts.com/css/present-anthem');
 
-
 :root {
   --main-color: #3F01A8;
-  --second-color: #101011;
+  /* --second-color: #101011; */
+  --second-color: #181818;
   --third-color: #E8E8E8;
   --alternative-color: #171719;
 }
@@ -20,6 +20,7 @@ h2 {
 }
 
 h3,
-span {
+span,
+a {
   font-family: 'Manjari', sans-serif;
 }

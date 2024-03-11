@@ -33,7 +33,7 @@ const Label = styled.h1`
 
 const Bachelor = styled.span`
   font-weight: bold;
-  font-size: 1.75rem;
+  font-size: 2rem;
   color: var(--main-color);
 
   @media (min-width: 575.98px) and (max-width: 991.98px) {

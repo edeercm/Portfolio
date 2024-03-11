@@ -1,8 +1,40 @@
 import React from 'react'
+import styled from 'styled-components'
+import chlsData from '../components/Challenges/ChlsData'
+import ChlsCard from '../components/Challenges/ChlsCard';
+
+const Section = styled.section`
+  width: 100%;
+  height: auto;
+  padding: 7.5rem 0;
+  background-color: var(--third-color);
+`;
+
+const Title = styled.h1`
+  margin-top: 2.5rem;
+  font-size: 6.25rem;
+  color: var(--second-color);
+`;
 
 const Challenges = () => {
   return <>
-  <h1 className='fs-1 text-black'>SPAN</h1>
+    <Section>
+      <div className='container text-center'>
+        <Title>Frontend Mentor.</Title>
+      </div>
+      <div>
+        {chlsData.map((chls) => (
+          <ChlsCard
+            key={chls.id}
+            title={chls.title}
+            subtitle={chls.subtitle}
+            desc={chls.desc}
+            link={chls.link}
+            image={chls.image}
+          />
+        ))}
+      </div>
+    </Section>
   </>
 }
 

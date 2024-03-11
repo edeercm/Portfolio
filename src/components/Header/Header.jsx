@@ -1,19 +1,20 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import styled from 'styled-components'
 import Hamburger from './Hamburger';
 
-const NavBar = styled.header`
+const HeaderStyle = styled.header`
   position: fixed;
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 9vh;
+  height: 10vh;
   z-index: 10;
   background-color: var(--second-color);
 `;
 
-const Logo = styled.h2`
+const Logo = styled.div`
   cursor: pointer;
   font-weight: bold;
   font-size: 2rem;
@@ -24,21 +25,22 @@ const Logo = styled.h2`
   }
 `;
 
-const NavLabel = styled.h2`
+const NavLabel = styled.span`
   position: relative;
   cursor: pointer;
-  font-size: 2rem;
+  font-size: 1.5rem;
+  text-transform: uppercase;
   color: var(--third-color);
 
   &::after {
     content: '';
     position: absolute;
     bottom: 0;
-    right: 0; /* Ajuste para que la línea comience desde el lado derecho */
+    right: 0;
     width: 0;
     height: 0.175rem;
     background-color: var(--third-color);
-    transition: width 0.35s ease-out, right 0.35s ease-in; /* Agregamos right a la transición */
+    transition: width 0.35s ease-out, right 0.35s ease-in;
   }
 
   &:hover::after {
@@ -49,7 +51,7 @@ const NavLabel = styled.h2`
 
 const RWDContainerOne = styled.div`
   display: flex;
-  align-items: center;
+  
   justify-content: end;
 
   @media (max-width: 575.97px) {
@@ -69,33 +71,30 @@ const RWDContainerTwo = styled.div`
 
 const Header = () => {
 
-  const handleNavigation = (id) => {
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
-
   return <>
-    <NavBar>
+    <HeaderStyle>
       <div className="container">
         <div className="row">
           <div className="col-6">
-            <Logo onClick={() => handleNavigation('home')}>
-              X
-            </Logo>
+            <Link to={'/'}>
+              <Logo>X</Logo>
+            </Link>
           </div>
           <RWDContainerOne className="col-6">
-            <div className='d-flex flex-row align-items-center gap-3'>
-              <NavLabel onClick={() => handleNavigation('skills')}>
-                Skills
-              </NavLabel>
-              <NavLabel onClick={() => handleNavigation('projects')}>
-                Projects
-              </NavLabel>
-              <NavLabel onClick={() => handleNavigation('contact')}>
-                Contact
-              </NavLabel>
+            <div className='d-flex flex-row gap-4'>
+              <Link to={'projects'} className='d-flex align-items-center'>
+                <NavLabel>Projects</NavLabel>
+              </Link>
+              <Link to={'contact'} className='d-flex align-items-center'>
+                <NavLabel>Contact</NavLabel>
+              </Link>
+              <a
+                href="https://drive.google.com/file/d/1D_jmMSCdab7MHIswD3SB6bmHcl_eHX8b/view?usp=sharing"
+                target='_blank'
+                className='d-flex align-items-center'
+              >
+                <NavLabel>Resume</NavLabel>
+              </a>
             </div>
           </RWDContainerOne>
           <RWDContainerTwo className="col-6">
@@ -103,7 +102,7 @@ const Header = () => {
           </RWDContainerTwo>
         </div>
       </div>
-    </NavBar>
+    </HeaderStyle>
   </>
 }
 

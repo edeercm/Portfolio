@@ -1,15 +1,67 @@
 import React from 'react'
-import HeroSection from '../components/Home/HeroSection/HeroSection';
-import SkillsSection from '../components/Home/SkillsSection/SkillsSection';
-import ProjectsSection from '../components/Home/ProjectsSection/ProjectsSection';
-import ContactSection from '../components/Home/ContactSection/ContactSection';
+import styled from 'styled-components'
+import Intro from '../components/Home/Intro';
+import About from '../components/Home/About';
+import img from '../assets/images/home/me2.jpg'
+import Skills from '../components/Skills/Skills'
+
+
+const Section = styled.section`
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 7.5rem 0;
+  background-color: var(--third-color);
+
+  @media (min-width: 575.98px) and (max-width: 991.98px) {
+    padding: 7rem 0;
+  }
+
+  @media (max-width: 575.97px) {
+    padding: 5.75rem 0 3.75rem;
+  }
+`;
+
+const Img = styled.img`
+  width: auto;
+  height: 60svh;
+  object-fit: contain;
+  object-position: center;  
+
+  @media (min-width: 575.98px) and (max-width: 991.98px) {
+    height: auto;
+    margin-bottom: 1.5rem;
+  }
+
+  @media (max-width: 575.97px) {
+    height: auto;
+    margin-bottom: 1.5rem;
+  }
+`;
 
 const Home = () => {
   return <>
-    <HeroSection />
-    <SkillsSection />
-    <ProjectsSection />
-    <ContactSection />
+    <Section>
+      <div className="container">
+        <div className="row gap-4">
+          <div className="col-12 text-center text-xl-start mt-md-3 mt-xl-0">
+            <Intro />
+          </div>
+          <div className="col-12">
+            <div className="row flex-column-reverse flex-xl-row">
+              <div className="col-12 col-xl-6 d-flex align-items-end">
+                <About />
+              </div>
+              <div className="col-12 col-xl-6 d-flex justify-content-center justify-content-xl-end">
+                <Img src={img} alt="Me ;)" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </Section>
+    <Skills/>
   </>
 }
 
