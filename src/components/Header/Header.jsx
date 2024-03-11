@@ -89,7 +89,7 @@ const Header = () => {
                 <NavLabel>Contact</NavLabel>
               </Link>
               <a
-                href="https://drive.google.com/file/d/1D_jmMSCdab7MHIswD3SB6bmHcl_eHX8b/view?usp=sharing"
+                href="https://drive.google.com/file/d/1D_jmMSCdab7MHIswD3SB6bmHcl_eHX8b/view"
                 target='_blank'
                 className='d-flex align-items-center'
               >
