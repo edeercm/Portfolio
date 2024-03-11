@@ -16,7 +16,7 @@ export const Card = styled.div`
   }
 
   @media (max-width: 575.97px) {
-    width: 90%;
+    width: 95%;
     height: auto;
     padding: 5rem 0;
   }
