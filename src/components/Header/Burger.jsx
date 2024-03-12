@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import BurgerLabels from './BurgerLabels';
 import BurgerIcons from './BurgerIcons';
@@ -13,6 +13,13 @@ const HamBtn = styled.button`
 `
 
 const Burger = () => {
+
+  const closeOffcanvas = () => {
+    const offcanvas = document.getElementById('offcanvasRight');
+    const offcanvasInstance = bootstrap.Offcanvas.getInstance(offcanvas);
+    offcanvasInstance.hide(); // Cerrar el offcanvas
+  };
+
   return <>
     <div className='d-flex d-md-none'>
       <HamBtn
@@ -47,7 +54,7 @@ const Burger = () => {
           </button>
         </div>
         <div className="offcanvas-body d-flex flex-column gap-5">
-          <BurgerLabels />
+          <BurgerLabels closeOffcanvas={closeOffcanvas}/>
           <BurgerIcons />
         </div>
       </div>

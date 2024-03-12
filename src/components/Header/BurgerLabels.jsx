@@ -16,17 +16,23 @@ const BurgerLabelCont = styled.ul`
   }
 `;
 
-const BurgerLabels = () => {
+const BurgerLabels = ({ closeOffcanvas }) => {
+
+  const handleLinkClick = () => {
+    closeOffcanvas(); // Llamar a la función de cierre del offcanvas
+  };
+
   return <>
     <nav className='mt-5 pt-4'>
       <BurgerLabelCont>
-        <li><Link to={'/'}>Home</Link></li>
-        <li><Link to={'projects'}>Projects</Link></li>
-        <li><Link to={'contact'}>Contact</Link></li>
+        <li> <Link to={'/'} onClick={handleLinkClick}>Home</Link></li>
+        <li><Link to={'projects'} onClick={handleLinkClick}>Projects</Link></li>
+        <li> <Link to={'contact'} onClick={handleLinkClick}> Contact</Link></li>
         <li>
           <a
             target='_blank'
             rel="noopener noreferrer"
+            onClick={handleLinkClick}
             href="https://onedrive.live.com/embed?resid=E2C6B5F9511FCBD8%21116&authkey=!AAsWJTvZUm0kLiI&em=2"
           >
             Resume

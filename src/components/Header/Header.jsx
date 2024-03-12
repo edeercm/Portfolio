@@ -13,9 +13,6 @@ const HeaderStyle = styled.header`
   z-index: 10;
   background-color: var(--second-color);
 
-  @media (min-width: 575.98px) and (max-width: 991.98px) {
-  }
-
   @media (max-width: 575.97px) {
     height: 7.5svh;
   }
