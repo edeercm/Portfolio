@@ -1,22 +1,15 @@
 import React, { useRef } from 'react';
 import styled from 'styled-components';
-import { HiBars3BottomRight } from 'react-icons/hi2';
 import BurgerLabels from './BurgerLabels';
 import BurgerIcons from './BurgerIcons';
+import { IoMdClose } from "react-icons/io";
+import { HiBars3BottomRight } from 'react-icons/hi2';
 
 const HamBtn = styled.button`
  svg {
   font-size: 2.75rem;
   color: var(--third-color);
  }
-`
-
-const CloseBtn = styled.button`
-  font-size: 1.5rem;
-  
-  &:focus {
-    box-shadow: none;
-  }
 `
 
 const Burger = () => {
@@ -35,15 +28,23 @@ const Burger = () => {
         tabIndex="-1"
         id="offcanvasRight"
         aria-labelledby="offcanvasRightLabel"
+        style={{
+          backgroundColor: 'var(--second-color)'
+        }}
       >
-        <div className="offcanvas-header">
-          <CloseBtn
+        <div className="offcanvas-header d-flex justify-content-end">
+          <button
             type="button"
-            aria-label="Close"
-            className="btn-close"
+            aria-label="close"
             data-bs-dismiss="offcanvas"
           >
-          </CloseBtn>
+            <IoMdClose
+              style={{
+                fontSize: '2.75rem',
+                color: 'var(--third-color)'
+              }}
+            />
+          </button>
         </div>
         <div className="offcanvas-body d-flex flex-column gap-5">
           <BurgerLabels />

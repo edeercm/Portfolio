@@ -9,16 +9,16 @@ const BurgerLabelCont = styled.ul`
   gap: 0.75rem;
 
   a {
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: bold;
     text-transform: uppercase;
-    color: var(--second-color);
+    color: var(--third-color);
   }
 `;
 
 const BurgerLabels = () => {
   return <>
-    <nav className='mt-5'>
+    <nav className='mt-5 pt-4'>
       <BurgerLabelCont>
         <li><Link to={'/'}>Home</Link></li>
         <li><Link to={'projects'}>Projects</Link></li>

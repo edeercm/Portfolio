@@ -10,9 +10,9 @@ const BurgerIconCont = styled.ul`
   gap: 0.75rem;
 
   svg {
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: bold;
-    color: var(--second-color);
+    color: var(--third-color);
   }
 `;
 
