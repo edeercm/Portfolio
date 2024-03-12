@@ -21,17 +21,28 @@ const Section = styled.section`
   }
 `;
 
+const Intro = styled.h1`
+  font-size: 1.25rem;
+  font-weight: bold;
+
+  @media (min-width: 575.98px) and (max-width: 991.98px) {
+  }
+
+  @media (max-width: 575.97px) {
+  }
+`;
+
 const Label = styled.h1`
-  color: #3F01A8;
   font-size: 7.5rem;
   font-weight: bold;
+  color: var(--main-color);
 
   @media (min-width: 575.98px) and (max-width: 991.98px) {
     font-size: 6.5rem;
   }
 
   @media (max-width: 575.97px) {
-    font-size: 6.5rem;
+    font-size: 5.25rem;
   }
 `;
 
@@ -41,7 +52,7 @@ const Contact = () => {
       <div className="container">
         <div className="row">
           <div className="col-12">
-            <h1>Already have a design in mind?</h1>
+            <Intro>Already have a design in mind?</Intro>
             <Label>Let's connect</Label>
             <ContactBtns />
           </div>

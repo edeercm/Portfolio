@@ -16,7 +16,6 @@ const Btn = styled.a`
   transition: background-color 0.5s;
 
   svg {
-    width: auto;
     font-size: 1.5rem;
   }
 
