@@ -7,7 +7,7 @@ import { HiBars3BottomRight } from 'react-icons/hi2';
 
 const OffCStyle = styled.div`
   background-color: var(--second-color);
-  transition: 0.625s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 0.75s cubic-bezier(0.4, 0, 0.2, 1);
 `
 
 const BurgerBtn = styled.button`
