@@ -9,11 +9,10 @@ const Btn = styled.a`
   justify-content: space-evenly;
   width: 10rem;
   height: 2.25rem;
-  text-decoration: none;
   color: var(--main-color);
   background-color: transparent;
   border: 0.05rem solid var(--main-color);
-  transition: background-color 0.5s;
+  transition: background-color 0.5s ease-in-out;
 
   svg {
     font-size: 1.5rem;
@@ -21,9 +20,10 @@ const Btn = styled.a`
 
   &:hover {
     border: none;
+    color: var(--third-color);
     background-color: var(--second-color);
 
-    svg, span {
+    svg {
       font-weight: bold;
       color: var(--third-color);
     }
@@ -39,14 +39,14 @@ const ContactBtns = () => {
         rel="noopener noreferrer"
       >
         <FaLinkedin />
-        <span>Message me</span>
+        Message me
       </Btn>
       <Btn
         href="mailto:eder.cadena@gmail.com"
         rel="noopener noreferrer"
       >
         <MdAlternateEmail />
-        <span>Get in touch</span>
+        Get in touch
       </Btn>
     </div>
   </>
