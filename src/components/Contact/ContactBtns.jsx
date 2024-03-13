@@ -12,7 +12,7 @@ const Btn = styled.a`
   color: var(--main-color);
   background-color: transparent;
   border: 0.05rem solid var(--main-color);
-  transition: background-color 0.5s ease-in-out;
+  transition: background-color 0.75s ease-in-out;
 
   svg {
     font-size: 1.5rem;
