@@ -22,13 +22,11 @@ const Section = styled.section`
 `;
 
 const Intro = styled.h1`
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   font-weight: bold;
 
-  @media (min-width: 575.98px) and (max-width: 991.98px) {
-  }
-
   @media (max-width: 575.97px) {
+    font-size: 1.25rem;
   }
 `;
 

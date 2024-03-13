@@ -1,10 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import BurgerLabels from './BurgerLabels';
 import BurgerIcons from './BurgerIcons';
 import { IoMdClose } from "react-icons/io";
 import { HiBars3BottomRight } from 'react-icons/hi2';
-import './BurgerAnim.css'
 
 const HamBtn = styled.button`
  svg {
@@ -14,12 +13,6 @@ const HamBtn = styled.button`
 `
 
 const Burger = () => {
-
-  const [isOpen, setIsOpen] = useState(false);
-
-  const toggleOffcanvas = () => {
-    setIsOpen(!isOpen);
-  };
 
   const closeOffcanvas = () => {
     const offcanvas = document.getElementById('offcanvasRight');
@@ -38,7 +31,7 @@ const Burger = () => {
         <HiBars3BottomRight />
       </HamBtn>
       <div
-        className={`offcanvas offcanvas-end offcanvas-anim ${isOpen ? 'show' : 'hide'}`}
+        className="offcanvas offcanvas-end"
         tabIndex="-1"
         id="offcanvasRight"
         aria-labelledby="offcanvasRightLabel"
