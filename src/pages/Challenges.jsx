@@ -21,7 +21,6 @@ const Title = styled.h4`
   }
 
   @media (max-width: 575.97px) {
-
   }
 `;
 
