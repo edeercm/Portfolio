@@ -33,7 +33,7 @@ const BurgerLabels = ({ closeOffcanvas }) => {
             target='_blank'
             rel="noopener noreferrer"
             onClick={handleLinkClick}
-            href="https://1drv.ms/b/s!AtjLH1H5tcbid7C_U4I9OD8RTLs?e=QcWGGs"
+            href="https://1drv.ms/b/s!AtjLH1H5tcbid7C_U4I9OD8RTLs"
           >
             Resume
           </a>
