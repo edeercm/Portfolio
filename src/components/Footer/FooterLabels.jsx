@@ -25,7 +25,7 @@ const FooterLabels = () => {
       <a
         target='_blank'
         rel='noopener noreferrer'
-        href="https://onedrive.live.com/embed?resid=E2C6B5F9511FCBD8%21121&authkey=!AKS7KvfpSnv6inI&em=2"
+        href="https://1drv.ms/b/s!AtjLH1H5tcbieq8Zp5UUe2Fpv9s?e=nG8Z7X"
       >
         Resume
       </a>

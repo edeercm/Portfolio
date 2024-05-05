@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import { SiAdobephotoshop } from "react-icons/si";
 // import { IoLogoJavascript } from "react-icons/io5";
 import { FaHtml5, FaBootstrap, FaReact, FaCss3Alt } from "react-icons/fa";
+import { IoLogoJavascript } from "react-icons/io5";
 
 const Container = styled.div`
   display: flex;
@@ -72,20 +73,20 @@ const SkillCards = () => {
         <Label>HTML5</Label>
       </Card>
       <Card>
+        <Icon><FaCss3Alt /></Icon>
+        <Label>CSS3</Label>
+      </Card>
+      <Card>
+        <Icon><IoLogoJavascript /></Icon>
+        <Label>JavaScript</Label>
+      </Card>
+      <Card>
         <Icon><FaBootstrap /></Icon>
         <Label>Bootstrap</Label>
       </Card>
       <Card>
         <Icon><FaReact /></Icon>
         <Label>React</Label>
-      </Card>
-      {/* <Card>
-        <Icon><IoLogoJavascript /></Icon>
-        <Label>JavaScript</Label>
-      </Card> */}
-      <Card>
-        <Icon><FaCss3Alt /></Icon>
-        <Label>CSS3</Label>
       </Card>
       <Card>
         <Icon><SiAdobephotoshop /></Icon>
