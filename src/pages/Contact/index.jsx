@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import ContactBtns from './ContactBtns';
+import ContactBtns from './components/ContactBtns';
 
 const Section = styled.section`
   width: 100%;
@@ -44,19 +44,19 @@ const Label = styled.h1`
 `;
 
 const index = () => {
-    return <>
-        <Section>
-            <div className="container">
-                <div className="row">
-                    <div className="col-12">
-                        <Intro>Already have a design in mind?</Intro>
-                        <Label>Let's connect</Label>
-                        <ContactBtns />
-                    </div>
-                </div>
-            </div>
-        </Section >
-    </>
+  return <>
+    <Section>
+      <div className="container">
+        <div className="row">
+          <div className="col-12">
+            <Intro>Already have a design in mind?</Intro>
+            <Label>Let's connect</Label>
+            <ContactBtns />
+          </div>
+        </div>
+      </div>
+    </Section >
+  </>
 }
 
 export default index

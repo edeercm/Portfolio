@@ -1,7 +1,7 @@
 import styled from 'styled-components'
-import projsData from './ProjsData'
-import ProjsCard from './ProjsCard'
-import ChlsBtn from '../Challenges/ChlsBtn';
+import projsData from './components/ProjsData'
+import ProjsCard from './components/ProjsCard'
+import ChlsBtn from '../Challenges/components/ChlsBtn';
 
 const Section = styled.section`
   width: 100%;

@@ -1,6 +1,6 @@
 import styled from 'styled-components'
-import chlsData from './ChlsData'
-import ChlsCard from './ChlsCard';
+import chlsData from './components/ChlsData'
+import ChlsCard from './components/ChlsCard';
 
 const Section = styled.section`
   width: 100%;

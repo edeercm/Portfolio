@@ -1,6 +1,6 @@
-import projectone from '../../assets/images/projects/projectone.png';
-import projectwo from '../../assets/images/projects/projectwo.png'
-import projecthree from '../../assets/images/projects/projecthree.png'
+import projectone from '../../../assets/images/projects/projectone.png';
+import projectwo from '../../../assets/images/projects/projectwo.png'
+import projecthree from '../../../assets/images/projects/projecthree.png'
 
 const projsData = [
   {
@@ -9,7 +9,7 @@ const projsData = [
     "subtitle": "Alura challenge",
     "desc": "Project developed by me for the Alura challenge. Built with HTML, CSS, and JavaScript.",
     "link": "https://edeercm.github.io/EncriptadorDeTextoAlura/",
-    "image": projectone  
+    "image": projectone
   },
   {
     "id": 2,

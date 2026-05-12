@@ -1,8 +1,8 @@
 import styled from 'styled-components'
-import Intro from './Intro';
-import About from './About';
+import Intro from './components/Intro';
+import About from './components/About';
 import img from '../../assets/images/home/me2.jpg'
-import Skills from './Skills'
+import Skills from './components/Skills'
 
 const Section = styled.section`
   height: auto;

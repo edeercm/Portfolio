@@ -1,7 +1,7 @@
-import chlsone from '../../assets/images/challenges/chlsone.png';
-import chlstwo from '../../assets/images/challenges/chlstwo.png';
-import chlsthree from '../../assets/images/challenges/chlsthree.png';
-import chlsfour from '../../assets/images/challenges/chlsfour.png';
+import chlsone from '../../../assets/images/challenges/chlsone.png';
+import chlstwo from '../../../assets/images/challenges/chlstwo.png';
+import chlsthree from '../../../assets/images/challenges/chlsthree.png';
+import chlsfour from '../../../assets/images/challenges/chlsfour.png';
 
 const chlsData = [
   {
@@ -10,7 +10,7 @@ const chlsData = [
     "subtitle": "Challenge",
     "desc": "Landing page developed with React, Bootstrap and styled-componets.",
     "link": "https://fylosecurity.netlify.app/",
-    "image": chlsone  
+    "image": chlsone
   },
   {
     "id": 2,
