@@ -1,4 +1,3 @@
-import React from 'react'
 import styled from 'styled-components'
 import ContactBtns from './ContactBtns';
 
@@ -44,20 +43,20 @@ const Label = styled.h1`
   }
 `;
 
-const Contact = () => {
-  return <>
-    <Section>
-      <div className="container">
-        <div className="row">
-          <div className="col-12">
-            <Intro>Already have a design in mind?</Intro>
-            <Label>Let's connect</Label>
-            <ContactBtns />
-          </div>
-        </div>
-      </div>
-    </Section >
-  </>
+const index = () => {
+    return <>
+        <Section>
+            <div className="container">
+                <div className="row">
+                    <div className="col-12">
+                        <Intro>Already have a design in mind?</Intro>
+                        <Label>Let's connect</Label>
+                        <ContactBtns />
+                    </div>
+                </div>
+            </div>
+        </Section >
+    </>
 }
 
-export default Contact
+export default index

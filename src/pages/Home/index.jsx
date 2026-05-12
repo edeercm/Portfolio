@@ -1,10 +1,8 @@
-import React from 'react'
 import styled from 'styled-components'
 import Intro from './Intro';
 import About from './About';
-import img from '../assets/images/home/me2.jpg'
+import img from '../../assets/images/home/me2.jpg'
 import Skills from './Skills'
-
 
 const Section = styled.section`
   height: auto;
@@ -40,7 +38,7 @@ const Img = styled.img`
   }
 `;
 
-const Home = () => {
+const index = () => {
   return <>
     <Section>
       <div className="container">
@@ -65,4 +63,4 @@ const Home = () => {
   </>
 }
 
-export default Home
+export default index
