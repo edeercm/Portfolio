@@ -1,8 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
-import projsData from './Projects/ProjsData'
-import ProjsCard from './Projects/ProjsCard'
-import ChlsBtn from './Challenges/ChlsBtn';
+import projsData from './ProjsData'
+import ProjsCard from './ProjsCard'
+import ChlsBtn from '../Challenges/ChlsBtn';
 
 const Section = styled.section`
   width: 100%;

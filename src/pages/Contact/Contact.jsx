@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import ContactBtns from '../components/Contact/ContactBtns';
+import ContactBtns from './ContactBtns';
 
 const Section = styled.section`
   width: 100%;

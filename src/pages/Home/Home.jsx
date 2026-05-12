@@ -1,9 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
-import Intro from './Home/Intro';
-import About from './Home/About';
+import Intro from './Intro';
+import About from './About';
 import img from '../assets/images/home/me2.jpg'
-import Skills from './Home/Skills'
+import Skills from './Skills'
 
 
 const Section = styled.section`
