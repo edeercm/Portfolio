@@ -1,5 +1,4 @@
-import React from 'react'
-import { Card, Title, Subtitle, DescriptionCont, Desc, ViewBtn, ProjectImg } from '../Projects/ProjsCardStyles';
+import { Card, Title, Subtitle, DescriptionCont, Desc, ViewBtn, ProjectImg } from '../../Projects/components/ProjsCardStyles';
 
 const ChlsCard = ({ title, subtitle, desc, link, image }) => {
   return <>
