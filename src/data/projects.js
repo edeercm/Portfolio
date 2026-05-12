@@ -1,6 +1,6 @@
-import projectone from '../../../assets/images/projects/projectone.png';
-import projectwo from '../../../assets/images/projects/projectwo.png'
-import projecthree from '../../../assets/images/projects/projecthree.png'
+import projectone from '../assets/images/projects/projectone.png';
+import projectwo from '../assets/images/projects/projectwo.png'
+import projecthree from '../assets/images/projects/projecthree.png'
 
 const projsData = [
     {

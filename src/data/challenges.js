@@ -1,7 +1,7 @@
-import chlsone from '../../../assets/images/challenges/chlsone.png';
-import chlstwo from '../../../assets/images/challenges/chlstwo.png';
-import chlsthree from '../../../assets/images/challenges/chlsthree.png';
-import chlsfour from '../../../assets/images/challenges/chlsfour.png';
+import chlsone from '../assets/images/challenges/chlsone.png';
+import chlstwo from '../assets/images/challenges/chlstwo.png';
+import chlsthree from '../assets/images/challenges/chlsthree.png';
+import chlsfour from '../assets/images/challenges/chlsfour.png';
 
 const chlsData = [
     {
