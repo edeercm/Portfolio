@@ -1,6 +1,5 @@
-import React from 'react'
 import styled from 'styled-components';
-import { FaInstagram, FaLinkedin, FaGithub } from "react-icons/fa";
+import socialsData from '../../../../data/socials';
 
 const Icon = styled.a`
   svg {
@@ -12,27 +11,19 @@ const Icon = styled.a`
 const FooterIcons = () => {
   return <>
     <div className='d-flex flex-row gap-2'>
-      <Icon
-        target='_blank'
-        rel='noopener noreferrer'
-        href='https://www.linkedin.com/in/edeercm/'
-      >
-        <FaLinkedin />
-      </Icon>
-      <Icon
-        target='_blank'
-        rel='noopener noreferrer'
-        href='https://github.com/edeercm'
-      >
-        <FaGithub />
-      </Icon>
-      <Icon
-        target='_blank'
-        rel='noopener noreferrer'
-        href='https://www.instagram.com/edeercm/'
-      >
-        <FaInstagram />
-      </Icon>
+      {socialsData.map((social) => {
+        const IconComponent = social.icon;
+        return (
+          <Icon
+            key={social.id}
+            target='_blank'
+            rel='noopener noreferrer'
+            href={social.url}
+          >
+            <IconComponent />
+          </Icon>
+        );
+      })}
     </div>
   </>
 }
