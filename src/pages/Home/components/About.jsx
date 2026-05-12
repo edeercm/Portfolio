@@ -1,6 +1,5 @@
-import React from 'react'
 import styled from 'styled-components'
-import { FaInstagram, FaLinkedin, FaGithub } from "react-icons/fa";
+import socialsData from '../../../data/socials';
 
 const Label = styled.span`
   width: 90%;
@@ -51,21 +50,15 @@ const Icon = styled.div`
 
 const About = () => {
   return <>
-    <div className='d-flex flex-column text-center text-xl-start align-items-center align-items-xl-start gap-4'>
-      <div className='d-flex flex-column'>
-        <Label>I transform ideas into digital experiences, blending creativity and technology. Currently based in Mexico and <LabelTwo>actively seeking new opportunities.</LabelTwo></Label>
-      </div>
-      <div className='d-flex flex-row gap-3'>
-        <a href='https://www.linkedin.com/in/edeercm/' target='_blank' rel='noopener noreferrer'>
-          <Icon><FaLinkedin /></Icon>
-        </a>
-        <a href='https://github.com/edeercm' target='_blank' rel='noopener noreferrer'>
-          <Icon><FaGithub /></Icon>
-        </a>
-        <a href='https://www.instagram.com/edeercm/' target='_blank' rel='noopener noreferrer'>
-          <Icon><FaInstagram /></Icon>
-        </a>
-      </div>
+    <div className='d-flex flex-row gap-3'>
+      {socialsData.map((social) => {
+        const IconComponent = social.icon;
+        return (
+          <a key={social.id} href={social.url} target='_blank' rel='noopener noreferrer'>
+            <Icon><IconComponent /></Icon>
+          </a>
+        );
+      })}
     </div>
   </>
 }

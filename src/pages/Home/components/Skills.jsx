@@ -1,6 +1,5 @@
-import React from 'react';
 import styled from 'styled-components'
-import SkillsCards from './SkillsCards'
+import SkillsCards from '../../../components/ui/SkillsCard'
 
 const Section = styled.section`
   width: 100%;

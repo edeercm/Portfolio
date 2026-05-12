@@ -1,9 +1,5 @@
-import React from 'react'
 import styled from 'styled-components'
-import { SiAdobephotoshop } from "react-icons/si";
-// import { IoLogoJavascript } from "react-icons/io5";
-import { FaHtml5, FaBootstrap, FaReact, FaCss3Alt } from "react-icons/fa";
-import { IoLogoJavascript } from "react-icons/io5";
+import skillsData from '../../../data/skills';
 
 const Container = styled.div`
   display: flex;
@@ -65,35 +61,20 @@ const Icon = styled.div`
   }
 `;
 
-const SkillCards = () => {
-  return <>
-    <Container>
-      <Card>
-        <Icon><FaHtml5 /></Icon>
-        <Label>HTML5</Label>
-      </Card>
-      <Card>
-        <Icon><FaCss3Alt /></Icon>
-        <Label>CSS3</Label>
-      </Card>
-      <Card>
-        <Icon><IoLogoJavascript /></Icon>
-        <Label>JavaScript</Label>
-      </Card>
-      <Card>
-        <Icon><FaBootstrap /></Icon>
-        <Label>Bootstrap</Label>
-      </Card>
-      <Card>
-        <Icon><FaReact /></Icon>
-        <Label>React</Label>
-      </Card>
-      <Card>
-        <Icon><SiAdobephotoshop /></Icon>
-        <Label>Photoshop</Label>
-      </Card>
-    </Container>
-  </>
+const index = () => {
+    return (
+        <Container>
+            {skillsData.map((skill) => {
+                const IconComponent = skill.icon;
+                return (
+                    <Card key={skill.id}>
+                        <Icon><IconComponent /></Icon>
+                        <Label>{skill.name}</Label>
+                    </Card>
+                );
+            })}
+        </Container>
+    );
 }
 
-export default SkillCards
+export default index
