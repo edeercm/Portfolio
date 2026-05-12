@@ -1,6 +1,6 @@
 import styled from 'styled-components'
-import projsData from './components/ProjsData'
-import ProjsCard from './components/ProjsCard'
+import projectsData from '../../data/projects'
+import Card from '../../components/ui/Card';
 import ChlsBtn from '../Challenges/components/ChlsBtn';
 
 const Section = styled.section`
@@ -21,33 +21,32 @@ const Title = styled.h4`
   }
 
   @media (max-width: 575.97px) {
-
   }
 `;
 
 const index = () => {
-    return <>
-        <Section>
-            <div className='container text-center'>
-                <Title>Projects.</Title>
-            </div>
-            <div>
-                {projsData.map((project) => (
-                    <ProjsCard
-                        key={project.id}
-                        title={project.title}
-                        subtitle={project.subtitle}
-                        desc={project.desc}
-                        link={project.link}
-                        image={project.image}
-                    />
-                ))}
-            </div>
-            <div className='container d-flex justify-content-center'>
-                <ChlsBtn />
-            </div>
-        </Section>
-    </>
+  return <>
+    <Section>
+      <div className='container text-center'>
+        <Title>Projects.</Title>
+      </div>
+      <div>
+        {projectsData.map((item) => (
+          <Card
+            key={item.id}
+            title={item.title}
+            subtitle={item.subtitle}
+            desc={item.desc}
+            link={item.link}
+            image={item.image}
+          />
+        ))}
+      </div>
+      <div className='container d-flex justify-content-center'>
+        <ChlsBtn />
+      </div>
+    </Section>
+  </>
 }
 
 export default index

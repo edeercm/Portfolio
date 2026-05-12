@@ -1,6 +1,6 @@
 import styled from 'styled-components'
-import chlsData from './components/ChlsData'
-import ChlsCard from './components/ChlsCard';
+import challengesData from '../../data/challenges'
+import Card from '../../components/ui/Card';
 
 const Section = styled.section`
   width: 100%;
@@ -23,27 +23,26 @@ const Title = styled.h4`
   }
 `;
 
-
 const index = () => {
-    return <>
-        <Section>
-            <div className='container text-center'>
-                <Title>Frontend Mentor</Title>
-            </div>
-            <div>
-                {chlsData.map((chls) => (
-                    <ChlsCard
-                        key={chls.id}
-                        title={chls.title}
-                        subtitle={chls.subtitle}
-                        desc={chls.desc}
-                        link={chls.link}
-                        image={chls.image}
-                    />
-                ))}
-            </div>
-        </Section>
-    </>
+  return <>
+    <Section>
+      <div className='container text-center'>
+        <Title>Frontend Mentor</Title>
+      </div>
+      <div>
+        {challengesData.map((item) => (
+          <Card
+            key={item.id}
+            title={item.title}
+            subtitle={item.subtitle}
+            desc={item.desc}
+            link={item.link}
+            image={item.image}
+          />
+        ))}
+      </div>
+    </Section>
+  </>
 }
 
 export default index
