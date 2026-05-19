@@ -1,66 +1,21 @@
-import styled from 'styled-components'
-import Intro from './components/Intro';
-import About from './components/About';
-import img from '../../assets/images/home/me2.jpg'
-import Skills from './components/Skills'
-
-const Section = styled.section`
-  height: auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 7.5rem 0;
-  background-color: var(--third-color);
-
-  @media (min-width: 575.98px) and (max-width: 991.98px) {
-    padding: 7rem 0;
-  }
-
-  @media (max-width: 575.97px) {
-    padding: 5.75rem 0 3.75rem;
-  }
-`;
-
-const Img = styled.img`
-  width: auto;
-  height: 60svh;
-  object-fit: contain;
-  object-position: center;  
-
-  @media (min-width: 575.98px) and (max-width: 991.98px) {
-    height: auto;
-    margin-bottom: 1.5rem;
-  }
-
-  @media (max-width: 575.97px) {
-    height: auto;
-    margin-bottom: 1.5rem;
-  }
-`;
+import HeroSection from '../../components/sections/HeroSection';
+import AboutSection from '../../components/sections/AboutSection';
+import ExperienceSection from '../../components/sections/ExperienceSection';
+import ProjectsSection from '../../components/sections/ProjectsSection';
+import ExpertiseSection from '../../components/sections/ExpertiseSection';
+import ContactSection from '../../components/sections/ContactSection';
 
 const index = () => {
-  return <>
-    <Section>
-      <div className="container">
-        <div className="row gap-4">
-          <div className="col-12 text-center text-xl-start mt-md-3 mt-xl-0">
-            <Intro />
-          </div>
-          <div className="col-12">
-            <div className="row flex-column-reverse flex-xl-row">
-              <div className="col-12 col-xl-6 d-flex align-items-end">
-                <About />
-              </div>
-              <div className="col-12 col-xl-6 d-flex justify-content-center justify-content-xl-end">
-                <Img src={img} alt="Me ;)" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </Section>
-    <Skills />
-  </>
+  return (
+    <>
+      <HeroSection />
+      <AboutSection />
+      <ExperienceSection />
+      <ProjectsSection />
+      <ExpertiseSection />
+      <ContactSection />
+    </>
+  );
 }
 
 export default index

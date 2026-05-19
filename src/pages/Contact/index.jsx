@@ -1,5 +1,5 @@
-import styled from 'styled-components'
-import ContactBtns from './components/ContactBtns';
+
+//import ContactBtns from './components/ContactBtns';
 
 const Section = styled.section`
   width: 100%;

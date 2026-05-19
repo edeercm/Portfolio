@@ -1,47 +1,28 @@
-import { Link } from 'react-router-dom';
-import styled from 'styled-components'
-import HeaderLabels from './components/HeaderLabels';
-import Burger from './components/Burger';
+import { useLocation } from 'react-router-dom';
+import NavLinks from './components/NavLinks';
 
-const HeaderStyle = styled.header`
-  position: fixed;
-  display: flex;
-  align-items: center;
-  width: 100%;
-  height: 10vh;
-  z-index: 10;
-  background-color: var(--second-color);
+const Header = () => {
+  const { pathname } = useLocation();
+  const isHome = pathname === '/';
 
-  @media (max-width: 575.97px) {
-    height: 7.5svh;
-  }
-`;
+  return (
+    <nav className="fixed top-4 left-1/2 -translate-x-1/2 rounded-full px-6 py-2 bg-surface-container/60 backdrop-blur-xl border border-white/10 shadow-[0px_0px_20px_rgba(20,110,245,0.1)] flex items-center gap-gutter max-w-fit mx-auto z-50">
+      {/* Logo o Nombre */}
+      {/* <span className="font-headline-md text-headline-md font-bold text-primary mr-4">Eder</span> */}
 
-const Logo = styled.article`
-  cursor: pointer;
-  font-weight: bold;
-  font-size: 2rem;
-  color: var(--third-color);
-`;
+      {/* Enlaces a las Secciones (Anclas) - modularizado */}
+      <NavLinks />
 
-const index = () => {
-    return <>
-        <HeaderStyle>
-            <div className="container">
-                <div className="row">
-                    <div className="col-6">
-                        <Logo>
-                            <Link to={'/'}>X</Link>
-                        </Logo>
-                    </div>
-                    <div className="col-6 d-flex justify-content-end align-items-center">
-                        <HeaderLabels />
-                        <Burger />
-                    </div>
-                </div>
-            </div>
-        </HeaderStyle>
-    </>
-}
+      {/* Call to Action */}
+      <a
+        // href={isHome ? '#contact' : '/#contact'}
+        href='#contact'
+        className="ml-4 bg-primary-container text-on-primary-container px-4 py-1.5 rounded-full font-label-md text-label-md uppercase tracking-wider hover:brightness-110 transition-all"
+      >
+        Hire Me
+      </a>
+    </nav>
+  );
+};
 
-export default index
+export default Header;

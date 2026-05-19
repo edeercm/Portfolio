@@ -1,66 +1,22 @@
-import styled from 'styled-components';
-import FooterLabels from './components/FooterLabels';
-import FooterIcons from './components/FooterIcons';
+import socialsData from '../../../data/socials';
 
-const FooterStyle = styled.footer`
-  display: flex;
-  align-items: center;
-  height: 35svh;
-  background-color: var(--second-color);
-  
-  @media (min-width: 575.98px) and (max-width: 991.98px) {
-  }
+const Footer = () => {
+  return (
+    <footer className="w-full py-12 border-t border-white/5 flex flex-col md:flex-row justify-between items-center px-margin-desktop max-w-container-max mx-auto bg-transparent">
+      {/* Automáticamente usa el año actual */}
+      <p className="font-body-sm text-body-sm text-on-surface-variant mb-4 md:mb-0">
+        © {new Date().getFullYear()} Eder. Built with precision.
+      </p>
 
-  @media (max-width: 575.97px) {
-  }
-`;
+      <div className="flex gap-gutter">
+        <a className="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors opacity-80 hover:opacity-100" href="#" target="_blank" rel="noopener noreferrer">Github</a>
+        <a className="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors opacity-80 hover:opacity-100" href="#" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a className="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors opacity-80 hover:opacity-100" href="#" target="_blank" rel="noopener noreferrer">Twitter</a>
+      </div>
+    </footer>
+  );
+};
 
-const Ubi = styled.span`
-  font-size: 1.125rem;
-  color: var(--third-color);
-`;
+export default Footer;
 
-const Line = styled.div`
-  margin-top: 1.25rem;
-  height: 0.025rem;
-  background-color: var(--third-color);
-`;
 
-const Copyright = styled.span`
-  font-size: 1.125rem;
-  color: var(--third-color);
-`;
-
-const index = () => {
-    return <>
-        <FooterStyle>
-            <div className='container'>
-                <div className="row">
-                    <div className="col-12">
-                        <div className="row gap-2 gap-md-0">
-                            <div className="col-12 col-md-6 d-flex justify-content-center justify-content-md-start">
-                                <FooterLabels />
-                            </div>
-                            <div className="col-12 col-md-6 text-center text-md-end">
-                                <Ubi>Ver, MX</Ubi>
-                            </div>
-                        </div>
-                        <Line></Line>
-                    </div>
-                    <div className="col-12 mt-4 mt-md-5">
-                        <div className="row gap-3 gap-md-0">
-                            <div className="col-12 col-md-6 text-center text-md-start">
-                                <Copyright>&#169; Eder | 2024</Copyright>
-                            </div>
-                            <div className="col-12 col-md-6 d-flex justify-content-center justify-content-md-end">
-                                <FooterIcons />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </FooterStyle>
-    </>
-}
-
-export default index
