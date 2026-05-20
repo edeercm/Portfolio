@@ -1,0 +1,24 @@
+@keyframes laserPulse {
+  0%, 100% {
+    opacity: 0.1;
+    transform: scaleY(0.97);
+  }
+  50% {
+    opacity: 0.6;
+    transform: scaleY(1);
+  }
+}
+
+.laser-pulse-1 {
+  animation: laserPulse 2.4s ease-in-out infinite;
+}
+
+.laser-pulse-2 {
+  animation: laserPulse 2.4s ease-in-out infinite;
+  animation-delay: 0.8s;
+}
+
+.laser-pulse-3 {
+  animation: laserPulse 2.4s ease-in-out infinite;
+  animation-delay: 1.6s;
+}

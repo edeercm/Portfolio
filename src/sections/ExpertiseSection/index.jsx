@@ -1,4 +1,4 @@
-import expertiseData from '../../../data/expertise';
+import expertiseData from '../../data/expertise';
 
 const ExpertiseSection = () => {
   const row1 = expertiseData?.row1 ?? [];

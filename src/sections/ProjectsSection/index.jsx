@@ -1,4 +1,4 @@
-import projsData from '../../../data/projects';
+import projsData from '../../data/projects';
 
 const ProjectsSection = () => {
   return (

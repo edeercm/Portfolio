@@ -1,4 +1,4 @@
-import socialsData from '../../../data/socials';
+import socialsData from '../../data/socials';
 
 const ContactSection = () => {
   return (
