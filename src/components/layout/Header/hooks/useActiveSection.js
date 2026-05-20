@@ -20,7 +20,7 @@ const useActiveSection = () => {
           }
         });
       },
-      { root: null, rootMargin: '0px 0px -40% 0px', threshold: 0.25 }
+      { root: null, rootMargin: '0px 0px -40% 0px', threshold: 0 }
     );
 
     sections.forEach((s) => observer.observe(s));
