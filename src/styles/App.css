@@ -6,77 +6,88 @@
 @tailwind utilities;
 
 @layer base {
-   body {
-      background-color: theme('colors.background');
-      color: theme('colors.on-surface');
-      cursor: none;
-      /* Oculta el cursor por defecto para usar el customizado */
-      scroll-behavior: smooth;
-      overflow-x: hidden;
-   }
+  :root {
+    --color-primary: theme('colors.primary');
+    --color-primary-container: theme('colors.primary-container');
+    --color-surface-container: theme('colors.surface-container');
+    --color-background: theme('colors.background');
+    --color-on-surface: theme('colors.on-surface');
+    --color-on-surface-variant: theme('colors.on-surface-variant');
+  }
+
+  body {
+    background-color: theme('colors.background');
+    color: theme('colors.on-surface');
+    cursor: none;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+  }
 }
 
 @layer components {
-   .custom-cursor {
-      width: 8px;
-      height: 8px;
-      background: theme('colors.primary-container');
-      border-radius: 50%;
-      position: fixed;
-      pointer-events: none;
-      z-index: 9999;
-      box-shadow: 0 0 15px theme('colors.primary-container');
-      transition: transform 0.15s ease-out, background 0.15s ease-out;
-   }
+  .custom-cursor {
+    width: 8px;
+    height: 8px;
+    background: var(--color-primary-container);
+    border-radius: 50%;
+    position: fixed;
+    pointer-events: none;
+    z-index: 9999;
+    box-shadow: 0 0 15px var(--color-primary-container);
+    transition: transform 0.15s ease-out, background 0.15s ease-out;
+  }
 
-   .glass-card {
-      background: rgba(17, 24, 39, 0.6);
-      backdrop-filter: blur(12px);
-      border: 1px solid rgba(255, 255, 255, 0.08);
-   }
+  .glass-card {
+    background: rgba(16, 33, 47, 0.6);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+  }
 
-   .glow-hover:hover {
-      box-shadow: 0px 0px 30px rgba(20, 110, 245, 0.15);
-      border-color: rgba(20, 110, 245, 0.3);
-   }
+  .glow-hover:hover {
+    box-shadow: 0px 0px 30px color-mix(in srgb, var(--color-primary-container) 15%, transparent);
+    border-color: color-mix(in srgb, var(--color-primary-container) 30%, transparent);
+  }
 
-   .data-stream-bg {
-      background-image: linear-gradient(rgba(10, 10, 15, 0.8), rgba(10, 10, 15, 0.8)),
-         repeating-linear-gradient(0deg, transparent, transparent 1px, rgba(20, 110, 245, 0.03) 1px, rgba(20, 110, 245, 0.03) 2px);
-      background-size: 100% 4px;
-   }
+  /* Fondo Hero — intencional, diferente al background global */
+  .data-stream-bg {
+    background-image:
+      linear-gradient(rgba(10, 10, 15, 0.8), rgba(10, 10, 15, 0.8)),
+      repeating-linear-gradient(
+        0deg,
+        transparent,
+        transparent 1px,
+        color-mix(in srgb, var(--color-primary-container) 3%, transparent) 1px,
+        color-mix(in srgb, var(--color-primary-container) 3%, transparent) 2px
+      );
+    background-size: 100% 4px;
+  }
 
-   .timeline-gradient {
-      background: linear-gradient(to bottom, #146ef5 0%, #146ef5 50%, transparent 100%);
-   }
+  .timeline-gradient {
+    background: linear-gradient(
+      to bottom,
+      var(--color-primary-container) 0%,
+      var(--color-primary-container) 50%,
+      transparent 100%
+    );
+  }
 }
 
 @layer utilities {
-   .animate-scroll-left {
-      animation: scroll-left 40s linear infinite;
-   }
+  .animate-scroll-left {
+    animation: scroll-left 40s linear infinite;
+  }
 
-   .animate-scroll-right {
-      animation: scroll-right 40s linear infinite;
-   }
+  .animate-scroll-right {
+    animation: scroll-right 40s linear infinite;
+  }
 }
 
 @keyframes scroll-left {
-   0% {
-      transform: translateX(0);
-   }
-
-   100% {
-      transform: translateX(-50%);
-   }
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
 }
 
 @keyframes scroll-right {
-   0% {
-      transform: translateX(-50%);
-   }
-
-   100% {
-      transform: translateX(0);
-   }
+  0% { transform: translateX(-50%); }
+  100% { transform: translateX(0); }
 }
