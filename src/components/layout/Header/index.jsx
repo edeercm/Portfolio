@@ -18,7 +18,7 @@ const Header = () => {
         left-1/2 
         -translate-x-1/2 
 
-        w-[91%]
+        w-[91.5%]
         md:w-[40%]
 
         px-6 
