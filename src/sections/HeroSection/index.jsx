@@ -8,7 +8,7 @@ const HeroSection = () => {
     <section
       className="
         relative 
-        min-h-[100vh] 
+        min-h-[110vh] 
         md:h-[115vh] 
         lg:h-[125vh] 
         w-full 
