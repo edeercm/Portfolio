@@ -8,7 +8,7 @@ const ExperienceSection = () => {
       className="py-24 border-t border-white/5 overflow-hidden"
       id="experience"
     >
-      <div className=" px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+      <div className="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
         <ExperienceHeader />
         <ExperienceTimeline experiences={experienceData} />
       </div>
